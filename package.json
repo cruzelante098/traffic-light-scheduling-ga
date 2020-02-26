@@ -1,0 +1,19 @@
+{
+  "name": "traffic-light-scheduling-ga",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "compile": "tsc",
+    "compile:watch": "tsc --watch",
+    "start": "ts-node src/cli.ts",
+    "test": "mocha",
+    "test:watch": "mocha --watch --reporter min",
+    "test:cov": "nyc --reporter=text --reporter=html mocha & start ./coverage/index.html",
+    "coverage": "nyc --reporter=text mocha",
+    "coveralls": "npm run coverage && nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint ./src/**/* ./test/**/*.ts --color"
+  },
+  "author": "Francisco Cruz <alu0101040288@ull.edu.es>",
+  "license": "MIT"
+}
