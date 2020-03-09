@@ -4,6 +4,8 @@ import sys
 import os
 import subprocess
 import shlex as shlex
+import re
+
 from termcolor import colored
 from typing import List
 
@@ -15,6 +17,7 @@ osm_file = sys.argv[1]
 (osm_filename, osm_ext) = os.path.splitext(osm_file)
 net_xml_file = f"{osm_filename}.net.xml"
 poly_file = f"{osm_filename}.poly.xml"
+sumo_config_file = f"{osm_filename}.sumocfg"
 
 if osm_ext != ".osm":
     print("Extension is not .osm")
@@ -23,8 +26,8 @@ if osm_ext != ".osm":
 
 def executeCommand(command: List[str], detach=False):
     proc = subprocess.Popen(command)
-    print(colored(f"\nExecuting '{shlex.join(proc.args)}'", 'yellow') +
-          (colored(" Detached", 'cyan') if detach else ""))
+    print(colored(f"\nExecuting '{shlex.join(proc.args)}'", 'cyan') +
+          (colored(" Detached", 'magenta') if detach else ""))
     if not detach:
         outs, errs = proc.communicate()
         if proc.returncode != 0:
@@ -51,6 +54,7 @@ executeCommand([
     # "--crossings.guess",
 ])
 
+# Creates poly file
 executeCommand([
     "polyconvert",
     "--net-file", net_xml_file,
@@ -59,9 +63,11 @@ executeCommand([
     "-o", poly_file,
 ])
 
-# Executes network and others files in sumo
-executeCommand([
-    "sumo-gui",
-    "-n", net_xml_file,
-    "-a", poly_file
-], detach=True)
+user_input = input(colored("\nWould you like to execute SUMO? y/n ", 'yellow'))
+
+if re.match("y", user_input, re.I):
+    # Executes sumo with config file
+    executeCommand([
+        "sumo-gui",
+        "-c", sumo_config_file,
+    ], detach=True)

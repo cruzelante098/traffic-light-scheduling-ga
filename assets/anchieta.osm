@@ -11050,13 +11050,14 @@
     <tag k='tunnel' v='yes' />
     <tag k='wikipedia' v='es:Autopista del Norte de Tenerife' />
   </way>
-  <way id='100829410' timestamp='2016-10-25T00:15:47Z' uid='2946617' user='Chumaa' visible='true' version='11' changeset='43146098'>
+  <way id='100829410' action='modify' timestamp='2016-10-25T00:15:47Z' uid='2946617' user='Chumaa' visible='true' version='11' changeset='43146098'>
     <nd ref='1165301888' />
     <nd ref='4462625952' />
     <nd ref='1165301884' />
     <tag k='highway' v='motorway' />
     <tag k='lanes' v='3' />
     <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='120' />
     <tag k='name' v='Autopista del Norte' />
     <tag k='oneway' v='yes' />
     <tag k='ref' v='TF-5' />
@@ -11083,13 +11084,14 @@
     <tag k='lanes' v='1' />
     <tag k='oneway' v='yes' />
   </way>
-  <way id='100829415' timestamp='2015-07-11T13:26:44Z' uid='88164' user='Med' visible='true' version='5' changeset='32564340'>
+  <way id='100829415' action='modify' timestamp='2015-07-11T13:26:44Z' uid='88164' user='Med' visible='true' version='5' changeset='32564340'>
     <nd ref='1163001945' />
     <nd ref='1165301888' />
     <tag k='highway' v='motorway' />
     <tag k='lanes' v='3' />
     <tag k='layer' v='-1' />
     <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='120' />
     <tag k='name' v='Autopista del Norte' />
     <tag k='oneway' v='yes' />
     <tag k='ref' v='TF-5' />
@@ -11270,7 +11272,7 @@
     <tag k='sidewalk' v='both' />
     <tag k='source' v='GRAFCAN OrtoExpress Urbana 2009' />
   </way>
-  <way id='109573928' timestamp='2015-07-08T20:41:30Z' uid='88164' user='Med' visible='true' version='4' changeset='32505288'>
+  <way id='109573928' action='modify' timestamp='2015-07-08T20:41:30Z' uid='88164' user='Med' visible='true' version='4' changeset='32505288'>
     <nd ref='1217727896' />
     <nd ref='1431457348' />
     <nd ref='1217727851' />
@@ -11289,6 +11291,7 @@
     <nd ref='1217727855' />
     <tag k='highway' v='primary' />
     <tag k='lanes' v='2' />
+    <tag k='maxspeed' v='60' />
     <tag k='name' v='Carretera de La Esperanza' />
     <tag k='old_ref' v='C-824' />
     <tag k='oneway' v='no' />
@@ -15174,6 +15177,7 @@
     <nd ref='280826430' />
     <nd ref='610323380' />
     <tag k='highway' v='secondary' />
+    <tag k='maxspeed' v='50' />
     <tag k='name' v='Carretera de San Miguel de Geneto' />
     <tag k='oneway' v='no' />
     <tag k='ref' v='TF-263' />
@@ -16894,13 +16898,14 @@
     <tag k='oneway' v='yes' />
     <tag k='psv' v='designated' />
   </way>
-  <way id='216243700' timestamp='2015-07-11T13:26:48Z' uid='88164' user='Med' visible='true' version='3' changeset='32564340'>
+  <way id='216243700' action='modify' timestamp='2015-07-11T13:26:48Z' uid='88164' user='Med' visible='true' version='3' changeset='32564340'>
     <nd ref='1163001937' />
     <nd ref='1658380561' />
     <nd ref='1163001945' />
     <tag k='highway' v='motorway' />
     <tag k='lanes' v='3' />
     <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='120' />
     <tag k='name' v='Autopista del Norte' />
     <tag k='oneway' v='yes' />
     <tag k='ref' v='TF-5' />
@@ -17092,7 +17097,7 @@
     <tag k='lanes' v='1' />
     <tag k='width' v='5' />
   </way>
-  <way id='217365458' timestamp='2015-07-08T12:02:26Z' uid='2946617' user='Chumaa' visible='true' version='5' changeset='32493641'>
+  <way id='217365458' action='modify' timestamp='2015-07-08T12:02:26Z' uid='2946617' user='Chumaa' visible='true' version='5' changeset='32493641'>
     <nd ref='2266377622' />
     <nd ref='1559166878' />
     <nd ref='1559166874' />
@@ -17103,6 +17108,7 @@
     <nd ref='301233038' />
     <tag k='highway' v='tertiary' />
     <tag k='lanes' v='2' />
+    <tag k='maxspeed' v='30' />
     <tag k='name' v='Avenida Astrofísico Francisco Sánchez' />
     <tag k='oneway' v='no' />
     <tag k='sidewalk' v='both' />
@@ -17207,13 +17213,14 @@
     <tag k='source' v='GRAFCAN OrtoExpress Urbana 2009' />
     <tag k='wikipedia' v='es:Autopista del Norte de Tenerife' />
   </way>
-  <way id='217691379' timestamp='2016-10-25T00:15:47Z' uid='2946617' user='Chumaa' visible='true' version='4' changeset='43146098'>
+  <way id='217691379' action='modify' timestamp='2016-10-25T00:15:47Z' uid='2946617' user='Chumaa' visible='true' version='4' changeset='43146098'>
     <nd ref='1165301884' />
     <nd ref='1658380527' />
     <nd ref='1658380508' />
     <tag k='highway' v='motorway' />
     <tag k='lanes' v='3' />
     <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='120' />
     <tag k='name' v='Autopista del Norte' />
     <tag k='oneway' v='yes' />
     <tag k='ref' v='TF-5' />
@@ -19261,7 +19268,7 @@
     <tag k='surface' v='asphalt' />
     <tag k='turn:lanes:backward' v='left|through;right' />
   </way>
-  <way id='358043015' timestamp='2016-11-08T14:13:05Z' uid='2946617' user='Chumaa' visible='true' version='2' changeset='43487982'>
+  <way id='358043015' action='modify' timestamp='2016-11-08T14:13:05Z' uid='2946617' user='Chumaa' visible='true' version='2' changeset='43487982'>
     <nd ref='3630761284' />
     <nd ref='3582864393' />
     <nd ref='2087610294' />
@@ -19269,6 +19276,7 @@
     <nd ref='2266377622' />
     <tag k='highway' v='tertiary' />
     <tag k='lanes' v='2' />
+    <tag k='maxspeed' v='30' />
     <tag k='name' v='Avenida Astrofísico Francisco Sánchez' />
     <tag k='oneway' v='no' />
     <tag k='sidewalk' v='both' />
