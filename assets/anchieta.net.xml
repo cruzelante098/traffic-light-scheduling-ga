@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 03/18/20 12:15:25 by Eclipse SUMO netedit Version 1.5.0
+<!-- generated on 03/18/20 12:16:35 by Eclipse SUMO netedit Version 1.5.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -4053,11 +4053,6 @@
         <lane id="97855879_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="72.84" shape="1062.05,1615.71 1061.66,1615.77 1044.51,1603.31 1009.69,1640.91"/>
     </edge>
 
-    <tlLogic id="1253997655" type="static" programID="0" offset="0">
-        <phase duration="79" state="GG"/>
-        <phase duration="6"  state="yy"/>
-        <phase duration="5"  state="rr"/>
-    </tlLogic>
     <tlLogic id="278958815" type="static" programID="0" offset="0">
         <phase duration="33" state="GGrrrrGGg"/>
         <phase duration="6"  state="yyrrrryyg"/>
@@ -4280,7 +4275,7 @@
     <junction id="1253997594" type="priority" x="522.29" y="926.61" incLanes="-109573936_0 -109573936_1" intLanes=":1253997594_0_0" shape="522.29,926.61 521.39,932.74 522.29,926.61">
         <request index="0" response="0" foes="0" cont="0"/>
     </junction>
-    <junction id="1253997655" type="traffic_light" x="564.04" y="1300.42" incLanes="-109573927#4_0 -109573927#4_1 109573927#3_0 109573927#3_1" intLanes=":1253997655_0_0 :1253997655_1_0" shape="570.18,1301.27 557.94,1299.33 570.10,1301.72">
+    <junction id="1253997655" type="priority" x="564.04" y="1300.42" incLanes="-109573927#4_0 -109573927#4_1 109573927#3_0 109573927#3_1" intLanes=":1253997655_0_0 :1253997655_1_0" shape="570.18,1301.27 557.94,1299.33 570.10,1301.72">
         <request index="0" response="00" foes="00" cont="0"/>
         <request index="1" response="00" foes="00" cont="0"/>
     </junction>
@@ -5138,7 +5133,7 @@
     <connection from="-109573927#2" to="-109573927#1" fromLane="1" toLane="1" via=":1253997680_0_0" dir="s" state="M"/>
     <connection from="-109573927#2" to="83819551" fromLane="1" toLane="1" via=":1253997680_1_0" dir="l" state="m"/>
     <connection from="-109573927#3" to="-109573927#2" fromLane="1" toLane="1" via=":3585608081_1_0" dir="s" state="M"/>
-    <connection from="-109573927#4" to="-109573927#3" fromLane="1" toLane="1" via=":1253997655_0_0" tl="1253997655" linkIndex="0" dir="s" state="O"/>
+    <connection from="-109573927#4" to="-109573927#3" fromLane="1" toLane="1" via=":1253997655_0_0" dir="s" state="M"/>
     <connection from="-109573928#0" to="-109573936" fromLane="1" toLane="1" via=":1217727896_0_0" dir="s" state="M"/>
     <connection from="-109573928#1.8" to="-109573928#0" fromLane="1" toLane="1" via=":1431457541_0_0" dir="s" state="M"/>
     <connection from="-109573936" to="109573936" fromLane="1" toLane="1" via=":1253997594_0_0" dir="t" state="M"/>
@@ -5289,7 +5284,7 @@
     <connection from="109573927#0" to="83819551" fromLane="1" toLane="1" via=":1253997680_2_0" dir="r" state="M"/>
     <connection from="109573927#0" to="109573927#2" fromLane="1" toLane="1" via=":1253997680_3_0" dir="s" state="M"/>
     <connection from="109573927#2" to="109573927#3" fromLane="1" toLane="1" via=":3585608081_0_0" dir="s" state="M"/>
-    <connection from="109573927#3" to="109573927#4" fromLane="1" toLane="1" via=":1253997655_1_0" tl="1253997655" linkIndex="1" dir="s" state="O"/>
+    <connection from="109573927#3" to="109573927#4" fromLane="1" toLane="1" via=":1253997655_1_0" dir="s" state="M"/>
     <connection from="109573928#0" to="109573928#1" fromLane="1" toLane="1" via=":1431457541_1_0" dir="s" state="M"/>
     <connection from="109573928#1" to="550301038" fromLane="1" toLane="1" via=":EntradaSalida-TF24_0_0" tl="EntradaSalida-TF24" linkIndex="0" dir="r" state="o"/>
     <connection from="109573936" to="109573928#0" fromLane="1" toLane="1" via=":1217727896_1_0" dir="s" state="M"/>
