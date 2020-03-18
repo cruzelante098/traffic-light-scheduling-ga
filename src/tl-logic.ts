@@ -37,10 +37,6 @@ export class TLLogic {
     }
   }
 
-  pushPhase(phase: Phase) {
-    this.phases.push(phase);
-  }
-
   get phases(): Phase[] {
     return this._phases;
   }
@@ -55,5 +51,9 @@ export class TLLogic {
 
   set name(value: string) {
     this._name = value;
+  }
+
+  pushPhase(phase: Phase) {
+    this.phases.push(phase);
   }
 }

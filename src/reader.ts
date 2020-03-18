@@ -33,6 +33,3 @@ export function parseTlLogic(networkFilename: string): TLLogic[] {
 
   return tlLogicArray;
 }
-
-const tl: TLLogic[] = parseTlLogic("assets/anchieta.net.xml");
-
