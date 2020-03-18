@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 03/18/20 12:05:59 by Eclipse SUMO netedit Version 1.5.0
+<!-- generated on 03/18/20 12:15:25 by Eclipse SUMO netedit Version 1.5.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -4058,24 +4058,6 @@
         <phase duration="6"  state="yy"/>
         <phase duration="5"  state="rr"/>
     </tlLogic>
-    <tlLogic id="1559166850" type="static" programID="0" offset="0">
-        <phase duration="34" state="GGrrr"/>
-        <phase duration="6"  state="yyrrr"/>
-        <phase duration="34" state="rrGGG"/>
-        <phase duration="6"  state="rryyr"/>
-    </tlLogic>
-    <tlLogic id="1559166854" type="static" programID="0" offset="0">
-        <phase duration="39" state="GrG"/>
-        <phase duration="6"  state="yrG"/>
-        <phase duration="39" state="rGG"/>
-        <phase duration="6"  state="ryG"/>
-    </tlLogic>
-    <tlLogic id="1559166892" type="static" programID="0" offset="0">
-        <phase duration="74" state="GGGr"/>
-        <phase duration="6"  state="yGGr"/>
-        <phase duration="5"  state="rGGG"/>
-        <phase duration="5"  state="rGGy"/>
-    </tlLogic>
     <tlLogic id="278958815" type="static" programID="0" offset="0">
         <phase duration="33" state="GGrrrrGGg"/>
         <phase duration="6"  state="yyrrrryyg"/>
@@ -4084,47 +4066,65 @@
         <phase duration="33" state="rrrGGGGrr"/>
         <phase duration="6"  state="rrryyyyrr"/>
     </tlLogic>
+    <tlLogic id="Entrada-Astrofisico" type="static" programID="0" offset="0">
+        <phase duration="39" state="GrG"/>
+        <phase duration="6"  state="yrG"/>
+        <phase duration="39" state="rGG"/>
+        <phase duration="6"  state="ryG"/>
+    </tlLogic>
+    <tlLogic id="Entrada-TF5Norte" type="static" programID="0" offset="0">
+        <phase duration="34" state="GGrrr"/>
+        <phase duration="6"  state="yyrrr"/>
+        <phase duration="34" state="rrGGG"/>
+        <phase duration="6"  state="rryyr"/>
+    </tlLogic>
     <tlLogic id="Entrada-TF5Sur" type="static" programID="0" offset="0">
         <phase duration="39" state="GGrrG"/>
         <phase duration="6"  state="yyrrr"/>
         <phase duration="34" state="rrggr"/>
         <phase duration="6"  state="rryyr"/>
     </tlLogic>
-    <tlLogic id="cluster_1431457817_1431457827_1559166828_3640886976" type="static" programID="0" offset="0">
+    <tlLogic id="Entrada-Trinidad" type="static" programID="0" offset="0">
+        <phase duration="39" state="GGGrrr"/>
+        <phase duration="6"  state="yyyrrr"/>
+        <phase duration="34" state="rrrGGG"/>
+        <phase duration="6"  state="rrryyr"/>
+    </tlLogic>
+    <tlLogic id="EntradaSalida-Geneto" type="static" programID="0" offset="0">
         <phase duration="34" state="GGrGr"/>
         <phase duration="6"  state="yyrGr"/>
         <phase duration="34" state="rrGGG"/>
         <phase duration="6"  state="rryGy"/>
     </tlLogic>
-    <tlLogic id="cluster_1431457835_1559166827" type="static" programID="0" offset="0">
-        <phase duration="74" state="GGGr"/>
-        <phase duration="6"  state="yGGr"/>
-        <phase duration="5"  state="rGGG"/>
-        <phase duration="5"  state="rGGy"/>
-    </tlLogic>
-    <tlLogic id="cluster_1559166858_cluster_1559166852_3640802176_cluster_gneJ44_gneJ52_gneJ53_gneJ49_gneJ50_gneJ51" type="static" programID="0" offset="0">
-        <phase duration="74" state="GGGr"/>
-        <phase duration="6"  state="yGGr"/>
-        <phase duration="5"  state="rGGG"/>
-        <phase duration="5"  state="rGGy"/>
-    </tlLogic>
-    <tlLogic id="cluster_1559166863_760441432" type="static" programID="0" offset="0">
-        <phase duration="79" state="gGGgr"/>
-        <phase duration="5"  state="yGGgr"/>
-        <phase duration="6"  state="rGGGG"/>
-        <phase duration="6"  state="rGGGy"/>
-    </tlLogic>
-    <tlLogic id="gneJ64" type="static" programID="0" offset="0">
+    <tlLogic id="EntradaSalida-TF24" type="static" programID="0" offset="0">
         <phase duration="39" state="GGrGr"/>
         <phase duration="4"  state="yyrGr"/>
         <phase duration="34" state="rrGGG"/>
         <phase duration="4"  state="rryGy"/>
     </tlLogic>
-    <tlLogic id="gneJ67" type="static" programID="0" offset="0">
-        <phase duration="39" state="GGGrrr"/>
-        <phase duration="6"  state="yyyrrr"/>
-        <phase duration="34" state="rrrGGG"/>
-        <phase duration="6"  state="rrryyr"/>
+    <tlLogic id="Salida-AngelGuimera" type="static" programID="0" offset="0">
+        <phase duration="74" state="GGGr"/>
+        <phase duration="6"  state="yGGr"/>
+        <phase duration="5"  state="rGGG"/>
+        <phase duration="5"  state="rGGy"/>
+    </tlLogic>
+    <tlLogic id="Salida-TF5Norte" type="static" programID="0" offset="0">
+        <phase duration="74" state="GGGr"/>
+        <phase duration="6"  state="yGGr"/>
+        <phase duration="5"  state="rGGG"/>
+        <phase duration="5"  state="rGGy"/>
+    </tlLogic>
+    <tlLogic id="Salida-TF5Sur" type="static" programID="0" offset="0">
+        <phase duration="74" state="GGGr"/>
+        <phase duration="6"  state="yGGr"/>
+        <phase duration="5"  state="rGGG"/>
+        <phase duration="5"  state="rGGy"/>
+    </tlLogic>
+    <tlLogic id="Salida-Trinidad" type="static" programID="0" offset="0">
+        <phase duration="79" state="gGGgr"/>
+        <phase duration="5"  state="yGGgr"/>
+        <phase duration="6"  state="rGGGG"/>
+        <phase duration="6"  state="rGGGy"/>
     </tlLogic>
 
     <junction id="1001504521" type="priority" x="1320.07" y="1198.70" incLanes="449288818#1_0 449288818#1_1 449288818#1_2" intLanes=":1001504521_0_0 :1001504521_1_0" shape="1348.73,1171.14 1346.42,1168.92 1347.11,1167.50 1342.27,1163.62 1315.40,1194.62 1322.48,1200.80">
@@ -5150,7 +5150,7 @@
     <connection from="-142470423#4" to="-142470423#3" fromLane="1" toLane="1" via=":1431457841_0_0" dir="s" state="M"/>
     <connection from="-142470423#4" to="720379225#0" fromLane="1" toLane="0" via=":1431457841_1_0" dir="l" state="m"/>
     <connection from="-142470423#5" to="-142470423#4" fromLane="1" toLane="1" via=":6627861330_0_0" dir="s" state="M"/>
-    <connection from="-142470433#1" to="218745680" fromLane="1" toLane="0" via=":EntradaSalida-Geneto_0_0" tl="cluster_1431457817_1431457827_1559166828_3640886976" linkIndex="0" dir="r" state="o"/>
+    <connection from="-142470433#1" to="218745680" fromLane="1" toLane="0" via=":EntradaSalida-Geneto_0_0" tl="EntradaSalida-Geneto" linkIndex="0" dir="r" state="o"/>
     <connection from="-142470433#2" to="142470460#0" fromLane="1" toLane="1" via=":1559166755_0_0" dir="R" state="M"/>
     <connection from="-142470433#2" to="-142470433#1" fromLane="1" toLane="1" via=":1559166755_1_0" dir="s" state="M"/>
     <connection from="-142470433#3" to="91731866#0" fromLane="1" toLane="1" via=":1065961820_4_0" dir="r" state="M"/>
@@ -5291,7 +5291,7 @@
     <connection from="109573927#2" to="109573927#3" fromLane="1" toLane="1" via=":3585608081_0_0" dir="s" state="M"/>
     <connection from="109573927#3" to="109573927#4" fromLane="1" toLane="1" via=":1253997655_1_0" tl="1253997655" linkIndex="1" dir="s" state="O"/>
     <connection from="109573928#0" to="109573928#1" fromLane="1" toLane="1" via=":1431457541_1_0" dir="s" state="M"/>
-    <connection from="109573928#1" to="550301038" fromLane="1" toLane="1" via=":EntradaSalida-TF24_0_0" tl="gneJ64" linkIndex="0" dir="r" state="o"/>
+    <connection from="109573928#1" to="550301038" fromLane="1" toLane="1" via=":EntradaSalida-TF24_0_0" tl="EntradaSalida-TF24" linkIndex="0" dir="r" state="o"/>
     <connection from="109573936" to="109573928#0" fromLane="1" toLane="1" via=":1217727896_1_0" dir="s" state="M"/>
     <connection from="111629673" to="220626580#0" fromLane="1" toLane="1" via=":311594146_0_0" dir="s" state="M"/>
     <connection from="111629674#0" to="111629674#1" fromLane="1" toLane="1" via=":1271320646_1_0" dir="s" state="M"/>
@@ -5314,16 +5314,16 @@
     <connection from="142470433#4" to="142470433#5" fromLane="1" toLane="1" via=":270900627_4_0" dir="s" state="M"/>
     <connection from="142470433#4" to="36356470#0" fromLane="1" toLane="1" via=":270900627_5_0" dir="l" state="m"/>
     <connection from="142470433#5" to="-142470433#5" fromLane="1" toLane="1" via=":610323380_0_0" dir="t" state="M"/>
-    <connection from="142470445" to="218891289" fromLane="1" toLane="1" via=":Entrada-Astrofisico_1_0" tl="1559166854" linkIndex="1" dir="s" state="O"/>
-    <connection from="142470445" to="218891289" fromLane="2" toLane="2" via=":Entrada-Astrofisico_1_1" tl="1559166854" linkIndex="2" dir="s" state="O"/>
+    <connection from="142470445" to="218891289" fromLane="1" toLane="1" via=":Entrada-Astrofisico_1_0" tl="Entrada-Astrofisico" linkIndex="1" dir="s" state="O"/>
+    <connection from="142470445" to="218891289" fromLane="2" toLane="2" via=":Entrada-Astrofisico_1_1" tl="Entrada-Astrofisico" linkIndex="2" dir="s" state="O"/>
     <connection from="142470460#0" to="142470460#1" fromLane="1" toLane="1" via=":1559166778_0_0" dir="s" state="M"/>
     <connection from="142470460#0" to="142470467" fromLane="1" toLane="0" via=":1559166778_1_0" dir="l" state="M"/>
     <connection from="142470460#1" to="449288818#0" fromLane="1" toLane="1" via=":1559166771_0_0" dir="s" state="M"/>
     <connection from="142470461" to="-217365458#2" fromLane="1" toLane="1" via=":gneJ30_1_0" dir="s" state="M"/>
-    <connection from="142470465" to="218891289" fromLane="1" toLane="1" via=":Entrada-Astrofisico_0_0" tl="1559166854" linkIndex="0" dir="s" state="o"/>
-    <connection from="154607611" to="28306819#0" fromLane="1" toLane="0" via=":Salida-TF5Norte_0_0" tl="1559166892" linkIndex="0" dir="R" state="o"/>
-    <connection from="154607611" to="154607613#0" fromLane="1" toLane="1" via=":Salida-TF5Norte_1_0" tl="1559166892" linkIndex="1" dir="s" state="o"/>
-    <connection from="154607611" to="154607613#0" fromLane="2" toLane="2" via=":Salida-TF5Norte_1_1" tl="1559166892" linkIndex="2" dir="s" state="o"/>
+    <connection from="142470465" to="218891289" fromLane="1" toLane="1" via=":Entrada-Astrofisico_0_0" tl="Entrada-Astrofisico" linkIndex="0" dir="s" state="o"/>
+    <connection from="154607611" to="28306819#0" fromLane="1" toLane="0" via=":Salida-TF5Norte_0_0" tl="Salida-TF5Norte" linkIndex="0" dir="R" state="o"/>
+    <connection from="154607611" to="154607613#0" fromLane="1" toLane="1" via=":Salida-TF5Norte_1_0" tl="Salida-TF5Norte" linkIndex="1" dir="s" state="o"/>
+    <connection from="154607611" to="154607613#0" fromLane="2" toLane="2" via=":Salida-TF5Norte_1_1" tl="Salida-TF5Norte" linkIndex="2" dir="s" state="o"/>
     <connection from="154607613#0" to="154607613#1" fromLane="1" toLane="1" via=":3661942326_0_0" dir="s" state="M"/>
     <connection from="154607613#0" to="154607613#1" fromLane="2" toLane="2" via=":3661942326_0_1" dir="s" state="M"/>
     <connection from="154607613#1" to="216268744" fromLane="1" toLane="1" via=":Entrada-TF5Sur_0_0" tl="Entrada-TF5Sur" linkIndex="0" dir="s" state="o"/>
@@ -5346,11 +5346,11 @@
     <connection from="200890620#1" to="28306819#2" fromLane="0" toLane="0" via=":2108521553_1_0" dir="s" state="M"/>
     <connection from="202557406" to="215803174#0" fromLane="0" toLane="1" via=":1713236912_0_0" dir="s" state="m"/>
     <connection from="215077545" to="62073539" fromLane="1" toLane="1" via=":773677882_1_0" dir="s" state="M"/>
-    <connection from="215803157" to="159229344#0" fromLane="1" toLane="1" via=":Salida-AngelGuimera_0_0" tl="cluster_1559166858_cluster_1559166852_3640802176_cluster_gneJ44_gneJ52_gneJ53_gneJ49_gneJ50_gneJ51" linkIndex="0" dir="r" state="o"/>
-    <connection from="215803157" to="216243708#1" fromLane="1" toLane="1" via=":Salida-AngelGuimera_1_0" tl="cluster_1559166858_cluster_1559166852_3640802176_cluster_gneJ44_gneJ52_gneJ53_gneJ49_gneJ50_gneJ51" linkIndex="1" dir="s" state="o"/>
-    <connection from="215803157" to="216243708#1" fromLane="2" toLane="2" via=":Salida-AngelGuimera_1_1" tl="cluster_1559166858_cluster_1559166852_3640802176_cluster_gneJ44_gneJ52_gneJ53_gneJ49_gneJ50_gneJ51" linkIndex="2" dir="s" state="o"/>
-    <connection from="215803174#0" to="215803157" fromLane="1" toLane="1" via=":Entrada-TF5Norte_0_0" tl="1559166850" linkIndex="0" dir="s" state="o"/>
-    <connection from="215803174#0" to="215803157" fromLane="2" toLane="2" via=":Entrada-TF5Norte_0_1" tl="1559166850" linkIndex="1" dir="s" state="o"/>
+    <connection from="215803157" to="159229344#0" fromLane="1" toLane="1" via=":Salida-AngelGuimera_0_0" tl="Salida-AngelGuimera" linkIndex="0" dir="r" state="o"/>
+    <connection from="215803157" to="216243708#1" fromLane="1" toLane="1" via=":Salida-AngelGuimera_1_0" tl="Salida-AngelGuimera" linkIndex="1" dir="s" state="o"/>
+    <connection from="215803157" to="216243708#1" fromLane="2" toLane="2" via=":Salida-AngelGuimera_1_1" tl="Salida-AngelGuimera" linkIndex="2" dir="s" state="o"/>
+    <connection from="215803174#0" to="215803157" fromLane="1" toLane="1" via=":Entrada-TF5Norte_0_0" tl="Entrada-TF5Norte" linkIndex="0" dir="s" state="o"/>
+    <connection from="215803174#0" to="215803157" fromLane="2" toLane="2" via=":Entrada-TF5Norte_0_1" tl="Entrada-TF5Norte" linkIndex="1" dir="s" state="o"/>
     <connection from="215803177" to="217912067" fromLane="0" toLane="0" via=":1163001906_0_0" dir="s" state="M"/>
     <connection from="215803178" to="159229344#0.2" fromLane="0" toLane="1" via=":gneJ55_0_0" dir="r" state="m"/>
     <connection from="216243700" to="217691379-AddedOnRampEdge" fromLane="0" toLane="1" via=":1165301884_1_0" dir="s" state="M"/>
@@ -5366,9 +5366,9 @@
     <connection from="216243701-AddedOffRampEdge" to="216243700" fromLane="2" toLane="0" via=":1163001937_2_0" dir="s" state="M"/>
     <connection from="216243701-AddedOffRampEdge" to="216243700" fromLane="3" toLane="1" via=":1163001937_2_1" dir="s" state="M"/>
     <connection from="216243701-AddedOffRampEdge" to="216243700" fromLane="4" toLane="2" via=":1163001937_2_2" dir="s" state="M"/>
-    <connection from="216243708#1" to="28490061#1" fromLane="1" toLane="1" via=":Salida-Trinidad_0_0" tl="cluster_1559166863_760441432" linkIndex="0" dir="r" state="o"/>
-    <connection from="216243708#1" to="220346965" fromLane="1" toLane="1" via=":Salida-Trinidad_1_0" tl="cluster_1559166863_760441432" linkIndex="1" dir="s" state="O"/>
-    <connection from="216243708#1" to="220346965" fromLane="2" toLane="2" via=":Salida-Trinidad_1_1" tl="cluster_1559166863_760441432" linkIndex="2" dir="s" state="O"/>
+    <connection from="216243708#1" to="28490061#1" fromLane="1" toLane="1" via=":Salida-Trinidad_0_0" tl="Salida-Trinidad" linkIndex="0" dir="r" state="o"/>
+    <connection from="216243708#1" to="220346965" fromLane="1" toLane="1" via=":Salida-Trinidad_1_0" tl="Salida-Trinidad" linkIndex="1" dir="s" state="O"/>
+    <connection from="216243708#1" to="220346965" fromLane="2" toLane="2" via=":Salida-Trinidad_1_1" tl="Salida-Trinidad" linkIndex="2" dir="s" state="O"/>
     <connection from="216243711" to="198274982" fromLane="0" toLane="0" via=":1868821339_1_0" dir="s" state="="/>
     <connection from="216257189" to="28370575" fromLane="1" toLane="1" via=":311594144_0_0" dir="s" state="M"/>
     <connection from="216257189" to="217483528" fromLane="1" toLane="1" via=":311594144_1_0" dir="L" state="M"/>
@@ -5416,8 +5416,8 @@
     <connection from="217365460#1" to="97855879" fromLane="1" toLane="0" via=":1132622212_0_0" dir="r" state="M"/>
     <connection from="217365460#1" to="217365460#2" fromLane="1" toLane="1" via=":1132622212_1_0" dir="s" state="M"/>
     <connection from="217365460#1" to="217365460#2" fromLane="2" toLane="2" via=":1132622212_1_1" dir="s" state="M"/>
-    <connection from="217365460#2" to="154607611" fromLane="1" toLane="1" via=":Entrada-Trinidad_0_0" tl="gneJ67" linkIndex="0" dir="r" state="o"/>
-    <connection from="217365460#2" to="154607611" fromLane="2" toLane="2" via=":Entrada-Trinidad_1_0" tl="gneJ67" linkIndex="1" dir="r" state="o"/>
+    <connection from="217365460#2" to="154607611" fromLane="1" toLane="1" via=":Entrada-Trinidad_0_0" tl="Entrada-Trinidad" linkIndex="0" dir="r" state="o"/>
+    <connection from="217365460#2" to="154607611" fromLane="2" toLane="2" via=":Entrada-Trinidad_1_0" tl="Entrada-Trinidad" linkIndex="1" dir="r" state="o"/>
     <connection from="217365467#0" to="217365467#1" fromLane="1" toLane="1" via=":921650975_0_0" dir="s" state="m"/>
     <connection from="217365467#1" to="217365467#2" fromLane="1" toLane="1" via=":4583119137_0_0" dir="s" state="m"/>
     <connection from="217365467#2" to="745155171" fromLane="1" toLane="1" via=":311594137_0_0" dir="r" state="M"/>
@@ -5434,19 +5434,19 @@
     <connection from="217691379-AddedOnRampEdge" to="217691379" fromLane="3" toLane="2" via=":217691379-AddedOnRampNode_0_2" dir="s" state="M"/>
     <connection from="217691393#0" to="217691393#1" fromLane="1" toLane="1" via=":3661938913_0_0" dir="s" state="M"/>
     <connection from="217691393#0" to="217691393#1" fromLane="2" toLane="2" via=":3661938913_0_1" dir="s" state="M"/>
-    <connection from="217691393#1" to="215803157" fromLane="1" toLane="1" via=":Entrada-TF5Norte_2_0" tl="1559166850" linkIndex="2" dir="s" state="o"/>
-    <connection from="217691393#1" to="215803157" fromLane="2" toLane="2" via=":Entrada-TF5Norte_2_1" tl="1559166850" linkIndex="3" dir="s" state="o"/>
+    <connection from="217691393#1" to="215803157" fromLane="1" toLane="1" via=":Entrada-TF5Norte_2_0" tl="Entrada-TF5Norte" linkIndex="2" dir="s" state="o"/>
+    <connection from="217691393#1" to="215803157" fromLane="2" toLane="2" via=":Entrada-TF5Norte_2_1" tl="Entrada-TF5Norte" linkIndex="3" dir="s" state="o"/>
     <connection from="217912067" to="215803108" fromLane="1" toLane="0" via=":1864356535_0_0" dir="s" state="M"/>
     <connection from="217912067" to="215803108" fromLane="2" toLane="1" via=":1864356535_0_1" dir="s" state="M"/>
     <connection from="217912067" to="215803108" fromLane="3" toLane="2" via=":1864356535_0_2" dir="s" state="M"/>
-    <connection from="218745680" to="91731873#1" fromLane="0" toLane="1" via=":Salida-TF5Sur_0_0" tl="cluster_1431457835_1559166827" linkIndex="0" dir="R" state="o"/>
-    <connection from="218745680" to="217691393#0" fromLane="0" toLane="1" via=":Salida-TF5Sur_1_0" tl="cluster_1431457835_1559166827" linkIndex="1" dir="s" state="o"/>
-    <connection from="218745680" to="217691393#0" fromLane="1" toLane="2" via=":Salida-TF5Sur_1_1" tl="cluster_1431457835_1559166827" linkIndex="2" dir="s" state="o"/>
-    <connection from="218891289" to="-109573928#1.8" fromLane="1" toLane="1" via=":EntradaSalida-TF24_1_0" tl="gneJ64" linkIndex="1" dir="r" state="o"/>
-    <connection from="218891289" to="550301038" fromLane="1" toLane="1" via=":EntradaSalida-TF24_2_0" tl="gneJ64" linkIndex="2" dir="s" state="O"/>
-    <connection from="218891289" to="550301038" fromLane="2" toLane="2" via=":EntradaSalida-TF24_2_1" tl="gneJ64" linkIndex="3" dir="s" state="O"/>
-    <connection from="220346965" to="154607611" fromLane="1" toLane="1" via=":Entrada-Trinidad_2_0" tl="gneJ67" linkIndex="3" dir="s" state="O"/>
-    <connection from="220346965" to="154607611" fromLane="2" toLane="2" via=":Entrada-Trinidad_2_1" tl="gneJ67" linkIndex="4" dir="s" state="O"/>
+    <connection from="218745680" to="91731873#1" fromLane="0" toLane="1" via=":Salida-TF5Sur_0_0" tl="Salida-TF5Sur" linkIndex="0" dir="R" state="o"/>
+    <connection from="218745680" to="217691393#0" fromLane="0" toLane="1" via=":Salida-TF5Sur_1_0" tl="Salida-TF5Sur" linkIndex="1" dir="s" state="o"/>
+    <connection from="218745680" to="217691393#0" fromLane="1" toLane="2" via=":Salida-TF5Sur_1_1" tl="Salida-TF5Sur" linkIndex="2" dir="s" state="o"/>
+    <connection from="218891289" to="-109573928#1.8" fromLane="1" toLane="1" via=":EntradaSalida-TF24_1_0" tl="EntradaSalida-TF24" linkIndex="1" dir="r" state="o"/>
+    <connection from="218891289" to="550301038" fromLane="1" toLane="1" via=":EntradaSalida-TF24_2_0" tl="EntradaSalida-TF24" linkIndex="2" dir="s" state="O"/>
+    <connection from="218891289" to="550301038" fromLane="2" toLane="2" via=":EntradaSalida-TF24_2_1" tl="EntradaSalida-TF24" linkIndex="3" dir="s" state="O"/>
+    <connection from="220346965" to="154607611" fromLane="1" toLane="1" via=":Entrada-Trinidad_2_0" tl="Entrada-Trinidad" linkIndex="3" dir="s" state="O"/>
+    <connection from="220346965" to="154607611" fromLane="2" toLane="2" via=":Entrada-Trinidad_2_1" tl="Entrada-Trinidad" linkIndex="4" dir="s" state="O"/>
     <connection from="220626580#0" to="220626580#1" fromLane="1" toLane="1" via=":1255538439_0_0" dir="s" state="M"/>
     <connection from="220626581" to="217365459" fromLane="1" toLane="1" via=":278692429_0_0" dir="s" state="M"/>
     <connection from="24208761#0" to="-24208915#0" fromLane="1" toLane="1" via=":262127297_0_0" dir="r" state="M"/>
@@ -5607,9 +5607,9 @@
     <connection from="462991363#5" to="462991363#6" fromLane="1" toLane="1" via=":4583123680_0_0" dir="s" state="M"/>
     <connection from="549548862#0" to="549548862#1" fromLane="1" toLane="1" via=":cluster_262127017_312998730_312998736_4583114346_3_0" dir="s" state="M"/>
     <connection from="549548862#1" to="462991363#1" fromLane="1" toLane="1" via=":cluster_2084331665_2084331667_4583119145_2_0" dir="s" state="M"/>
-    <connection from="550301038" to="142470433#1" fromLane="1" toLane="1" via=":EntradaSalida-Geneto_1_0" tl="cluster_1431457817_1431457827_1559166828_3640886976" linkIndex="1" dir="R" state="o"/>
-    <connection from="550301038" to="218745680" fromLane="1" toLane="0" via=":EntradaSalida-Geneto_2_0" tl="cluster_1431457817_1431457827_1559166828_3640886976" linkIndex="2" dir="s" state="O"/>
-    <connection from="550301038" to="218745680" fromLane="2" toLane="1" via=":EntradaSalida-Geneto_2_1" tl="cluster_1431457817_1431457827_1559166828_3640886976" linkIndex="3" dir="s" state="O"/>
+    <connection from="550301038" to="142470433#1" fromLane="1" toLane="1" via=":EntradaSalida-Geneto_1_0" tl="EntradaSalida-Geneto" linkIndex="1" dir="R" state="o"/>
+    <connection from="550301038" to="218745680" fromLane="1" toLane="0" via=":EntradaSalida-Geneto_2_0" tl="EntradaSalida-Geneto" linkIndex="2" dir="s" state="O"/>
+    <connection from="550301038" to="218745680" fromLane="2" toLane="1" via=":EntradaSalida-Geneto_2_1" tl="EntradaSalida-Geneto" linkIndex="3" dir="s" state="O"/>
     <connection from="62073441" to="-62073486" fromLane="1" toLane="1" via=":773677882_0_0" dir="s" state="M"/>
     <connection from="62073503" to="775363912" fromLane="1" toLane="1" via=":5637967616_0_0" dir="s" state="M"/>
     <connection from="62073520" to="62073441" fromLane="1" toLane="1" via=":773677393_0_0" dir="R" state="m"/>
@@ -6692,7 +6692,7 @@
     <connection from=":Entrada-Astrofisico_w0" to="218891289" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="142470465" to=":Entrada-Astrofisico_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Entrada-TF5Norte_c0" to=":Entrada-TF5Norte_w1" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Entrada-TF5Norte_w0" to=":Entrada-TF5Norte_c0" fromLane="0" toLane="0" tl="1559166850" linkIndex="4" dir="s" state="M"/>
+    <connection from=":Entrada-TF5Norte_w0" to=":Entrada-TF5Norte_c0" fromLane="0" toLane="0" tl="Entrada-TF5Norte" linkIndex="4" dir="s" state="M"/>
     <connection from=":Entrada-TF5Norte_w0" to="215803157" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="215803174#0" to=":Entrada-TF5Norte_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="217691393#1" to=":Entrada-TF5Norte_w1" fromLane="0" toLane="0" dir="s" state="M"/>
@@ -6703,22 +6703,22 @@
     <connection from=":Entrada-Trinidad_c0" to=":Entrada-Trinidad_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Entrada-Trinidad_w0" to="154607611" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="217365460#2" to=":Entrada-Trinidad_w0" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Entrada-Trinidad_w1" to=":Entrada-Trinidad_c0" fromLane="0" toLane="0" tl="gneJ67" linkIndex="5" dir="s" state="M"/>
+    <connection from=":Entrada-Trinidad_w1" to=":Entrada-Trinidad_c0" fromLane="0" toLane="0" tl="Entrada-Trinidad" linkIndex="5" dir="s" state="M"/>
     <connection from=":Entrada-Trinidad_w1" to="775381932" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="220346965" to=":Entrada-Trinidad_w1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":EntradaSalida-Geneto_c0" to=":EntradaSalida-Geneto_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="-142470433#1" to=":EntradaSalida-Geneto_w0" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":EntradaSalida-Geneto_w1" to=":EntradaSalida-Geneto_c0" fromLane="0" toLane="0" tl="cluster_1431457817_1431457827_1559166828_3640886976" linkIndex="4" dir="s" state="M"/>
+    <connection from=":EntradaSalida-Geneto_w1" to=":EntradaSalida-Geneto_c0" fromLane="0" toLane="0" tl="EntradaSalida-Geneto" linkIndex="4" dir="s" state="M"/>
     <connection from=":EntradaSalida-Geneto_w1" to="142470433#1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="550301038" to=":EntradaSalida-Geneto_w1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":EntradaSalida-TF24_c0" to=":EntradaSalida-TF24_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":EntradaSalida-TF24_w0" to="550301038" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="109573928#1" to=":EntradaSalida-TF24_w0" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":EntradaSalida-TF24_w1" to=":EntradaSalida-TF24_c0" fromLane="0" toLane="0" tl="gneJ64" linkIndex="4" dir="s" state="M"/>
+    <connection from=":EntradaSalida-TF24_w1" to=":EntradaSalida-TF24_c0" fromLane="0" toLane="0" tl="EntradaSalida-TF24" linkIndex="4" dir="s" state="M"/>
     <connection from=":EntradaSalida-TF24_w1" to="-109573928#1.8" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="218891289" to=":EntradaSalida-TF24_w1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-AngelGuimera_c0" to=":Salida-AngelGuimera_w1" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Salida-AngelGuimera_w0" to=":Salida-AngelGuimera_c0" fromLane="0" toLane="0" tl="cluster_1559166858_cluster_1559166852_3640802176_cluster_gneJ44_gneJ52_gneJ53_gneJ49_gneJ50_gneJ51" linkIndex="3" dir="s" state="M"/>
+    <connection from=":Salida-AngelGuimera_w0" to=":Salida-AngelGuimera_c0" fromLane="0" toLane="0" tl="Salida-AngelGuimera" linkIndex="3" dir="s" state="M"/>
     <connection from=":Salida-AngelGuimera_w0" to="216243708#1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="-159229344#0" to=":Salida-AngelGuimera_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-AngelGuimera_w1" to="159229344#0" fromLane="0" toLane="0" dir="s" state="M"/>
@@ -6728,14 +6728,14 @@
     <connection from="216268744" to=":Salida-Astrofisico_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-TF5Norte_c0" to=":Salida-TF5Norte_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="154607611" to=":Salida-TF5Norte_w0" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Salida-TF5Norte_w1" to=":Salida-TF5Norte_c0" fromLane="0" toLane="0" tl="1559166892" linkIndex="3" dir="s" state="M"/>
+    <connection from=":Salida-TF5Norte_w1" to=":Salida-TF5Norte_c0" fromLane="0" toLane="0" tl="Salida-TF5Norte" linkIndex="3" dir="s" state="M"/>
     <connection from=":Salida-TF5Norte_w1" to="154607613#0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-TF5Sur_c0" to=":Salida-TF5Sur_w1" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Salida-TF5Sur_w0" to=":Salida-TF5Sur_c0" fromLane="0" toLane="0" tl="cluster_1431457835_1559166827" linkIndex="3" dir="s" state="M"/>
+    <connection from=":Salida-TF5Sur_w0" to=":Salida-TF5Sur_c0" fromLane="0" toLane="0" tl="Salida-TF5Sur" linkIndex="3" dir="s" state="M"/>
     <connection from=":Salida-TF5Sur_w0" to="217691393#0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-TF5Sur_w1" to="91731873#1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-Trinidad_c0" to=":Salida-Trinidad_w1" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Salida-Trinidad_w0" to=":Salida-Trinidad_c0" fromLane="0" toLane="0" tl="cluster_1559166863_760441432" linkIndex="4" dir="s" state="M"/>
+    <connection from=":Salida-Trinidad_w0" to=":Salida-Trinidad_c0" fromLane="0" toLane="0" tl="Salida-Trinidad" linkIndex="4" dir="s" state="M"/>
     <connection from=":Salida-Trinidad_w0" to="28490061#1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="216243708#1" to=":Salida-Trinidad_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-Trinidad_w1" to="220346965" fromLane="0" toLane="0" dir="s" state="M"/>
