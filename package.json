@@ -23,6 +23,8 @@
     "typescript": "^3.8.2"
   },
   "dependencies": {
+    "@types/xml-parser": "^1.2.29",
+    "fast-xml-parser": "^3.16.0",
     "genetics-js": "^0.2.2"
   }
 }
