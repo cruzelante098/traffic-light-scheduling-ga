@@ -1,4 +1,9 @@
-import * as cp from 'child_process';
+import cp from "child_process";
+import fs from "fs";
+
+import through2 from "through2";
+import tmp from "tmp";
+import path from "path";
 
 /*
   SUMO options:
@@ -7,15 +12,71 @@ import * as cp from 'child_process';
     -a, --additional-files FILE          Load further descriptions from FILE(s)
  */
 
-interface SumoOptions {
+const COMMAND_NAME = "sumo";
+
+export interface SumoOptions {
   flags: string[];
   files: { network: string, routes: string[], additional?: string[] },
 }
 
-const COMMAND_NAME = "sumo";
+export interface SumoAggregatedData {
+  vehicles: {
+    inserted: number,
+  },
+  teleports: {
+    jam: number,
+    yield: number,
+    wrongLane: number,
+    total: number,
+  },
+  statistics: {
+    routeLength: number,
+    speed: number,
+    duration: number,
+    waitingTime: number,
+    timeLoss: number,
+    departDelay: number,
+  },
+}
 
-export function executeSumo(sumoOptions: SumoOptions) {
+// Temporal directory creation
+// ---------------------------
+tmp.setGracefulCleanup();
+const tmpDir = tmp.dirSync({prefix: `SUMO_`, keep: false, unsafeCleanup: true});
+console.log(`Dir created: ${tmpDir.name}`);
 
+const sumoOutputFilename = tmp.tmpNameSync({dir: tmpDir.name, prefix: "SUMO_", postfix: ".txt"});
+const outputFile = fs.createWriteStream(path.normalize(sumoOutputFilename));
+
+console.log(`File created: ${path.basename(sumoOutputFilename)}`);
+
+function parseSumoAggegatedOutputData(sumoOutput: string): SumoAggregatedData {
+  const get = (r: RegExp): number => {
+    return Number(sumoOutput.match(r)?.[1]);
+  };
+
+  return {
+    vehicles: {
+      inserted: get(/Inserted: ([0-9]*)/i),
+    },
+    teleports: {
+      jam: get(/Jam: ([0-9]*)/i),
+      wrongLane: get(/Wrong Lane: ([0-9]*)/i),
+      yield: get(/Yield: ([0-9]*)/i),
+      total: get(/Teleports: ([0-9]*)/i),
+    },
+    statistics: {
+      departDelay: get(/DepartDelay: ([.0-9]*)/i),
+      duration: get(/Duration: ([.0-9]*)/i),
+      routeLength: get(/RouteLength: ([.0-9]*)/i),
+      speed: get(/Speed: ([.0-9]*)/i),
+      timeLoss: get(/TimeLoss: ([.0-9]*)/i),
+      waitingTime: get(/WaitingTime: ([.0-9]*)/i),
+    },
+  };
+}
+
+export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
   let command = COMMAND_NAME + " ";
   command += sumoOptions.flags.join(" ") + " ";
   command += `--net-file ${sumoOptions.files.network} `;
@@ -26,21 +87,12 @@ export function executeSumo(sumoOptions: SumoOptions) {
   }
 
   console.log(`Executing '${command}'`);
-
-  const stdout = cp.execSync(command);
-
-  console.log(stdout);
+  const child = cp.spawnSync(command, {
+    cwd: process.cwd(),
+    env: process.env,
+    stdio: 'pipe',
+    encoding: 'utf-8',
+    shell: true,
+  });
+  return parseSumoAggegatedOutputData(child.output.join());
 }
-
-executeSumo({
-    flags: [
-      "-W",                  // don't log warnings
-      "--no-step-log",       // don't log step info
-    ],
-    files: {
-      network: './assets/anchieta.net.xml',
-      routes: ['./assets/anchieta.rou.xml'],
-      additional: ['./assets/anchieta_pedestrians.rou.xml']
-    }
-  }
-);

@@ -25,11 +25,11 @@ export class Phase {
 }
 
 export class TLLogic {
-  private _name: string;
+  private _id: string;
   private _phases: Phase[];
 
   constructor(name: string, phases?: Phase[]) {
-    this._name = name;
+    this._id = name;
     if (phases) {
       this._phases = phases;
     } else {
@@ -45,12 +45,12 @@ export class TLLogic {
     this._phases = value;
   }
 
-  get name(): string {
-    return this._name;
+  get id(): string {
+    return this._id;
   }
 
-  set name(value: string) {
-    this._name = value;
+  set id(value: string) {
+    this._id = value;
   }
 
   pushPhase(phase: Phase) {
