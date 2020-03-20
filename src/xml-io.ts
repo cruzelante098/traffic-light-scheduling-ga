@@ -1,14 +1,13 @@
 import fs from "fs";
-import BeautifulDom from "beautiful-dom";
+import path from "path";
 
 import tmp from "tmp";
-
 tmp.setGracefulCleanup();
-import { Phase, TLLogic } from "./tl-logic";
-import path from "path";
 
 // @ts-ignore
 import xmldom from "xmldom";
+
+import { Phase, TLLogic } from "./tl-logic";
 
 let netpath: string | undefined = undefined;
 
@@ -17,7 +16,7 @@ export function parseTlLogic(networkFilename: string): TLLogic[] {
   const tlLogicArray: TLLogic[] = [];
 
   const contents = fs.readFileSync(networkFilename, "utf8");
-  const document = new BeautifulDom(contents);
+  const document = new xmldom.DOMParser().parseFromString(contents);
 
   const tlElements = document.getElementsByTagName("tlLogic");
 
@@ -31,8 +30,9 @@ export function parseTlLogic(networkFilename: string): TLLogic[] {
     }
 
     const phases: Phase[] = [];
+    const phasesXml = tlXml.getElementsByTagName("phase");
 
-    for (const phase of tlXml.getElementsByTagName("phase")) {
+    for (const phase of phasesXml) {
       phases.push(new Phase(
         parseInt(phase.getAttribute("duration")!, 10),
         phase.getAttribute("state")!,
@@ -76,6 +76,5 @@ export function writeTlLogic(tl: TLLogic[]): string {
   }
 
   fs.writeFileSync(filename.name, new xmldom.XMLSerializer().serializeToString(document));
-  console.log(filename.name);
   return filename.name;
 }

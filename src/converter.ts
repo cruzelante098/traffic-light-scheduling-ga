@@ -1,6 +1,6 @@
 import { TLLogic } from "./tl-logic";
 import _ from "lodash";
-import NumericIndividual from "genetics-js/lib/lib/individual/numeric/base/NumericIndividual";
+import { NumericIndividual } from "genetics-js";
 
 let originalTl: ReadonlyArray<TLLogic> | undefined = undefined;
 

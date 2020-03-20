@@ -1,9 +1,4 @@
 import cp from "child_process";
-import fs from "fs";
-
-import through2 from "through2";
-import tmp from "tmp";
-import path from "path";
 
 /*
   SUMO options:
@@ -38,17 +33,6 @@ export interface SumoAggregatedData {
     departDelay: number,
   },
 }
-
-// Temporal directory creation
-// ---------------------------
-tmp.setGracefulCleanup();
-const tmpDir = tmp.dirSync({prefix: `SUMO_`, keep: false, unsafeCleanup: true});
-console.log(`Dir created: ${tmpDir.name}`);
-
-const sumoOutputFilename = tmp.tmpNameSync({dir: tmpDir.name, prefix: "SUMO_", postfix: ".txt"});
-const outputFile = fs.createWriteStream(path.normalize(sumoOutputFilename));
-
-console.log(`File created: ${path.basename(sumoOutputFilename)}`);
 
 function parseSumoAggegatedOutputData(sumoOutput: string): SumoAggregatedData {
   const get = (r: RegExp): number => {
@@ -94,5 +78,6 @@ export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
     encoding: 'utf-8',
     shell: true,
   });
+
   return parseSumoAggegatedOutputData(child.output.join());
 }
