@@ -27,14 +27,20 @@ export class Phase {
 export class TLLogic {
   private _id: string;
   private _phases: Phase[];
+  private _offset: number;
 
-  constructor(name: string, phases?: Phase[]) {
+  constructor(name: string, phases?: Phase[], offset?: number) {
     this._id = name;
-    if (phases) {
-      this._phases = phases;
-    } else {
-      this._phases = [];
-    }
+    this._phases = phases ? phases : [];
+    this._offset = offset? offset : 0;
+  }
+
+  get offset(): number {
+    return this._offset;
+  }
+
+  set offset(value: number) {
+    this._offset = value;
   }
 
   get phases(): Phase[] {

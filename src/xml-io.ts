@@ -22,6 +22,7 @@ export function parseTlLogic(networkFilename: string): TLLogic[] {
 
   for (const tlXml of tlElements) {
     const name = tlXml.getAttribute("id")!;
+    const offset = Number(tlXml.getAttribute("offset"));
 
     if (name === "278958815") {
       // This TL refers to the intersection between Camino San Francisco de Paula
@@ -39,7 +40,7 @@ export function parseTlLogic(networkFilename: string): TLLogic[] {
       ));
     }
 
-    tlLogicArray.push(new TLLogic(name, phases));
+    tlLogicArray.push(new TLLogic(name, phases, offset));
   }
 
   return tlLogicArray;
@@ -50,8 +51,11 @@ export function writeTlLogic(tl: TLLogic[]): string {
     throw "Network path is undefined";
   }
 
+  const basename = path.basename(netpath);
+  const filenameWithoutExtension =  basename.slice(0, basename.indexOf("."));
+
   const filename = tmp.fileSync({
-    prefix: `SUMO_${path.basename(netpath)}-`,
+    prefix: `SUMO_${filenameWithoutExtension}-`,
     postfix: ".net.xml",
     keep: false,
     discardDescriptor: true,
@@ -65,6 +69,8 @@ export function writeTlLogic(tl: TLLogic[]): string {
   for (const tlLogic of tl) {
     for (const tlXml of tlElements) {
       if (tlXml.getAttribute("id") === tlLogic.id) {
+        tlXml.setAttribute("offset", tlLogic.offset);
+
         const phases = tlXml.getElementsByTagName("phase");
         let i = 0;
         for (const phase of phases) {

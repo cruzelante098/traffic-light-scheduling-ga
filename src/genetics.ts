@@ -30,7 +30,7 @@ const originalTl: ReadonlyArray<TLLogic> = parseTlLogic("./assets/anchieta.net.x
 setOriginalTl(originalTl);
 
 const populationSize = 2;
-const mutationRate = 0.5;
+const mutationRate = 0.5; // 1 / (cantidad total de fases)
 const maxGenerations = 5;
 let generation = 1;
 
@@ -70,16 +70,16 @@ const params: EvolutionaryAlgorithmParams<IntegerIndividual,
     length: originalTl.reduce((a, b) => a + b.phases.length, 0),
     range: new NumericRange(4, 90),
   },
-  selection: new FitnessProportionalSelection(),
-  selectionParams: {
-    engine: nativeMath,
-    selectionCount: populationSize,
-    subSelection: new RouletteWheel(),
-  },
-  crossover: new OnePointCrossover(),
-  crossoverParams: {
-    engine: nativeMath,
-    individualConstructor: IntegerIndividual,
+    selection: new FitnessProportionalSelection(),
+    selectionParams: {
+      engine: nativeMath,
+      selectionCount: populationSize,
+      subSelection: new RouletteWheel(),
+    },
+    crossover: new OnePointCrossover(),
+    crossoverParams: {
+      engine: nativeMath,
+      individualConstructor: IntegerIndividual,
   },
   mutation: new RandomResetting(),
   mutationParams: {
@@ -112,4 +112,4 @@ if (fittest === undefined) {
 const tl = genotypeToTlLogic(fittest);
 const networkFilename = writeTlLogic(tl);
 console.log(networkFilename);
-fs.renameSync(networkFilename, "C:\\Users\\Francisco Cruz\\Desktop\\hola.net.xml");
+fs.renameSync(networkFilename, "C:\\Users\\Francisco Cruz\\Desktop\\anchieta_best_candidate.net.xml");
