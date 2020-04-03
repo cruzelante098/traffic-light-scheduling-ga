@@ -51,7 +51,7 @@ function parseSumoAggegatedOutputData(sumoOutput: string): SumoAggregatedData {
     },
     statistics: {
       departDelay: get(/DepartDelay: ([.0-9]*)/i),
-      duration: get(/Duration: ([.0-9]*)/i),
+      duration: get(/Duration: ([0-9]*\.[0-9]*)/i),
       routeLength: get(/RouteLength: ([.0-9]*)/i),
       speed: get(/Speed: ([.0-9]*)/i),
       timeLoss: get(/TimeLoss: ([.0-9]*)/i),

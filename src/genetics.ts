@@ -1,20 +1,15 @@
+import { EvolutionaryAlgorithmParams, EvolutionaryAlgorithm } from "@zfunction/genetics-js/lib/algorithms";
+import { IntegerIndividual, NumericIndividual, NumericRange } from "@zfunction/genetics-js/lib/individual";
+import { NumericParams, IntegerGenerator } from "@zfunction/genetics-js/lib/generator";
 import {
-  NumericIndividual,
-  NumericRange,
-  OnePointCrossover,
-  OnePointCrossoverParams,
-  UniformMutationParams,
-} from "genetics-js";
-
-import EvolutionaryAlgorithm, { EvolutionaryAlgorithmParams } from "genetics-js/lib/lib/algorithms/EvolutionaryAlgorithm";
-import FitnessFunction from "genetics-js/lib/lib/fitness/FitnessFunction";
-import FitnessProportionalSelection, { FitnessProportionalSelectionParams } from "genetics-js/lib/lib/selection/base/FitnessProportionalSelection";
-import RouletteWheel from "genetics-js/lib/lib/selection/implementation/RouletteWheel";
-import FitnessBased from "genetics-js/lib/lib/selection/replacement/FitnessBased";
-import MaxGenerations from "genetics-js/lib/lib/termination/MaxGenerations";
-import IntegerGenerator from "genetics-js/lib/lib/generator/numeric/integer/IntegerGenerator";
-import IntegerIndividual from "genetics-js/lib/lib/individual/numeric/integer/IntegerIndividual";
-import { NumericParams } from "genetics-js/lib/lib/generator/numeric/base/NumericGenerator";
+  FitnessProportionalSelectionParams,
+  FitnessProportionalSelection,
+  RouletteWheel,
+  FitnessBased,
+} from "@zfunction/genetics-js/lib/selection";
+import { OnePointCrossoverParams, OnePointCrossover } from "@zfunction/genetics-js/lib/crossover";
+import { UniformMutationParams, RandomResetting } from "@zfunction/genetics-js/lib/mutation";
+import { MaxGenerations } from "@zfunction/genetics-js/lib/termination";
 
 import { nativeMath } from "random-js";
 
@@ -24,24 +19,27 @@ import { TLLogic } from "./tl-logic";
 import { parseTlLogic, writeTlLogic } from "./xml-io";
 import { executeSumo, SumoAggregatedData } from "./executor";
 import { genotypeToTlLogic, setOriginalTl } from "./converter";
-import RandomResetting from "genetics-js/lib/lib/mutation/numeric/integer/RandomResetting";
+import { FitnessFunction } from "@zfunction/genetics-js";
 
 const originalTl: ReadonlyArray<TLLogic> = parseTlLogic("./assets/anchieta.net.xml");
 setOriginalTl(originalTl);
 
-const populationSize = 2;
-const mutationRate = 0.5; // 1 / (cantidad total de fases)
-const maxGenerations = 5;
+const populationSize = 10;
+const mutationRate = 0.1; // 1 / (cantidad total de fases)
+const maxGenerations = 100;
 let generation = 1;
 
 const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual) => {
-  const tl = genotypeToTlLogic(individual);
+  const tl = genotypeToTlLogic(individual.genotype);
   const networkFilename = writeTlLogic(tl);
 
   const data: SumoAggregatedData = executeSumo({
       flags: [
         "-W",                             // don't log warnings
-        // "--no-step-log",               // don't log step info
+        "--no-step-log",               // don't log step info
+        "-e 3600",
+        "--time-to-teleport -1",
+        "--seed 23432",
         "--duration-log.statistics",      // log aggregated information about trips
       ],
       files: {
@@ -67,19 +65,19 @@ const params: EvolutionaryAlgorithmParams<IntegerIndividual,
   generator: new IntegerGenerator(),
   generatorParams: {
     engine: nativeMath,
-    length: originalTl.reduce((a, b) => a + b.phases.length, 0),
-    range: new NumericRange(4, 90),
+    length: originalTl.reduce((a, b) => a + b.phases.length, 0) + originalTl.length, // the sum if for the offset amount
+    range: new NumericRange(4, 120),
   },
-    selection: new FitnessProportionalSelection(),
-    selectionParams: {
-      engine: nativeMath,
-      selectionCount: populationSize,
-      subSelection: new RouletteWheel(),
-    },
-    crossover: new OnePointCrossover(),
-    crossoverParams: {
-      engine: nativeMath,
-      individualConstructor: IntegerIndividual,
+  selection: new FitnessProportionalSelection(),
+  selectionParams: {
+    engine: nativeMath,
+    selectionCount: populationSize,
+    subSelection: new RouletteWheel(),
+  },
+  crossover: new OnePointCrossover(),
+  crossoverParams: {
+    engine: nativeMath,
+    individualConstructor: IntegerIndividual,
   },
   mutation: new RandomResetting(),
   mutationParams: {
