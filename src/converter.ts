@@ -2,6 +2,9 @@ import { TLLogic } from "./tl-logic";
 import _ from "lodash";
 import { NumericIndividual } from "@zfunction/genetics-js";
 
+// The reason this is a static variable is is due to the fact that I find it more
+// comfortable to assign it once at the start and remember it, so that every time I call
+// genotypeToTlLogic() I don't need to pass it as an argument.
 let originalTl: ReadonlyArray<TLLogic> | undefined = undefined;
 
 export function setOriginalTl(tl: ReadonlyArray<TLLogic>) {
