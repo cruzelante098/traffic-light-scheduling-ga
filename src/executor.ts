@@ -10,13 +10,21 @@ import cp from "child_process";
 const COMMAND_NAME = "sumo";
 
 export interface SumoOptions {
+  command_name?: string;
   flags: string[];
   files: { network: string, routes: string[], additional?: string[] },
 }
 
 export interface SumoAggregatedData {
+  performance: {
+    duration: number,
+    realTimeFactor: number,
+  },
   vehicles: {
     inserted: number,
+    loaded: number,
+    running: number,
+    waiting: number,
   },
   teleports: {
     jam: number,
@@ -40,8 +48,15 @@ function parseSumoAggegatedOutputData(sumoOutput: string): SumoAggregatedData {
   };
 
   return {
+    performance: {
+      duration: get(/Duration: ([0-9]*)ms/i),
+      realTimeFactor: get(/Real time factor: ([0-9.]*)/i),
+    },
     vehicles: {
       inserted: get(/Inserted: ([0-9]*)/i),
+      loaded: get(/Loaded: ([0-9]*)/i),
+      running: get(/Running: ([0-9]*)/i),
+      waiting: get(/Waiting: ([0-9]*)/i),
     },
     teleports: {
       jam: get(/Jam: ([0-9]*)/i),
@@ -61,7 +76,7 @@ function parseSumoAggegatedOutputData(sumoOutput: string): SumoAggregatedData {
 }
 
 export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
-  let command = COMMAND_NAME + " ";
+  let command = (sumoOptions.command_name ? sumoOptions.command_name : COMMAND_NAME) + " ";
   command += sumoOptions.flags.join(" ") + " ";
   command += `--net-file ${sumoOptions.files.network} `;
   command += `--route-files ${sumoOptions.files.routes.join(",")}`;
