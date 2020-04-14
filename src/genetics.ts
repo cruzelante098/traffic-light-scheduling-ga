@@ -21,16 +21,51 @@ import {
 import { nativeMath } from "random-js";
 
 import fs from "fs";
-import path from "path";
-import os from "os";
-import readline from "readline";
+import yargs from "yargs";
 
 import { TLLogic } from "./tl-logic";
 import { parseTlLogic, writeTlLogic } from "./xml-io";
 import { executeSumo, SumoAggregatedData } from "./executor";
 import { genotypeToTlLogic, setOriginalTl } from "./converter";
 
-const originalTl: ReadonlyArray<TLLogic> = parseTlLogic("./assets/anchieta.net.xml");
+const argv = yargs
+  .usage("$0 -n <netfile> -r <routefile> [-p] [-s <savepath>]")
+  .help()
+  .options({
+    p: {
+      type: "boolean",
+      alias: "play",
+      demandOption: false,
+      description: "Executes simulation after evolutive alg. ends",
+    },
+    n: {
+      type: "string",
+      alias: "network",
+      demandOption: true,
+      description: "Network file",
+    },
+    r: {
+      type: "string",
+      alias: "routes",
+      demandOption: true,
+      description: "Route file",
+      array: true,
+    },
+    s: {
+      type: "string",
+      alias: "save",
+      demandOption: true,
+      description: "Filepath to save best network candidate",
+    },
+  })
+  .argv;
+
+const netFilepath = argv.n!;
+const routesFilepath = argv.r!;
+const saveFilepath = argv.s!;
+
+const originalTl: ReadonlyArray<TLLogic> = parseTlLogic(netFilepath);
+
 setOriginalTl(originalTl);
 
 const populationSize = 2;
@@ -47,7 +82,7 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
       flags: [
         "--no-warnings",                        // don't log warnings
         "--no-step-log",                        // don't log step info
-        "--end 500",                          // simulation end time
+        "--end 500",                            // simulation end time
         "--time-to-teleport -1",                // disable teleports
         "--seed 23432",                         // define seed
         "--duration-log.statistics",            // log aggregated information about trips
@@ -55,7 +90,7 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
       ],
       files: {
         network: networkFilename,
-        routes: ["./assets/anchieta.rou.xml"],
+        routes: routesFilepath,
         // additional: ['./assets/anchieta_pedestrians.rou.xml']
       },
     },
@@ -67,7 +102,7 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
   const minimize = statistics.duration + statistics.timeLoss +
     vehicles.running + vehicles.waiting * performance.realTimeFactor;
 
-  const fitness = maximize/minimize;
+  const fitness = maximize / minimize;
 
   const generation = Math.floor(iteration / populationSize);
   const indivudual = Math.abs(populationSize * generation - iteration) + 1;
@@ -134,37 +169,29 @@ if (fittest === undefined) {
 
 const tl = genotypeToTlLogic(fittest);
 const networkFilename = writeTlLogic(tl);
-const bestCandidateFilepath = path.join(os.homedir(), "Desktop/anchieta_best_candidate.net.xml");
 
-fs.renameSync(networkFilename, bestCandidateFilepath);
+fs.renameSync(networkFilename, saveFilepath);
 
-console.log("Fittest candidate located at ", bestCandidateFilepath);
+console.log("Fittest candidate located at ", saveFilepath);
 console.log("Best fitness achieved", evolutionaryAlgorithm.population.getFittestIndividualItem()?.fitness);
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question("\nWould you like to see the simulation? (y/n)", (answer => {
-  rl.close();
-  if(answer === "y" || answer === "Y") {
-    executeSumo({
-        command_name: "sumo-gui",
-        flags: [
-          "--no-warnings",                        // don't log warnings
-          "--no-step-log",                        // don't log step info
-          "--time-to-teleport -1",                // disable teleports
-          "--seed 23432",                         // define seed
-          "--duration-log.statistics",            // log aggregated information about trips
-          "--tripinfo-output.write-unfinished",   // include info about vehicles that don't reach their destination
-        ],
-        files: {
-          network: '"' + bestCandidateFilepath + '"',
-          routes: ["./assets/anchieta.rou.xml"],
-          // additional: ['./assets/anchieta_pedestrians.rou.xml']
-        },
+if (argv.play) {
+  console.log("\nExecuting simulation");
+  executeSumo({
+      command_name: "sumo-gui",
+      flags: [
+        "--no-warnings",                        // don't log warnings
+        "--no-step-log",                        // don't log step info
+        "--time-to-teleport -1",                // disable teleports
+        "--seed 23432",                         // define seed
+        "--duration-log.statistics",            // log aggregated information about trips
+        "--tripinfo-output.write-unfinished",   // include info about vehicles that don't reach their destination
+      ],
+      files: {
+        network: `"${saveFilepath}"`,
+        routes: routesFilepath,
+        // additional: ['./assets/anchieta_pedestrians.rou.xml']
       },
-    );
-  }
-}));
+    },
+  );
+}
