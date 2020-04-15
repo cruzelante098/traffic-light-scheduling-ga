@@ -108,7 +108,7 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
       flags: [
         "--no-warnings",                        // don't log warnings
         "--no-step-log",                        // don't log step info
-        "--end 11500",                          // simulation end time
+        "--end 3600",                           // simulation end time
         "--time-to-teleport -1",                // disable teleports
         "--seed 23432",                         // define seed
         "--duration-log.statistics",            // log aggregated information about trips
@@ -132,7 +132,7 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
 
   const maximize = Math.pow(vehicles.inserted - (vehicles.running + vehicles.waiting), 2); // vehicles that completed their travel
   const minimize = statistics.duration + statistics.timeLoss +
-    (vehicles.running + vehicles.waiting) * performance.realTimeFactor;
+    (vehicles.running + vehicles.waiting) * ((performance.duration / 1000) * performance.realTimeFactor);
 
   // We are interested in maximizing the numerator and reducing the denominator for obvious reasons.
   const fitness = maximize / minimize;
