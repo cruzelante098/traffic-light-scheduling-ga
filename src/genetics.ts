@@ -80,12 +80,14 @@ const originalTl: ReadonlyArray<TLLogic> = parseTlLogic(netFilepath);
 setOriginalTl(originalTl);
 
 // TODO: This should be program arguments
-const maxGenerations = 1;
-const populationSize = 2;
+const maxGenerations = 12;
+const populationSize = 10;
 
 // TODO: this value should be 1 / (amount of phases and offsets), though more investigation is needed.
 // maybe consider it as an argument?
 const mutationRate = 1;
+
+const yellowPhaseDuration = 4;
 
 // Used to print info about what individual and generation is being executed.
 let iteration = 0;
@@ -178,7 +180,7 @@ const params: EvolutionaryAlgorithmParams<IntegerIndividual,
     mutationRate: mutationRate,
     particularValue: (index: number) => {
       if (doesPhaseContainsYellow(index)) {
-        return 4; // yellow duration
+        return yellowPhaseDuration;
       } else {
         return undefined;
       }
@@ -192,15 +194,51 @@ const params: EvolutionaryAlgorithmParams<IntegerIndividual,
   terminationCondition: new MaxGenerations(maxGenerations),
 };
 
-
+/*
+ * Provided an index of a NumericIndividual, is capable of detecting whether that index refer to an offset
+ * or a phase duration. Then, if the index refers to a phase, the function returns whether that phase
+ * contains a yellow traffic light.
+ */
 function doesPhaseContainsYellow(index: number): boolean {
+  // tlSize = TL offset + amount of phases
   const tlSizes = originalTl.map(tl => tl.size);
+
+  // what traffic light junction "index" refers to
   let tlPos = 0;
+
+  // Let's say we have the next TLLogic[] that we have converted into a NumericIndividual (array of numbers)
+  //                              [10, 60, 4, 70, 4, 5, 80, 4, 50, 4]
+  // where                        |   TLLogic[0]  |, |  TLLogic[1]  |
 
   while (index >= 0) {
     if ((index + 1) - tlSizes[tlPos] <= 0) {
+      // In this case, "index" refers to an unknown element located at TLLogic[tlPos].
+
+      // TLLogic[tlPos] have one offset and several phases. They are indistinguishable in NumericIndividual,
+      // given that they are just numbers. However, we know that the first element of every TLLogic is the offset,
+      // the rest are phase durations.
+
+      // In this case, TLLogic[0] = [10, 60, 4, 70, 4] and TLLogic[1] = [5, 80, 4, 50, 4] where
+      // the first element of each array is the offset and the rest are phase durations, as we just stated.
+
+      // If index = 3, then it refers to this ↓↓ element (70) of TLLogic[1].
+      //                          [10, 60, 4, 70, 4, 5, 80, 4, 50, 4]
+      // given that 3 is less than TLLogic[0] length.
+
       break;
     }
+
+    // In this case, given that index is greater than the amount of elements that are in TLLogic[0], we would skip the
+    // conditional and calculate index for TLLogic[1], which is why we increment tlPos and substract the length of
+    // TLLogic[0] to index.
+
+    // If index = 7, then it refers to this ↓ element of the individual
+    //            [10, 60, 4, 70, 4, 5, 80, 4, 50, 4]
+
+    // which in turn would be the third element (pos 2, we start counting at 0) in TLLogic[1] = [5, 80, 4, 50, 4].
+    //                                                                                                  ^
+    // And so on.
+
     index -= tlSizes[tlPos];
     tlPos++;
   }

@@ -24,12 +24,6 @@ export function parseTlLogic(networkFilename: string): TLLogic[] {
     const name = tlXml.getAttribute("id")!;
     const offset = Number(tlXml.getAttribute("offset"));
 
-    if (name === "278958815") {
-      // This TL refers to the intersection between Camino San Francisco de Paula
-      // and Avenida Astrofísico Francisco Sánchez. Not needed for this.
-      continue;
-    }
-
     const phases: Phase[] = [];
     const phasesXml = tlXml.getElementsByTagName("phase");
 
