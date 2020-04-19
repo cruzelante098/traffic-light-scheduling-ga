@@ -1,0 +1,18 @@
+<additional>
+  <inductionLoop id="guajara_creciente_0" lane="216650879_0" pos="0" freq="2103" file="output/out.guajara_creciente_0.xml"/>
+  <inductionLoop id="guajara_creciente_1" lane="216650879_1" pos="0" freq="0" file="output/out.guajara_creciente_1.xml"/>
+  <inductionLoop id="guajara_creciente_2" lane="216650879_2" pos="0" freq="1507" file="output/out.guajara_creciente_2.xml"/>
+  <inductionLoop id="guajara_creciente_3" lane="216650879_3" pos="0" freq="1280" file="output/out.guajara_creciente_3.xml"/>
+  
+  <inductionLoop id="guajara_decreciente_0" lane="217553754_0" pos="-1" freq="1868" file="output/out.guajara_decreciente_0.xml"/>
+  <inductionLoop id="guajara_decreciente_1" lane="217553754_1" pos="-1" freq="1361" file="output/out.guajara_decreciente_1.xml"/>
+  <inductionLoop id="guajara_decreciente_2" lane="217553754_2" pos="-1" freq="1098" file="output/out.guajara_decreciente_2.xml"/>
+
+  <inductionLoop id="anchieta_creciente_0" lane="101005127.945_0" pos="0" freq="1572" file="output/out.anchieta_creciente_0.xml"/>
+  <inductionLoop id="anchieta_creciente_1" lane="101005127.945_1" pos="0" freq="1691" file="output/out.anchieta_creciente_1.xml"/>
+  <inductionLoop id="anchieta_creciente_2" lane="101005127.945_2" pos="0" freq="1511" file="output/out.anchieta_creciente_2.xml"/>
+  
+  <inductionLoop id="anchieta_decreciente_0" lane="216243700_0" pos="-1" freq="1322" file="output/out.anchieta_decreciente_0.xml"/>
+  <inductionLoop id="anchieta_decreciente_1" lane="216243700_1" pos="-1" freq="2085" file="output/out.anchieta_decreciente_1.xml"/>
+  <inductionLoop id="anchieta_decreciente_2" lane="216243700_2" pos="-1" freq="1789" file="output/out.anchieta_decreciente_2.xml"/>
+</additional>
