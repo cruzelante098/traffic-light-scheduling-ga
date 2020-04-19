@@ -85,7 +85,7 @@ const populationSize = 2;
 
 // TODO: this value should be 1 / (amount of phases and offsets), though more investigation is needed.
 // maybe consider it as an argument?
-const mutationRate = 0.1;
+const mutationRate = 1;
 
 // Used to print info about what individual and generation is being executed.
 let iteration = 0;
@@ -176,6 +176,13 @@ const params: EvolutionaryAlgorithmParams<IntegerIndividual,
   mutationParams: {
     engine: nativeMath,
     mutationRate: mutationRate,
+    particularValue: (index: number) => {
+      if (doesPhaseContainsYellow(index)) {
+        return 4; // yellow duration
+      } else {
+        return undefined;
+      }
+    },
   },
   replacement: new FitnessBased(),
   replacementParams: {
@@ -184,6 +191,27 @@ const params: EvolutionaryAlgorithmParams<IntegerIndividual,
   fitnessFunction: fitnessFunction,
   terminationCondition: new MaxGenerations(maxGenerations),
 };
+
+
+function doesPhaseContainsYellow(index: number): boolean {
+  const tlSizes = originalTl.map(tl => tl.size);
+  let tlPos = 0;
+
+  while (index >= 0) {
+    if ((index + 1) - tlSizes[tlPos] <= 0) {
+      break;
+    }
+    index -= tlSizes[tlPos];
+    tlPos++;
+  }
+
+  if (index === 0) { // offset values are always at the start of the array, then the phase durations
+    return false;
+  } else { // phase duration
+    const phase = originalTl[tlPos].phases[index - 1];
+    return phase.state.includes("y");
+  }
+}
 
 const evolutionaryAlgorithm =
   new EvolutionaryAlgorithm<IntegerIndividual,

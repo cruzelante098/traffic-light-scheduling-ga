@@ -32,7 +32,11 @@ export class TLLogic {
   constructor(name: string, phases?: Phase[], offset?: number) {
     this._id = name;
     this._phases = phases ? phases : [];
-    this._offset = offset? offset : 0;
+    this._offset = offset ? offset : 0;
+  }
+
+  get size(): number {
+    return 1 + this.phases.length; // +1 because of offset
   }
 
   get offset(): number {
