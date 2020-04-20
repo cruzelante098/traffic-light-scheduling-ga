@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 04/19/20 23:23:48 by Eclipse SUMO dfrouter Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/dfrouterConfiguration.xsd">
+
+    <input>
+        <net-file value="reduced_anchieta.net.xml"/>
+        <detector-files value="flowroute\induction-loop-detectors-TF-5.add.xml"/>
+        <measure-files value="flowroute\flow_TF-5_2020-02-27.csv"/>
+    </input>
+
+    <output>
+        <routes-output value="flowroute\routes_output.rou.xml"/>
+        <detector-output value="flowroute\detectors_output.add.xml"/>
+        <emitters-output value="emiter_output.add.xml"/>
+        <vtype value="true"/>
+        <vtype-output value="VHTYPE.xml"/>
+    </output>
+
+    <processing>
+        <keep-unfinished-routes value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<detectors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/detectors_file.xsd">
+    <detectorDefinition id="guajara_creciente_0" lane="216650879_0" pos="0.00" type="source"/>
+    <detectorDefinition id="guajara_creciente_1" lane="216650879_1" pos="0.00" type="source"/>
+    <detectorDefinition id="guajara_creciente_2" lane="216650879_2" pos="0.00" type="source"/>
+    <detectorDefinition id="guajara_creciente_3" lane="216650879_3" pos="0.00" type="source"/>
+    <detectorDefinition id="guajara_decreciente_0" lane="217553754_0" pos="-1.00" type="sink"/>
+    <detectorDefinition id="guajara_decreciente_1" lane="217553754_1" pos="-1.00" type="sink"/>
+    <detectorDefinition id="guajara_decreciente_2" lane="217553754_2" pos="-1.00" type="sink"/>
+    <detectorDefinition id="anchieta_creciente_0" lane="101005127.945_0" pos="0.00" type="sink"/>
+    <detectorDefinition id="anchieta_creciente_1" lane="101005127.945_1" pos="0.00" type="sink"/>
+    <detectorDefinition id="anchieta_creciente_2" lane="101005127.945_2" pos="0.00" type="sink"/>
+    <detectorDefinition id="anchieta_decreciente_0" lane="216243700_0" pos="-1.00" type="source"/>
+    <detectorDefinition id="anchieta_decreciente_1" lane="216243700_1" pos="-1.00" type="source"/>
+    <detectorDefinition id="anchieta_decreciente_2" lane="216243700_2" pos="-1.00" type="source"/>
+</detectors>

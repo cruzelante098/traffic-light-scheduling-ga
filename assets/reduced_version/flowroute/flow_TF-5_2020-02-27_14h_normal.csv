@@ -1,0 +1,14 @@
+Detector;Time;qPKW;qLKW
+campus_guajara_creciente_lento;60;1663;90
+campus_guajara_creciente_medio_lento;60;1156;110
+campus_guajara_creciente_medio_rapido;60;613;120
+campus_guajara_creciente_rapido;60;893;125
+campus_guajara_decreciente_lento;60;2103;90
+campus_guajara_decreciente_medio;60;1507;110
+campus_guajara_decreciente_rapido;60;1280;125
+padre_anchieta_creciente_lento;60;1572;90
+padre_anchieta_creciente_medio;60;1691;110
+padre_anchieta_creciente_rapido;60;1511;125
+padre_anchieta_decreciente_lento;60;1322;90
+padre_anchieta_decreciente_medio;60;2085;110
+padre_anchieta_decreciente_rapido;60;1789;125
