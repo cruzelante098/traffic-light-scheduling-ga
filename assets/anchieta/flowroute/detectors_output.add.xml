@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 04/21/20 18:40:14 by Eclipse SUMO dfrouter Version 1.5.0
+<!-- generated on 04/21/20 20:27:45 by Eclipse SUMO dfrouter Version 1.5.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/dfrouterConfiguration.xsd">
 
     <input>
@@ -11,35 +11,48 @@
 
     <output>
         <routes-output value="flowroute\routes_output.add.xml"/>
+        <routes-for-all value="true"/>
         <detector-output value="flowroute\detectors_output.add.xml"/>
     </output>
+
+    <processing>
+        <keep-unfinished-routes value="true"/>
+    </processing>
 
 </configuration>
 -->
 
 <detectors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/detectors_file.xsd">
-    <detectorDefinition id="campus_guajara_creciente_lento" lane="216650879_0" pos="0.00" type="discarded"/>
-    <detectorDefinition id="campus_guajara_creciente_medio_lento" lane="216650879_1" pos="0.00" type="discarded"/>
-    <detectorDefinition id="campus_guajara_creciente_medio_rapido" lane="216650879_2" pos="0.00" type="discarded"/>
-    <detectorDefinition id="campus_guajara_creciente_rapido" lane="216650879_3" pos="0.00" type="discarded"/>
+    <detectorDefinition id="campus_guajara_creciente_lento" lane="216650879_0" pos="0.00" type="source"/>
+    <detectorDefinition id="campus_guajara_creciente_medio_lento" lane="216650879_1" pos="0.00" type="source"/>
+    <detectorDefinition id="campus_guajara_creciente_medio_rapido" lane="216650879_2" pos="0.00" type="source"/>
+    <detectorDefinition id="campus_guajara_creciente_rapido" lane="216650879_3" pos="0.00" type="source"/>
+    
     <detectorDefinition id="campus_guajara_decreciente_lento" lane="217553754_0" pos="-1.00" type="sink"/>
     <detectorDefinition id="campus_guajara_decreciente_medio" lane="217553754_1" pos="-1.00" type="sink"/>
     <detectorDefinition id="campus_guajara_decreciente_rapido" lane="217553754_2" pos="-1.00" type="sink"/>
+
     <detectorDefinition id="padre_anchieta_creciente_lento" lane="101005127.945_0" pos="0.00" type="sink"/>
     <detectorDefinition id="padre_anchieta_creciente_medio" lane="101005127.945_1" pos="0.00" type="sink"/>
     <detectorDefinition id="padre_anchieta_creciente_rapido" lane="101005127.945_2" pos="0.00" type="sink"/>
+
     <detectorDefinition id="padre_anchieta_decreciente_lento" lane="216243700_0" pos="-1.00" type="source"/>
     <detectorDefinition id="padre_anchieta_decreciente_medio" lane="216243700_1" pos="-1.00" type="source"/>
     <detectorDefinition id="padre_anchieta_decreciente_rapido" lane="216243700_2" pos="-1.00" type="source"/>
-    <detectorDefinition id="tf_24_la_esperanza_creciente" lane="-109573928#1.8_1" pos="-0.01" type="source"/>
-    <detectorDefinition id="tf_24_la_esperanza_decreciente" lane="109573928#1_1" pos="0.00" type="between"/>
-    <detectorDefinition id="tf_263_geneto_creciente" lane="142470433#4_1" pos="-0.01" type="source"/>
-    <detectorDefinition id="tf_263_geneto_decreciente" lane="-142470433#4_1" pos="0.00" type="between"/>
-    <detectorDefinition id="av_astrofisico_creciente" lane="-217365458#0_1" pos="-0.01" type="source"/>
-    <detectorDefinition id="av_astrofisico_decreciente" lane="358043015#3_1" pos="0.00" type="between"/>
-    <detectorDefinition id="av_angel_guimera" lane="159229344#0.2_1" pos="45.00" type="discarded"/>
-    <detectorDefinition id="av_trinidad_salida_carril_dcho" lane="28490061#1_1" pos="45.00" type="source"/>
-    <detectorDefinition id="av_trinidad_salida_carril_izdo" lane="28490061#1_2" pos="45.00" type="source"/>
-    <detectorDefinition id="av_trinidad_entrada_carril_dcho" lane="217365460#0_1" pos="105.00" type="between"/>
-    <detectorDefinition id="av_trinidad_entrada_carril_izdo" lane="217365460#0_2" pos="105.00" type="between"/>
+
+    <detectorDefinition id="tf_24_la_esperanza_creciente" lane="-109573928#1.8_1" pos="-0.01" type="sink"/>
+    <detectorDefinition id="tf_24_la_esperanza_decreciente" lane="109573928#1_1" pos="0.00" type="source"/>
+
+    <detectorDefinition id="tf_263_geneto_creciente" lane="142470433#4_1" pos="-0.01" type="sink"/>
+    <detectorDefinition id="tf_263_geneto_decreciente" lane="-142470433#4_1" pos="0.00" type="source"/>
+
+    <detectorDefinition id="av_astrofisico_creciente" lane="-217365458#0_1" pos="-0.01" type="sink"/>
+    <detectorDefinition id="av_astrofisico_decreciente" lane="358043015#3_1" pos="0.00" type="source"/>
+
+    <detectorDefinition id="av_angel_guimera" lane="159229344#0.2_1" pos="45.00" type="sink"/>
+    <detectorDefinition id="av_trinidad_salida_carril_dcho" lane="28490061#1_1" pos="45.00" type="sink"/>
+    <detectorDefinition id="av_trinidad_salida_carril_izdo" lane="28490061#1_2" pos="45.00" type="sink"/>
+
+    <detectorDefinition id="av_trinidad_entrada_carril_dcho" lane="217365460#0_1" pos="105.00" type="source"/>
+    <detectorDefinition id="av_trinidad_entrada_carril_izdo" lane="217365460#0_2" pos="105.00" type="source"/>
 </detectors>
