@@ -39,7 +39,7 @@
 
 | **Vehículo** | **IMD** |
 | ----------- | ----------- |
-| Normales | 14782 |
+| Normales | 14 782 |
 | Pesados | 521 |
 
 #### Datos de tráfico ESTIMADOS — 27 feb. 2020
