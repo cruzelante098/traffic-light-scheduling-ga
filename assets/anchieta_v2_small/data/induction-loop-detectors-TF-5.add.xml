@@ -1,0 +1,56 @@
+<additional>
+  <!-- TF-5 -->
+  <inductionLoop id="campus_guajara_creciente_lento" lane="216650879_0" pos="0" freq="1" file="output/campus_guajara_creciente_lento.xml"/>
+  <inductionLoop id="campus_guajara_creciente_medio_lento" lane="216650879_1" pos="0" freq="1" file="output/campus_guajara_creciente_medio_lento.xml"/>
+  <inductionLoop id="campus_guajara_creciente_medio_rapido" lane="216650879_2" pos="0" freq="1" file="output/campus_guajara_creciente_medio_rapido.xml"/>
+  <inductionLoop id="campus_guajara_creciente_rapido" lane="216650879_3" pos="0" freq="1" file="output/campus_guajara_creciente_rapido.xml"/>
+  
+  <inductionLoop id="campus_guajara_decreciente_lento" lane="217553754_0" pos="-1" freq="1" file="output/campus_guajara_decreciente_lento.xml"/>
+  <inductionLoop id="campus_guajara_decreciente_medio" lane="217553754_1" pos="-1" freq="1" file="output/campus_guajara_decreciente_medio.xml"/>
+  <inductionLoop id="campus_guajara_decreciente_rapido" lane="217553754_2" pos="-1" freq="1" file="output/campus_guajara_decreciente_rapido.xml"/>
+
+  <inductionLoop id="padre_anchieta_creciente_lento" lane="215803108_0" pos="-0.01" freq="1" file="output/padre_anchieta_creciente_lento.xml"/>
+  <inductionLoop id="padre_anchieta_creciente_medio" lane="215803108_1" pos="-0.01" freq="1" file="output/padre_anchieta_creciente_medio.xml"/>
+  <inductionLoop id="padre_anchieta_creciente_rapido" lane="215803108_2" pos="-0.01" freq="1" file="output/padre_anchieta_creciente_rapido.xml"/>
+
+  <inductionLoop id="padre_anchieta_decreciente_lento" lane="216243701_0" pos="0" freq="1" file="output/padre_anchieta_decreciente_lento.xml"/>
+  <inductionLoop id="padre_anchieta_decreciente_medio" lane="216243701_1" pos="0" freq="1" file="output/padre_anchieta_decreciente_medio.xml"/>
+  <inductionLoop id="padre_anchieta_decreciente_rapido" lane="216243701_2" pos="0" freq="1" file="output/padre_anchieta_decreciente_rapido.xml"/>
+
+
+  <!-- Vías de la rotonda -->
+  <inductionLoop id="tf_24_la_esperanza_creciente" lane="-109573928#1.8_1" pos="-0.01" freq="1" file="output/tf_24_la_esperanza_creciente.xml"/>
+  <inductionLoop id="tf_24_la_esperanza_decreciente" lane="109573928#1_1" pos="0" freq="1" file="output/tf_24_la_esperanza_decreciente.xml"/>
+
+  <inductionLoop id="tf_263_geneto_creciente" lane="142470433#4_1" pos="-0.01" freq="1" file="output/tf_263_geneto_creciente.xml"/>
+  <inductionLoop id="tf_263_geneto_decreciente" lane="-142470433#4_1" pos="0" freq="1" file="output/tf_263_geneto_decreciente.xml"/>
+  
+  <inductionLoop id="tf_263_geneto_rotonda_creciente" lane="142470433#1_1" pos="17" freq="1" file="output/tf_263_geneto_decreciente.xml"/>
+  <inductionLoop id="tf_263_geneto_rotonda_decreciente" lane="-142470433#1_1" pos="33" freq="1" file="output/tf_263_geneto_decreciente.xml"/>
+
+  <inductionLoop id="av_astrofisico_creciente" lane="-217365458#0_1" pos="-0.01" freq="1" file="output/av_astrofisico_creciente.xml"/>
+  <inductionLoop id="av_astrofisico_decreciente" lane="358043015#3_1" pos="0" freq="1" file="output/av_astrofisico_decreciente.xml"/>
+
+  <inductionLoop id="av_angel_guimera" lane="159229344#0.2_1" pos="45" freq="1" file="output/av_angel_guimera.xml"/>
+  
+  <inductionLoop id="av_trinidad_salida_carril_dcho" lane="28490061#2_1" pos="-1" freq="1" file="output/av_trinidad_salida_carril_dcho.xml"/>
+  <inductionLoop id="av_trinidad_salida_carril_izdo" lane="28490061#2_2" pos="-1" freq="1" file="output/av_trinidad_salida_carril_izdo.xml"/>
+
+  <inductionLoop id="av_trinidad_entrada_carril_dcho" lane="217365460#0_1" pos="0" freq="1" file="output/av_trinidad_entrada_carril_dcho.xml"/>
+  <inductionLoop id="av_trinidad_entrada_carril_izdo" lane="217365460#0_2" pos="0" freq="1" file="output/av_trinidad_entrada_carril_izdo.xml"/>
+  
+  <inductionLoop id="entrada_tf5_sur_carril_dcho" lane="100594724_0" pos="320" freq="1" file="output/entrada_tf5_sur_carril_dcho.xml"/>
+  <inductionLoop id="entrada_tf5_sur_carril_izdo" lane="100594724_1" pos="320" freq="1" file="output/entrada_tf5_sur_carril_izdo.xml"/>
+  
+  <inductionLoop id="mitad_rotonda_carril_dcho" lane="217691393#1_1" pos="4" freq="1" file="output/mitad_rotonda_carril_dcho.xml"/>
+  <inductionLoop id="mitad_rotonda_carril_izdo" lane="217691393#1_2" pos="4" freq="1" file="output/mitad_rotonda_carril_izdo.xml"/>
+  
+  <inductionLoop id="entrada_astrofisico_desde_tf5_sur" lane="27528360_1" pos="0" freq="1" file="output/entrada_astrofisico_desde_tf5_sur.xml"/>
+  
+  <inductionLoop id="entre_trinidad_carril_dcho" lane="220346965_1" pos="0" freq="1" file="output/entre_trinidad_carril_dcho.xml"/>
+  <inductionLoop id="entre_trinidad_carril_izdo" lane="220346965_2" pos="0" freq="1" file="output/entre_trinidad_carril_izdo.xml"/>
+  
+  <inductionLoop id="salida_tf5_norte" lane="28306819#1_0" pos="20" freq="1" file="output/salida_tf5_norte.xml"/>
+
+  <inductionLoop id="salida_tf5_sur" lane="91731873#1_1" pos="13" freq="1" file="output/salida_tf5_sur.xml"/>
+</additional>

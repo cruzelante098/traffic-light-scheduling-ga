@@ -1,0 +1,45 @@
+<additional>
+    <!-- <flow id="-142470433#4_159229344#0.2.qPKW" departSpeed="max" departPos="last" departLane="best" route="-142470433#4_159229344#0.2.qPKW" number="500" begin="0" end="3600"/> -->
+    <flow id="flow1" departSpeed="max" departPos="last" departLane="best" route="route_0" number="500" begin="0" end="3600"/>
+    <flow id="flow2" departSpeed="max" departPos="last" departLane="best" route="route_1" number="500" begin="0" end="3600"/>
+    <flow id="flow3" departSpeed="max" departPos="last" departLane="best" route="route_10" number="500" begin="0" end="3600"/>
+    <flow id="flow4" departSpeed="max" departPos="last" departLane="best" route="route_11" number="500" begin="0" end="3600"/>
+    <flow id="flow5" departSpeed="max" departPos="last" departLane="best" route="route_12" number="500" begin="0" end="3600"/>
+    <flow id="flow6" departSpeed="max" departPos="last" departLane="best" route="route_13" number="500" begin="0" end="3600"/>
+    <flow id="flow7" departSpeed="max" departPos="last" departLane="best" route="route_14" number="500" begin="0" end="3600"/>
+    <flow id="flow8" departSpeed="max" departPos="last" departLane="best" route="route_15" number="500" begin="0" end="3600"/>
+    <flow id="flow9" departSpeed="max" departPos="last" departLane="best" route="route_16" number="500" begin="0" end="3600"/>
+    <flow id="flow10" departSpeed="max" departPos="last" departLane="best" route="route_17" number="500" begin="0" end="3600"/>
+    <flow id="flow11" departSpeed="max" departPos="last" departLane="best" route="route_18" number="500" begin="0" end="3600"/>
+    <flow id="flow12" departSpeed="max" departPos="last" departLane="best" route="route_19" number="500" begin="0" end="3600"/>
+    <flow id="flow13" departSpeed="max" departPos="last" departLane="best" route="route_2" number="500" begin="0" end="3600"/>
+    <flow id="flow14" departSpeed="random" departPos="last" departLane="best" route="route_20" number="5600" begin="0" end="3600"/>
+    <flow id="flow15" departSpeed="max" departPos="last" departLane="best" route="route_21" number="500" begin="0" end="3600"/>
+    <flow id="flow16" departSpeed="max" departPos="last" departLane="best" route="route_22" number="500" begin="0" end="3600"/>
+    <flow id="flow17" departSpeed="max" departPos="last" departLane="best" route="route_23" number="500" begin="0" end="3600"/>
+    <flow id="flow18" departSpeed="max" departPos="last" departLane="best" route="route_24" number="500" begin="0" end="3600"/>
+    <!-- <flow id="flow19" departSpeed="max" departPos="last" departLane="best" route="route_25" number="500" begin="0" end="3600"/>  RUTA DE AV: ASTROFISICO TF5 -->
+    <flow id="flow20" departSpeed="max" departPos="last" departLane="best" route="route_26" number="3000" begin="0" end="3600"/>
+    <flow id="flow21" departSpeed="max" departPos="last" departLane="best" route="route_27" number="500" begin="0" end="3600"/>
+    <flow id="flow22" departSpeed="max" departPos="last" departLane="best" route="route_28" number="500" begin="0" end="3600"/>
+    <flow id="flow23" departSpeed="max" departPos="last" departLane="best" route="route_29" number="500" begin="0" end="3600"/>
+    <flow id="flow24" departSpeed="max" departPos="last" departLane="best" route="route_3" number="500" begin="0" end="3600"/>
+    <flow id="flow25" departSpeed="max" departPos="last" departLane="best" route="route_30" number="500" begin="0" end="3600"/>
+    <flow id="flow26" departSpeed="max" departPos="last" departLane="best" route="route_31" number="500" begin="0" end="3600"/>
+    <flow id="flow27" departSpeed="max" departPos="last" departLane="best" route="route_32" number="500" begin="0" end="3600"/>
+    <flow id="flow28" departSpeed="max" departPos="last" departLane="best" route="route_33" number="500" begin="0" end="3600"/>
+    <flow id="flow29" departSpeed="max" departPos="last" departLane="best" route="route_34" number="500" begin="0" end="3600"/>
+    <flow id="flow30" departSpeed="max" departPos="last" departLane="best" route="route_35" number="500" begin="0" end="3600"/>
+    <flow id="flow31" departSpeed="max" departPos="last" departLane="best" route="route_36" number="500" begin="0" end="3600"/>
+    <flow id="flow32" departSpeed="max" departPos="last" departLane="best" route="route_37" number="500" begin="0" end="3600"/>
+    <flow id="flow33" departSpeed="max" departPos="last" departLane="best" route="route_38" number="500" begin="0" end="3600"/>
+    <flow id="flow34" departSpeed="max" departPos="last" departLane="best" route="route_39" number="500" begin="0" end="3600"/>
+    <flow id="flow35" departSpeed="max" departPos="last" departLane="best" route="route_4" number="500" begin="0" end="3600"/>
+    <flow id="flow36" departSpeed="max" departPos="last" departLane="best" route="route_40" number="500" begin="0" end="3600"/>
+    <flow id="flow37" departSpeed="max" departPos="last" departLane="best" route="route_41" number="500" begin="0" end="3600"/>
+    <flow id="flow38" departSpeed="max" departPos="last" departLane="best" route="route_5" number="500" begin="0" end="3600"/>
+    <flow id="flow39" departSpeed="max" departPos="last" departLane="best" route="route_6" number="500" begin="0" end="3600"/>
+    <flow id="flow40" departSpeed="max" departPos="last" departLane="best" route="route_7" number="500" begin="0" end="3600"/>
+    <flow id="flow41" departSpeed="max" departPos="last" departLane="best" route="route_8" number="500" begin="0" end="3600"/>
+    <flow id="flow42" departSpeed="max" departPos="last" departLane="best" route="route_9" number="500" begin="0" end="3600"/>
+</additional>
