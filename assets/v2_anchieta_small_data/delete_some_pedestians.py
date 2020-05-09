@@ -3,7 +3,7 @@ from random import random
 
 
 # Open original file
-tree = ET.parse('[OG]peatones_aleatorios.rou.xml')
+tree = ET.parse('../instances/anchieta_no_tls_many_pedestrians/peatones_aleatorios.rou.xml')
 
 root = tree.getroot()
 to_delete = []
@@ -19,4 +19,4 @@ for x in to_delete:
 
 print(len(root))
 
-tree.write('peatones_aleatorios.rou.xml')
+tree.write('../instances/anchieta_no_tls_few_pedestrians/peatones_aleatorios.rou.xml')
