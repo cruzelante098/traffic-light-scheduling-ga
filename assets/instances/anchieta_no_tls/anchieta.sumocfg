@@ -7,7 +7,7 @@
 
     <input>
         <net-file value="anchieta.net.xml"/>
-        <additional-files value="../common_files/taz.add.xml,../common_files/flow_od_generated.add.xml"/>
+        <additional-files value="../common_files/taz.add.xml,../common_files/flow_od_generated.add.xml,../common_files/bus.rou.xml,../common_files/heavy.rou.xml"/>
     </input>
 
     <processing>
