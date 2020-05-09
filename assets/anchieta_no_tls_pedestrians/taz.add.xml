@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 05/05/20 20:30:17 by Eclipse SUMO netedit Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="anchieta.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="anchieta.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="C:\Users\Francisco%20Cruz\Repositorios\traffic-light-scheduling-ga\assets\anchieta_v2_small\data\taz.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <taz id="astrofisico" shape="805.04,1608.90 800.51,1565.90 762.03,1570.43 766.56,1606.64 805.04,1608.90" color="blue">
+        <tazSource id="358043015#3" weight="1.00"/>
+        <tazSink id="-217365458#0" weight="1.00"/>
+    </taz>
+    <taz id="esperanza" shape="753.63,1131.17 778.93,1112.90 757.85,1090.41 736.77,1104.46 753.63,1131.17" color="blue">
+        <tazSource id="109573928#1" weight="1.00"/>
+        <tazSink id="-109573928#1.8" weight="1.00"/>
+    </taz>
+    <taz id="geneto" shape="1027.67,1074.95 1023.45,1046.85 1071.23,1042.63 1079.66,1073.55 1027.67,1074.95" color="blue">
+        <tazSource id="-142470433#4" weight="1.00"/>
+        <tazSink id="142470433#4" weight="1.00"/>
+    </taz>
+    <taz id="guimera" shape="1388.47,1526.92 1384.98,1485.03 1432.98,1478.05 1436.47,1524.30 1388.47,1526.92" color="blue">
+        <tazSink id="142470423#2" weight="1.00"/>
+    </taz>
+    <taz id="incorp-tf5" shape="1709.24,852.25 1693.78,839.60 1712.05,819.93 1728.91,829.76 1709.24,852.25" color="blue">
+        <tazSource id="80925648" weight="1.00"/>
+    </taz>
+    <taz id="tf-5_anchieta" shape="590.02,2102.30 553.81,2066.09 522.13,2109.09 558.34,2138.51 590.02,2102.30" color="blue">
+        <tazSource id="216243701" weight="1.00"/>
+        <tazSink id="215803108" weight="1.00"/>
+    </taz>
+    <taz id="tf-5_guajara" shape="2005.76,496.70 1953.76,447.52 1981.87,416.60 2032.46,465.79 2005.76,496.70" color="blue">
+        <tazSource id="216650879" weight="1.00"/>
+        <tazSink id="217553754" weight="1.00"/>
+    </taz>
+    <taz id="trinidad" shape="1067.46,1698.77 1144.44,1672.70 1163.58,1748.46 1072.75,1781.86 1067.46,1698.77" color="blue">
+        <tazSource id="217365460#0" weight="1.00"/>
+        <tazSink id="28490061#2" weight="1.00"/>
+    </taz>
+</additional>

@@ -6,55 +6,55 @@ $OR;D2
 * some
 * additional
 * comments
-        tf-5_anchieta          tf-5_guajara        5500
-        tf-5_guajara           tf-5_anchieta       6000
+        tf-5_anchieta          tf-5_guajara        3000
+        tf-5_guajara           tf-5_anchieta       3000
         
-        incorp-tf5             tf-5_guajara        500
-        incorp-tf5             geneto              500
-        incorp-tf5             esperanza           500
-        incorp-tf5             astrofisico         500
-        incorp-tf5             trinidad            500
-        incorp-tf5             guimera             500
+        incorp-tf5             tf-5_guajara        150
+        incorp-tf5             geneto              150
+        incorp-tf5             esperanza           150
+        incorp-tf5             astrofisico         150
+        incorp-tf5             trinidad            150
+        incorp-tf5             guimera             150
 
-        tf-5_guajara           geneto              500
-        tf-5_guajara           esperanza           500
-        tf-5_guajara           astrofisico         500
-        tf-5_guajara           trinidad            500
-        tf-5_guajara           guimera             500
+        tf-5_guajara           geneto              100
+        tf-5_guajara           esperanza           100
+        tf-5_guajara           astrofisico         100
+        tf-5_guajara           trinidad            100
+        tf-5_guajara           guimera             100
         tf-5_guajara           tf-5_guajara        60
 
-        tf-5_anchieta          geneto              500
-        tf-5_anchieta          esperanza           500
-        tf-5_anchieta          astrofisico         500
-        tf-5_anchieta          trinidad            500
-        tf-5_anchieta          guimera             500
+        tf-5_anchieta          geneto              100
+        tf-5_anchieta          esperanza           100
+        tf-5_anchieta          astrofisico         100
+        tf-5_anchieta          trinidad            100
+        tf-5_anchieta          guimera             100
         tf-5_anchieta          tf-5_anchieta       60
         
-        geneto                 esperanza           500
-        geneto                 astrofisico         500
-        geneto                 trinidad            500
-        geneto                 guimera             500
-        geneto                 tf-5_anchieta       500
-        geneto                 tf-5_guajara        500
+        geneto                 esperanza           100
+        geneto                 astrofisico         100
+        geneto                 trinidad            100
+        geneto                 guimera             100
+        geneto                 tf-5_anchieta       100
+        geneto                 tf-5_guajara        100
 
-        esperanza              geneto              500
-        esperanza              astrofisico         500
-        esperanza              trinidad            500
-        esperanza              guimera             500
-        esperanza              tf-5_anchieta       500
-        esperanza              tf-5_guajara        500
+        esperanza              geneto              100
+        esperanza              astrofisico         150
+        esperanza              trinidad            100
+        esperanza              guimera             100
+        esperanza              tf-5_anchieta       250
+        esperanza              tf-5_guajara        200
 
-        astrofisico            geneto              500
-        astrofisico            esperanza           500
-        astrofisico            trinidad            500
-        astrofisico            guimera             500
-        astrofisico            tf-5_anchieta       500
-        astrofisico            tf-5_guajara        500
+        astrofisico            geneto              100
+        astrofisico            esperanza           100
+        astrofisico            trinidad            100
+        astrofisico            guimera             100
+        astrofisico            tf-5_anchieta       100
+        astrofisico            tf-5_guajara        100
 
-        trinidad               geneto              500
-        trinidad               esperanza           500
-        trinidad               astrofisico         500
-        trinidad               guimera             500
-        trinidad               tf-5_anchieta       500
-        trinidad               tf-5_guajara        500
+        trinidad               geneto              200
+        trinidad               esperanza           200
+        trinidad               astrofisico         200
+        trinidad               guimera             200
+        trinidad               tf-5_anchieta       200
+        trinidad               tf-5_guajara        200
         

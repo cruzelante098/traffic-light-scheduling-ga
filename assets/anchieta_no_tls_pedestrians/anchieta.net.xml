@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 05/06/20 19:38:51 by Eclipse SUMO netedit Version 1.5.0
+<!-- generated on 05/09/20 16:13:28 by Eclipse SUMO netedit Version 1.5.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -463,16 +463,10 @@
         <lane id=":Entrada-TF5Sur_0_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="25.00" length="9.93" shape="1009.34,1576.71 1004.57,1568.00"/>
     </edge>
     <edge id=":Entrada-TF5Sur_2" function="internal">
-        <lane id=":Entrada-TF5Sur_2_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="7.05" length="2.59" shape="998.44,1575.80 999.93,1573.68"/>
+        <lane id=":Entrada-TF5Sur_2_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="7.05" length="7.20" shape="998.44,1575.80 1000.10,1573.44 1001.21,1571.60 1001.76,1570.31 1001.76,1569.54"/>
     </edge>
     <edge id=":Entrada-TF5Sur_3" function="internal">
-        <lane id=":Entrada-TF5Sur_3_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="8.52" length="1.22" shape="1000.96,1577.79 1001.63,1576.78"/>
-    </edge>
-    <edge id=":Entrada-TF5Sur_4" function="internal">
-        <lane id=":Entrada-TF5Sur_4_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="7.05" length="4.61" shape="999.93,1573.68 1000.10,1573.44 1001.21,1571.60 1001.76,1570.31 1001.76,1569.54"/>
-    </edge>
-    <edge id=":Entrada-TF5Sur_5" function="internal">
-        <lane id=":Entrada-TF5Sur_5_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="8.52" length="9.62" shape="1001.63,1576.78 1003.11,1574.55 1004.43,1571.84 1004.92,1569.65 1004.57,1568.00"/>
+        <lane id=":Entrada-TF5Sur_3_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="8.52" length="10.84" shape="1000.96,1577.79 1003.11,1574.55 1004.43,1571.84 1004.92,1569.65 1004.57,1568.00"/>
     </edge>
     <edge id=":Entrada-TF5Sur_c0" function="crossing" crossingEdges="216268744 154607613#1">
         <lane id=":Entrada-TF5Sur_c0_0" index="0" allow="pedestrian" speed="1.00" length="5.92" width="4.00" shape="1001.33,1572.07 1004.17,1577.26"/>
@@ -547,7 +541,7 @@
         <lane id=":EntradaSalida-TF24_w1_0" index="0" allow="pedestrian" speed="1.00" length="28.75" width="4.00" shape="996.92,1489.08 994.40,1490.70 1003.08,1530.88 1005.82,1532.10 1007.70,1526.15 1008.24,1519.71 1007.43,1512.79 1005.28,1505.37 1001.77,1497.47"/>
     </edge>
     <edge id=":Salida-AngelGuimera_0" function="internal">
-        <lane id=":Salida-AngelGuimera_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="9.45" length="22.03" shape="1092.99,1530.25 1094.20,1534.78 1097.49,1537.65 1102.86,1538.86 1110.31,1538.41"/>
+        <lane id=":Salida-AngelGuimera_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="9.30" length="21.33" shape="1092.99,1530.25 1094.15,1534.79 1097.29,1537.68 1102.40,1538.93 1109.50,1538.53"/>
     </edge>
     <edge id=":Salida-AngelGuimera_1" function="internal">
         <lane id=":Salida-AngelGuimera_1_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="19.51" length="20.73" shape="1092.99,1530.25 1092.78,1536.53 1091.59,1540.75 1089.30,1544.68 1085.82,1550.10"/>
@@ -557,10 +551,10 @@
         <lane id=":Salida-AngelGuimera_c0_0" index="0" allow="pedestrian" speed="1.00" length="18.20" width="4.00" shape="1088.22,1549.23 1094.65,1532.20"/>
     </edge>
     <edge id=":Salida-AngelGuimera_w0" function="walkingarea">
-        <lane id=":Salida-AngelGuimera_w0_0" index="0" allow="pedestrian" speed="1.00" length="16.97" width="4.00" shape="1086.35,1548.52 1087.18,1550.93 1089.74,1552.49 1111.00,1542.96 1110.55,1539.99 1104.79,1541.07 1099.78,1542.44 1095.51,1544.11 1091.99,1546.09 1089.21,1548.36"/>
+        <lane id=":Salida-AngelGuimera_w0_0" index="0" allow="pedestrian" speed="1.00" length="16.97" width="4.00" shape="1086.35,1548.52 1087.18,1550.93 1089.74,1552.49 1111.00,1542.96 1110.55,1539.99 1104.23,1541.15 1099.42,1542.50 1095.31,1544.15 1091.90,1546.10 1089.19,1548.36"/>
     </edge>
     <edge id=":Salida-AngelGuimera_w1" function="walkingarea">
-        <lane id=":Salida-AngelGuimera_w1_0" index="0" allow="pedestrian" speed="1.00" length="10.51" width="4.00" shape="1110.08,1536.83 1109.63,1533.86 1109.38,1534.07 1110.22,1535.89 1097.59,1530.10 1094.59,1530.20 1092.78,1531.49 1095.10,1532.86 1096.43,1534.90 1098.60,1536.32 1101.60,1537.11 1105.42,1537.28"/>
+        <lane id=":Salida-AngelGuimera_w1_0" index="0" allow="pedestrian" speed="1.00" length="10.35" width="4.00" shape="1109.30,1536.94 1108.85,1533.98 1109.38,1534.07 1110.22,1535.89 1097.59,1530.10 1094.59,1530.20 1092.78,1531.49 1095.07,1532.86 1096.34,1534.91 1098.40,1536.35 1101.23,1537.16 1104.85,1537.36"/>
     </edge>
     <edge id=":Salida-Astrofisico_0" function="internal">
         <lane id=":Salida-Astrofisico_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="11.19" length="12.18" shape="1001.70,1569.42 999.57,1565.92 997.52,1563.28 995.55,1561.51 993.66,1560.60"/>
@@ -729,8 +723,8 @@
         <lane id=":gneJ55_0_0" index="0" allow="bus" speed="9.62" length="10.65" shape="1109.85,1531.64 1112.66,1534.21 1115.08,1535.98 1117.08,1536.96 1118.69,1537.14"/>
     </edge>
     <edge id=":gneJ55_1" function="internal">
-        <lane id=":gneJ55_1_0" index="0" allow="pedestrian" speed="22.22" length="0.10" width="3.00" shape="1118.20,1534.08 1118.20,1534.08"/>
-        <lane id=":gneJ55_1_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="22.22" length="0.10" shape="1118.69,1537.14 1118.69,1537.14"/>
+        <lane id=":gneJ55_1_0" index="0" allow="pedestrian" speed="22.22" length="9.06" width="3.00" shape="1109.28,1535.43 1118.20,1534.08"/>
+        <lane id=":gneJ55_1_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="22.22" length="9.06" shape="1109.69,1538.50 1118.69,1537.14"/>
     </edge>
     <edge id=":gneJ56_0" function="internal">
         <lane id=":gneJ56_0_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="33.33" length="0.28" shape="1015.42,1604.50 1015.18,1604.77"/>
@@ -982,8 +976,8 @@
         <param key="ref" value="TF-263"/>
     </edge>
     <edge id="159229344#0" from="Salida-AngelGuimera" to="gneJ55" priority="10" type="highway.tertiary" shape="1115.19,1539.29 1117.31,1538.97">
-        <lane id="159229344#0_0" index="0" allow="pedestrian" speed="22.22" length="8.46" width="3.00" shape="1109.85,1535.34 1118.20,1534.08"/>
-        <lane id="159229344#0_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="22.22" length="8.46" shape="1110.31,1538.41 1118.69,1537.14"/>
+        <lane id="159229344#0_0" index="0" allow="pedestrian" speed="22.22" length="0.20" width="3.00" shape="1109.08,1535.46 1109.28,1535.43"/>
+        <lane id="159229344#0_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="22.22" length="0.20" shape="1109.50,1538.53 1109.69,1538.50"/>
     </edge>
     <edge id="159229344#0.2" from="gneJ55" to="cluster_1431457871_2256210892" priority="10" type="highway.tertiary" shape="1117.31,1538.97 1210.46,1524.91">
         <lane id="159229344#0.2_0" index="0" allow="pedestrian" speed="22.22" length="87.91" width="3.00" shape="1118.20,1534.08 1205.14,1520.96"/>
@@ -1355,67 +1349,6 @@
         <lane id="97855879_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="72.84" shape="1062.05,1615.71 1061.66,1615.77 1044.51,1603.31 1009.69,1640.91"/>
     </edge>
 
-    <tlLogic id="Entrada-Astrofisico" type="static" programID="0" offset="0">
-        <phase duration="39" state="GrG"/>
-        <phase duration="6"  state="yrG"/>
-        <phase duration="39" state="rGG"/>
-        <phase duration="6"  state="ryG"/>
-    </tlLogic>
-    <tlLogic id="Entrada-TF5Norte" type="static" programID="0" offset="0">
-        <phase duration="34" state="GGrrr"/>
-        <phase duration="6"  state="yyrrr"/>
-        <phase duration="34" state="rrGGG"/>
-        <phase duration="6"  state="rryyr"/>
-    </tlLogic>
-    <tlLogic id="Entrada-TF5Sur" type="static" programID="0" offset="0">
-        <phase duration="39" state="GGrrG"/>
-        <phase duration="6"  state="yyrrr"/>
-        <phase duration="34" state="rrggr"/>
-        <phase duration="6"  state="rryyr"/>
-    </tlLogic>
-    <tlLogic id="Entrada-Trinidad" type="static" programID="0" offset="0">
-        <phase duration="39" state="GGGrrr"/>
-        <phase duration="6"  state="yyyrrr"/>
-        <phase duration="34" state="rrrGGG"/>
-        <phase duration="6"  state="rrryyr"/>
-    </tlLogic>
-    <tlLogic id="EntradaSalida-Geneto" type="static" programID="0" offset="0">
-        <phase duration="34" state="GGrGr"/>
-        <phase duration="6"  state="yyrGr"/>
-        <phase duration="34" state="rrGGG"/>
-        <phase duration="6"  state="rryGy"/>
-    </tlLogic>
-    <tlLogic id="EntradaSalida-TF24" type="static" programID="0" offset="0">
-        <phase duration="39" state="GGrGr"/>
-        <phase duration="4"  state="yyrGr"/>
-        <phase duration="34" state="rrGGG"/>
-        <phase duration="4"  state="rryGy"/>
-    </tlLogic>
-    <tlLogic id="Salida-AngelGuimera" type="static" programID="0" offset="0">
-        <phase duration="74" state="GGGr"/>
-        <phase duration="6"  state="yGGr"/>
-        <phase duration="5"  state="rGGG"/>
-        <phase duration="5"  state="rGGy"/>
-    </tlLogic>
-    <tlLogic id="Salida-TF5Norte" type="static" programID="0" offset="0">
-        <phase duration="74" state="GGGr"/>
-        <phase duration="6"  state="yGGr"/>
-        <phase duration="5"  state="rGGG"/>
-        <phase duration="5"  state="rGGy"/>
-    </tlLogic>
-    <tlLogic id="Salida-TF5Sur" type="static" programID="0" offset="0">
-        <phase duration="74" state="GGGr"/>
-        <phase duration="6"  state="yGGr"/>
-        <phase duration="5"  state="rGGG"/>
-        <phase duration="5"  state="rGGy"/>
-    </tlLogic>
-    <tlLogic id="Salida-Trinidad" type="static" programID="0" offset="0">
-        <phase duration="79" state="gGGgr"/>
-        <phase duration="5"  state="yGGgr"/>
-        <phase duration="6"  state="rGGGG"/>
-        <phase duration="6"  state="rGGGy"/>
-    </tlLogic>
-
     <junction id="1001504521" type="priority" x="1320.07" y="1198.70" incLanes="449288818#1_0 449288818#1_1" intLanes=":1001504521_0_0 :1001504521_1_0" shape="1337.11,1183.25 1334.80,1181.04 1334.53,1180.80 1332.03,1178.80 1315.26,1197.06 1320.08,1201.27">
         <request index="0" response="00" foes="00" cont="0"/>
         <request index="1" response="00" foes="00" cont="0"/>
@@ -1649,47 +1582,47 @@
     </junction>
     <junction id="943548009" type="dead_end" x="1711.54" y="830.45" incLanes="" intLanes="" shape="1710.34,829.25 1714.86,833.78"/>
     <junction id="943548012" type="dead_end" x="1652.14" y="802.55" incLanes="759746395_0 759746395_1" intLanes="" shape="1648.53,799.54 1653.45,803.64"/>
-    <junction id="Entrada-Astrofisico" type="traffic_light" x="1006.05" y="1539.41" incLanes="142470465_0 142470465_1 142470445_0 142470445_1 142470445_2" intLanes=":Entrada-Astrofisico_0_0 :Entrada-Astrofisico_1_0 :Entrada-Astrofisico_1_1" shape="1008.97,1540.72 1000.39,1536.88 998.56,1540.68 996.94,1543.36 995.25,1545.37 993.26,1547.12 987.27,1551.60 991.51,1556.15 993.37,1555.15 994.39,1555.61 994.57,1556.39 1004.19,1557.07 1004.24,1555.31 1004.68,1552.26 1005.25,1549.78 1006.08,1547.36 1007.27,1544.51" customShape="1">
+    <junction id="Entrada-Astrofisico" type="priority" x="1006.05" y="1539.41" incLanes="142470465_0 142470465_1 142470445_0 142470445_1 142470445_2" intLanes=":Entrada-Astrofisico_0_0 :Entrada-Astrofisico_1_0 :Entrada-Astrofisico_1_1" shape="1008.97,1540.72 1000.39,1536.88 998.56,1540.68 996.94,1543.36 995.25,1545.37 993.26,1547.12 987.27,1551.60 991.51,1556.15 993.37,1555.15 994.39,1555.61 994.57,1556.39 1004.19,1557.07 1004.24,1555.31 1004.68,1552.26 1005.25,1549.78 1006.08,1547.36 1007.27,1544.51" customShape="1">
         <request index="0" response="010" foes="010" cont="0"/>
         <request index="1" response="000" foes="001" cont="0"/>
         <request index="2" response="000" foes="000" cont="0"/>
     </junction>
-    <junction id="Entrada-TF5Norte" type="traffic_light" x="1091.21" y="1524.59" incLanes="215803174#0_0 215803174#0_1 215803174#0_2 217691393#1_0 217691393#1_1 217691393#1_2 :Entrada-TF5Norte_w0_0" intLanes=":Entrada-TF5Norte_0_0 :Entrada-TF5Norte_0_1 :Entrada-TF5Norte_2_0 :Entrada-TF5Norte_2_1 :Entrada-TF5Norte_c0_0" shape="1088.09,1527.31 1097.49,1527.01 1098.01,1524.00 1098.71,1523.08 1099.63,1522.23 1100.75,1521.23 1102.02,1519.85 1095.59,1514.45 1095.01,1514.94 1094.76,1514.97 1094.53,1514.85 1094.33,1514.59 1094.15,1514.19 1085.28,1517.28 1086.07,1519.37 1086.73,1520.91 1087.26,1522.19 1087.67,1523.49 1087.95,1525.10" customShape="1">
+    <junction id="Entrada-TF5Norte" type="priority" x="1091.21" y="1524.59" incLanes="215803174#0_0 215803174#0_1 215803174#0_2 217691393#1_0 217691393#1_1 217691393#1_2 :Entrada-TF5Norte_w0_0" intLanes=":Entrada-TF5Norte_0_0 :Entrada-TF5Norte_0_1 :Entrada-TF5Norte_2_0 :Entrada-TF5Norte_2_1 :Entrada-TF5Norte_c0_0" shape="1088.09,1527.31 1097.49,1527.01 1098.01,1524.00 1098.71,1523.08 1099.63,1522.23 1100.75,1521.23 1102.02,1519.85 1095.59,1514.45 1095.01,1514.94 1094.76,1514.97 1094.53,1514.85 1094.33,1514.59 1094.15,1514.19 1085.28,1517.28 1086.07,1519.37 1086.73,1520.91 1087.26,1522.19 1087.67,1523.49 1087.95,1525.10" customShape="1">
         <request index="0" response="10100" foes="10100" cont="0"/>
         <request index="1" response="11100" foes="11100" cont="0"/>
         <request index="2" response="10000" foes="10011" cont="0"/>
         <request index="3" response="10000" foes="10010" cont="0"/>
         <request index="4" response="00000" foes="01111" cont="0"/>
     </junction>
-    <junction id="Entrada-TF5Sur" type="traffic_light" x="1004.20" y="1570.66" incLanes="154607613#1_0 154607613#1_1 154607613#1_2 359358942#1_0 359358942#1_1 :Entrada-TF5Sur_w1_0" intLanes=":Entrada-TF5Sur_0_0 :Entrada-TF5Sur_0_1 :Entrada-TF5Sur_4_0 :Entrada-TF5Sur_5_0 :Entrada-TF5Sur_c0_0" shape="1002.50,1580.45 1010.75,1575.94 1005.97,1567.23 997.74,1571.76 995.63,1576.48 1000.81,1580.28">
-        <request index="0" response="11100" foes="11100" cont="0"/>
-        <request index="1" response="11000" foes="11000" cont="0"/>
-        <request index="2" response="10001" foes="10001" cont="1"/>
-        <request index="3" response="10011" foes="10011" cont="1"/>
+    <junction id="Entrada-TF5Sur" type="priority" x="1004.20" y="1570.66" incLanes="154607613#1_0 154607613#1_1 154607613#1_2 359358942#1_0 359358942#1_1 :Entrada-TF5Sur_w1_0" intLanes=":Entrada-TF5Sur_0_0 :Entrada-TF5Sur_0_1 :Entrada-TF5Sur_2_0 :Entrada-TF5Sur_3_0 :Entrada-TF5Sur_c0_0" shape="1002.50,1580.45 1010.75,1575.94 1005.97,1567.23 997.74,1571.76 995.63,1576.48 1000.81,1580.28">
+        <request index="0" response="10000" foes="11100" cont="0"/>
+        <request index="1" response="10000" foes="11000" cont="0"/>
+        <request index="2" response="10001" foes="10001" cont="0"/>
+        <request index="3" response="10011" foes="10011" cont="0"/>
         <request index="4" response="00000" foes="01111" cont="0"/>
     </junction>
-    <junction id="Entrada-Trinidad" type="traffic_light" x="1054.24" y="1596.53" incLanes="217365460#2_0 217365460#2_1 217365460#2_2 220346965_0 220346965_1 220346965_2 :Entrada-Trinidad_w1_0" intLanes=":Entrada-Trinidad_0_0 :Entrada-Trinidad_1_0 :Entrada-Trinidad_2_0 :Entrada-Trinidad_2_1 :Entrada-Trinidad_c0_0" shape="1060.01,1607.49 1068.24,1602.95 1067.98,1602.12 1068.01,1601.75 1068.16,1601.41 1068.41,1601.09 1068.77,1600.80 1056.33,1579.48 1053.74,1582.06 1051.71,1584.00 1049.86,1585.42 1047.81,1586.41 1045.20,1587.08 1041.63,1587.55 1042.50,1596.90 1046.07,1596.91 1049.38,1597.62 1052.43,1599.03 1055.22,1601.15 1057.75,1603.97">
+    <junction id="Entrada-Trinidad" type="priority" x="1054.24" y="1596.53" incLanes="217365460#2_0 217365460#2_1 217365460#2_2 220346965_0 220346965_1 220346965_2 :Entrada-Trinidad_w1_0" intLanes=":Entrada-Trinidad_0_0 :Entrada-Trinidad_1_0 :Entrada-Trinidad_2_0 :Entrada-Trinidad_2_1 :Entrada-Trinidad_c0_0" shape="1060.01,1607.49 1068.24,1602.95 1067.98,1602.12 1068.01,1601.75 1068.16,1601.41 1068.41,1601.09 1068.77,1600.80 1056.33,1579.48 1053.74,1582.06 1051.71,1584.00 1049.86,1585.42 1047.81,1586.41 1045.20,1587.08 1041.63,1587.55 1042.50,1596.90 1046.07,1596.91 1049.38,1597.62 1052.43,1599.03 1055.22,1601.15 1057.75,1603.97">
         <request index="0" response="10100" foes="10100" cont="0"/>
         <request index="1" response="11100" foes="11100" cont="0"/>
         <request index="2" response="00000" foes="00011" cont="0"/>
         <request index="3" response="00000" foes="00010" cont="0"/>
         <request index="4" response="00000" foes="00011" cont="0"/>
     </junction>
-    <junction id="EntradaSalida-Geneto" type="traffic_light" x="1040.87" y="1485.31" incLanes="-142470433#1_0 -142470433#1_1 550301038_0 550301038_1 550301038_2 :EntradaSalida-Geneto_w1_0" intLanes=":EntradaSalida-Geneto_0_0 :EntradaSalida-Geneto_4_0 :EntradaSalida-Geneto_2_0 :EntradaSalida-Geneto_2_1 :EntradaSalida-Geneto_c0_0" shape="1052.33,1497.19 1050.76,1489.13 1048.07,1488.29 1046.54,1486.76 1045.59,1482.74 1045.20,1477.77 1045.01,1473.95 1045.38,1469.37 1045.44,1465.89 1046.00,1463.79 1033.61,1461.32 1032.57,1468.11 1032.73,1476.33 1033.05,1482.17 1032.89,1488.18 1033.52,1491.50 1033.68,1494.66 1032.42,1497.04 1028.63,1499.92 1034.51,1506.08 1037.95,1503.44 1040.95,1501.30 1043.32,1499.64 1046.33,1498.06 1049.01,1497.27" customShape="1">
+    <junction id="EntradaSalida-Geneto" type="priority" x="1040.87" y="1485.31" incLanes="-142470433#1_0 -142470433#1_1 550301038_0 550301038_1 550301038_2 :EntradaSalida-Geneto_w1_0" intLanes=":EntradaSalida-Geneto_0_0 :EntradaSalida-Geneto_4_0 :EntradaSalida-Geneto_2_0 :EntradaSalida-Geneto_2_1 :EntradaSalida-Geneto_c0_0" shape="1052.33,1497.19 1050.76,1489.13 1048.07,1488.29 1046.54,1486.76 1045.59,1482.74 1045.20,1477.77 1045.01,1473.95 1045.38,1469.37 1045.44,1465.89 1046.00,1463.79 1033.61,1461.32 1032.57,1468.11 1032.73,1476.33 1033.05,1482.17 1032.89,1488.18 1033.52,1491.50 1033.68,1494.66 1032.42,1497.04 1028.63,1499.92 1034.51,1506.08 1037.95,1503.44 1040.95,1501.30 1043.32,1499.64 1046.33,1498.06 1049.01,1497.27" customShape="1">
         <request index="0" response="10100" foes="10100" cont="0"/>
         <request index="1" response="10000" foes="10000" cont="1"/>
         <request index="2" response="00000" foes="00001" cont="0"/>
         <request index="3" response="00000" foes="00000" cont="0"/>
         <request index="4" response="00000" foes="00011" cont="0"/>
     </junction>
-    <junction id="EntradaSalida-TF24" type="traffic_light" x="1007.69" y="1499.80" incLanes="109573928#1_0 109573928#1_1 218891289_0 218891289_1 218891289_2 :EntradaSalida-TF24_w1_0" intLanes=":EntradaSalida-TF24_0_0 :EntradaSalida-TF24_4_0 :EntradaSalida-TF24_2_0 :EntradaSalida-TF24_2_1 :EntradaSalida-TF24_c0_0" shape="1033.75,1507.36 1028.05,1499.88 1024.97,1501.30 1021.57,1501.10 1017.86,1499.26 1013.84,1495.81 1009.50,1490.73 1004.84,1484.02 994.40,1490.70 999.00,1498.63 1002.34,1506.07 1004.42,1513.01 1005.23,1519.46 1004.79,1525.42 1003.08,1530.88 1011.66,1534.72 1014.82,1527.86 1017.48,1522.87 1020.16,1519.02 1023.41,1515.63 1027.76,1511.97">
+    <junction id="EntradaSalida-TF24" type="priority" x="1007.69" y="1499.80" incLanes="109573928#1_0 109573928#1_1 218891289_0 218891289_1 218891289_2 :EntradaSalida-TF24_w1_0" intLanes=":EntradaSalida-TF24_0_0 :EntradaSalida-TF24_4_0 :EntradaSalida-TF24_2_0 :EntradaSalida-TF24_2_1 :EntradaSalida-TF24_c0_0" shape="1033.75,1507.36 1028.05,1499.88 1024.97,1501.30 1021.57,1501.10 1017.86,1499.26 1013.84,1495.81 1009.50,1490.73 1004.84,1484.02 994.40,1490.70 999.00,1498.63 1002.34,1506.07 1004.42,1513.01 1005.23,1519.46 1004.79,1525.42 1003.08,1530.88 1011.66,1534.72 1014.82,1527.86 1017.48,1522.87 1020.16,1519.02 1023.41,1515.63 1027.76,1511.97">
         <request index="0" response="10100" foes="10100" cont="0"/>
         <request index="1" response="10000" foes="10000" cont="1"/>
         <request index="2" response="00000" foes="00001" cont="0"/>
         <request index="3" response="00000" foes="00000" cont="0"/>
         <request index="4" response="00000" foes="00011" cont="0"/>
     </junction>
-    <junction id="Salida-AngelGuimera" type="traffic_light" x="1091.49" y="1543.07" incLanes="-159229344#0_0 359349713#0_0 215803157_0 215803157_1 215803157_2 :Salida-AngelGuimera_w0_0" intLanes=":Salida-AngelGuimera_0_0 :Salida-AngelGuimera_1_0 :Salida-AngelGuimera_1_1 :Salida-AngelGuimera_c0_0" shape="1111.00,1542.96 1109.63,1533.86 1106.00,1534.25 1103.02,1534.24 1100.68,1533.82 1099.00,1532.99 1097.97,1531.75 1097.59,1530.10 1088.19,1530.40 1087.05,1534.80 1085.47,1539.26 1084.03,1542.71 1082.88,1545.30 1081.72,1547.61 1089.74,1552.49 1091.51,1550.29 1093.99,1548.34 1097.18,1546.62 1101.08,1545.16 1105.68,1543.93" customShape="1">
+    <junction id="Salida-AngelGuimera" type="priority" x="1091.49" y="1543.07" incLanes="-159229344#0_0 359349713#0_0 215803157_0 215803157_1 215803157_2 :Salida-AngelGuimera_w0_0" intLanes=":Salida-AngelGuimera_0_0 :Salida-AngelGuimera_1_0 :Salida-AngelGuimera_1_1 :Salida-AngelGuimera_c0_0" shape="1111.00,1542.96 1109.63,1533.86 1106.00,1534.25 1103.02,1534.24 1100.68,1533.82 1099.00,1532.99 1097.97,1531.75 1097.59,1530.10 1088.19,1530.40 1087.05,1534.80 1085.47,1539.26 1084.03,1542.71 1082.88,1545.30 1081.72,1547.61 1089.74,1552.49 1091.51,1550.29 1093.99,1548.34 1097.18,1546.62 1101.08,1545.16 1105.68,1543.93" customShape="1">
         <request index="0" response="1000" foes="1000" cont="0"/>
         <request index="1" response="1000" foes="1000" cont="0"/>
         <request index="2" response="1000" foes="1000" cont="0"/>
@@ -1700,19 +1633,19 @@
         <request index="1" response="000" foes="000" cont="0"/>
         <request index="2" response="000" foes="000" cont="0"/>
     </junction>
-    <junction id="Salida-TF5Norte" type="traffic_light" x="1037.16" y="1591.18" incLanes="154607611_0 154607611_1 154607611_2 :Salida-TF5Norte_w1_0" intLanes=":Salida-TF5Norte_0_0 :Salida-TF5Norte_1_0 :Salida-TF5Norte_1_1 :Salida-TF5Norte_c0_0" shape="1037.74,1597.35 1036.86,1587.99 1033.68,1588.18 1032.55,1588.10 1031.44,1587.91 1030.11,1587.58 1028.33,1587.12 1028.39,1596.84 1028.86,1598.35 1031.28,1600.44">
+    <junction id="Salida-TF5Norte" type="priority" x="1037.16" y="1591.18" incLanes="154607611_0 154607611_1 154607611_2 :Salida-TF5Norte_w1_0" intLanes=":Salida-TF5Norte_0_0 :Salida-TF5Norte_1_0 :Salida-TF5Norte_1_1 :Salida-TF5Norte_c0_0" shape="1037.74,1597.35 1036.86,1587.99 1033.68,1588.18 1032.55,1588.10 1031.44,1587.91 1030.11,1587.58 1028.33,1587.12 1028.39,1596.84 1028.86,1598.35 1031.28,1600.44">
         <request index="0" response="1000" foes="1000" cont="0"/>
         <request index="1" response="1000" foes="1000" cont="0"/>
         <request index="2" response="1000" foes="1000" cont="0"/>
         <request index="3" response="0000" foes="0111" cont="0"/>
     </junction>
-    <junction id="Salida-TF5Sur" type="traffic_light" x="1063.62" y="1490.17" incLanes="218745680_0 218745680_1 :Salida-TF5Sur_w0_0" intLanes=":Salida-TF5Sur_0_0 :Salida-TF5Sur_1_0 :Salida-TF5Sur_1_1 :Salida-TF5Sur_c0_0" shape="1066.57,1498.98 1068.90,1489.88 1068.30,1489.48 1068.27,1489.16 1068.43,1488.77 1068.78,1488.31 1069.31,1487.76 1065.07,1483.24 1063.61,1484.81 1062.57,1486.18 1061.70,1487.33 1060.72,1488.22 1059.36,1488.83 1057.35,1489.13 1057.69,1495.52 1061.08,1496.04 1062.19,1496.72 1063.28,1497.51 1064.64,1498.30">
+    <junction id="Salida-TF5Sur" type="priority" x="1063.62" y="1490.17" incLanes="218745680_0 218745680_1 :Salida-TF5Sur_w0_0" intLanes=":Salida-TF5Sur_0_0 :Salida-TF5Sur_1_0 :Salida-TF5Sur_1_1 :Salida-TF5Sur_c0_0" shape="1066.57,1498.98 1068.90,1489.88 1068.30,1489.48 1068.27,1489.16 1068.43,1488.77 1068.78,1488.31 1069.31,1487.76 1065.07,1483.24 1063.61,1484.81 1062.57,1486.18 1061.70,1487.33 1060.72,1488.22 1059.36,1488.83 1057.35,1489.13 1057.69,1495.52 1061.08,1496.04 1062.19,1496.72 1063.28,1497.51 1064.64,1498.30">
         <request index="0" response="1000" foes="1000" cont="0"/>
         <request index="1" response="1000" foes="1000" cont="0"/>
         <request index="2" response="1000" foes="1000" cont="0"/>
         <request index="3" response="0000" foes="0111" cont="0"/>
     </junction>
-    <junction id="Salida-Trinidad" type="traffic_light" x="1077.45" y="1578.90" incLanes="216243708#1_0 216243708#1_1 216243708#1_2 775381932_0 :Salida-Trinidad_w0_0" intLanes=":Salida-Trinidad_3_0 :Salida-Trinidad_1_0 :Salida-Trinidad_1_1 :Salida-Trinidad_c0_0" shape="1077.17,1597.77 1085.95,1594.40 1083.50,1587.52 1081.75,1581.47 1080.72,1576.23 1080.40,1571.80 1080.79,1568.19 1081.88,1565.40 1073.86,1560.51 1073.27,1561.46 1072.54,1562.47 1065.09,1570.59 1070.45,1579.39 1074.46,1595.14 1075.26,1596.98 1076.08,1596.80" customShape="1">
+    <junction id="Salida-Trinidad" type="priority" x="1077.45" y="1578.90" incLanes="216243708#1_0 216243708#1_1 216243708#1_2 775381932_0 :Salida-Trinidad_w0_0" intLanes=":Salida-Trinidad_3_0 :Salida-Trinidad_1_0 :Salida-Trinidad_1_1 :Salida-Trinidad_c0_0" shape="1077.17,1597.77 1085.95,1594.40 1083.50,1587.52 1081.75,1581.47 1080.72,1576.23 1080.40,1571.80 1080.79,1568.19 1081.88,1565.40 1073.86,1560.51 1073.27,1561.46 1072.54,1562.47 1065.09,1570.59 1070.45,1579.39 1074.46,1595.14 1075.26,1596.98 1076.08,1596.80" customShape="1">
         <request index="0" response="1000" foes="1000" cont="1"/>
         <request index="1" response="0000" foes="0000" cont="0"/>
         <request index="2" response="0000" foes="0000" cont="0"/>
@@ -1799,8 +1732,6 @@
         <request index="5" response="000000" foes="000000" cont="0"/>
     </junction>
 
-    <junction id=":Entrada-TF5Sur_4_0" type="internal" x="999.93" y="1573.68" incLanes=":Entrada-TF5Sur_2_0" intLanes=":Entrada-TF5Sur_0_0 :Entrada-TF5Sur_0_1 :Entrada-TF5Sur_c0_0"/>
-    <junction id=":Entrada-TF5Sur_5_0" type="internal" x="1001.63" y="1576.78" incLanes=":Entrada-TF5Sur_3_0" intLanes=":Entrada-TF5Sur_0_0 :Entrada-TF5Sur_0_1 :Entrada-TF5Sur_c0_0"/>
     <junction id=":EntradaSalida-Geneto_4_0" type="internal" x="1038.07" y="1466.29" incLanes=":EntradaSalida-Geneto_1_0" intLanes=":EntradaSalida-Geneto_c0_0"/>
     <junction id=":EntradaSalida-TF24_4_0" type="internal" x="1000.19" y="1491.74" incLanes=":EntradaSalida-TF24_1_0" intLanes=":EntradaSalida-TF24_c0_0"/>
     <junction id=":Salida-Trinidad_3_0" type="internal" x="1080.38" y="1592.25" incLanes=":Salida-Trinidad_0_0" intLanes=":Salida-Trinidad_c0_0"/>
@@ -1811,7 +1742,7 @@
     <connection from="-142470423#0" to="142470423#0" fromLane="1" toLane="1" via=":cluster_1431457871_2256210892_1_0" dir="t" state="m"/>
     <connection from="-142470423#1" to="-142470423#0" fromLane="1" toLane="1" via=":cluster_2084331665_2084331667_4583119145_0_0" dir="s" state="M"/>
     <connection from="-142470423#2" to="-142470423#1" fromLane="1" toLane="1" via=":cluster_2084331660_2084331663_4583119143_0_0" dir="s" state="M"/>
-    <connection from="-142470433#1" to="218745680" fromLane="1" toLane="0" via=":EntradaSalida-Geneto_0_0" tl="EntradaSalida-Geneto" linkIndex="0" dir="r" state="o"/>
+    <connection from="-142470433#1" to="218745680" fromLane="1" toLane="0" via=":EntradaSalida-Geneto_0_0" dir="r" state="m"/>
     <connection from="-142470433#2" to="142470460#0" fromLane="1" toLane="1" via=":1559166755_0_0" dir="R" state="M"/>
     <connection from="-142470433#2" to="-142470433#1" fromLane="1" toLane="1" via=":1559166755_1_0" dir="s" state="M"/>
     <connection from="-142470433#3" to="-142470433#2" fromLane="1" toLane="1" via=":1065961820_1_0" dir="s" state="M"/>
@@ -1851,26 +1782,26 @@
     <connection from="101005127.945" to="217912067" fromLane="0" toLane="1" via=":1163001906_1_0" dir="s" state="M"/>
     <connection from="101005127.945" to="217912067" fromLane="1" toLane="2" via=":1163001906_1_1" dir="s" state="M"/>
     <connection from="101005127.945" to="217912067" fromLane="2" toLane="3" via=":1163001906_1_2" dir="s" state="M"/>
-    <connection from="109573928#1" to="550301038" fromLane="1" toLane="1" via=":EntradaSalida-TF24_0_0" tl="EntradaSalida-TF24" linkIndex="0" dir="r" state="o"/>
+    <connection from="109573928#1" to="550301038" fromLane="1" toLane="1" via=":EntradaSalida-TF24_0_0" dir="r" state="m"/>
     <connection from="142470423#0" to="142470423#1" fromLane="1" toLane="1" via=":cluster_2084331665_2084331667_4583119145_1_0" dir="s" state="M"/>
     <connection from="142470423#1" to="142470423#2" fromLane="1" toLane="1" via=":cluster_2084331660_2084331663_4583119143_1_0" dir="s" state="M"/>
     <connection from="142470433#1" to="142470433#2" fromLane="1" toLane="1" via=":1559166755_2_0" dir="s" state="M"/>
     <connection from="142470433#2" to="142470433#3" fromLane="1" toLane="1" via=":1065961820_0_0" dir="s" state="M"/>
     <connection from="142470433#3" to="142470433#4" fromLane="1" toLane="1" via=":280826429_0_0" dir="s" state="M"/>
-    <connection from="142470445" to="218891289" fromLane="1" toLane="1" via=":Entrada-Astrofisico_1_0" tl="Entrada-Astrofisico" linkIndex="1" dir="s" state="O"/>
-    <connection from="142470445" to="218891289" fromLane="2" toLane="2" via=":Entrada-Astrofisico_1_1" tl="Entrada-Astrofisico" linkIndex="2" dir="s" state="O"/>
+    <connection from="142470445" to="218891289" fromLane="1" toLane="1" via=":Entrada-Astrofisico_1_0" dir="s" state="M"/>
+    <connection from="142470445" to="218891289" fromLane="2" toLane="2" via=":Entrada-Astrofisico_1_1" dir="s" state="M"/>
     <connection from="142470460#0" to="142470460#1" fromLane="1" toLane="1" via=":1559166778_0_0" dir="s" state="M"/>
     <connection from="142470460#0" to="142470467" fromLane="1" toLane="0" via=":1559166778_1_0" dir="l" state="M"/>
     <connection from="142470460#1" to="449288818#0" fromLane="1" toLane="0" via=":1559166771_0_0" dir="s" state="M"/>
     <connection from="142470461" to="-217365458#2" fromLane="1" toLane="1" via=":gneJ30_1_0" dir="s" state="M"/>
-    <connection from="142470465" to="218891289" fromLane="1" toLane="1" via=":Entrada-Astrofisico_0_0" tl="Entrada-Astrofisico" linkIndex="0" dir="s" state="o"/>
-    <connection from="154607611" to="28306819#0" fromLane="1" toLane="0" via=":Salida-TF5Norte_0_0" tl="Salida-TF5Norte" linkIndex="0" dir="R" state="o"/>
-    <connection from="154607611" to="154607613#0" fromLane="1" toLane="1" via=":Salida-TF5Norte_1_0" tl="Salida-TF5Norte" linkIndex="1" dir="s" state="o"/>
-    <connection from="154607611" to="154607613#0" fromLane="2" toLane="2" via=":Salida-TF5Norte_1_1" tl="Salida-TF5Norte" linkIndex="2" dir="s" state="o"/>
+    <connection from="142470465" to="218891289" fromLane="1" toLane="1" via=":Entrada-Astrofisico_0_0" dir="s" state="m"/>
+    <connection from="154607611" to="28306819#0" fromLane="1" toLane="0" via=":Salida-TF5Norte_0_0" dir="R" state="m"/>
+    <connection from="154607611" to="154607613#0" fromLane="1" toLane="1" via=":Salida-TF5Norte_1_0" dir="s" state="m"/>
+    <connection from="154607611" to="154607613#0" fromLane="2" toLane="2" via=":Salida-TF5Norte_1_1" dir="s" state="m"/>
     <connection from="154607613#0" to="154607613#1" fromLane="1" toLane="1" via=":3661942326_0_0" dir="s" state="M"/>
     <connection from="154607613#0" to="154607613#1" fromLane="2" toLane="2" via=":3661942326_0_1" dir="s" state="M"/>
-    <connection from="154607613#1" to="216268744" fromLane="1" toLane="1" via=":Entrada-TF5Sur_0_0" tl="Entrada-TF5Sur" linkIndex="0" dir="s" state="o"/>
-    <connection from="154607613#1" to="216268744" fromLane="2" toLane="2" via=":Entrada-TF5Sur_0_1" tl="Entrada-TF5Sur" linkIndex="1" dir="s" state="o"/>
+    <connection from="154607613#1" to="216268744" fromLane="1" toLane="1" via=":Entrada-TF5Sur_0_0" dir="s" state="m"/>
+    <connection from="154607613#1" to="216268744" fromLane="2" toLane="2" via=":Entrada-TF5Sur_0_1" dir="s" state="m"/>
     <connection from="159229344#0" to="159229344#0.2" fromLane="0" toLane="0" via=":gneJ55_1_0" dir="s" state="M"/>
     <connection from="159229344#0" to="159229344#0.2" fromLane="1" toLane="1" via=":gneJ55_1_1" dir="s" state="M"/>
     <connection from="159229344#0.2" to="216268747" fromLane="1" toLane="0" via=":cluster_1431457871_2256210892_4_0" dir="r" state="M"/>
@@ -1888,11 +1819,11 @@
     <connection from="200890620#1" to="28306819#2" fromLane="0" toLane="0" via=":2108521553_1_0" dir="s" state="M"/>
     <connection from="202557406" to="215803174#0" fromLane="0" toLane="1" via=":1713236912_0_0" dir="s" state="m"/>
     <connection from="215077545" to="62073539" fromLane="0" toLane="0" via=":773677882_2_0" dir="s" state="M"/>
-    <connection from="215803157" to="159229344#0" fromLane="1" toLane="1" via=":Salida-AngelGuimera_0_0" tl="Salida-AngelGuimera" linkIndex="0" dir="r" state="o"/>
-    <connection from="215803157" to="216243708#1" fromLane="1" toLane="1" via=":Salida-AngelGuimera_1_0" tl="Salida-AngelGuimera" linkIndex="1" dir="s" state="o"/>
-    <connection from="215803157" to="216243708#1" fromLane="2" toLane="2" via=":Salida-AngelGuimera_1_1" tl="Salida-AngelGuimera" linkIndex="2" dir="s" state="o"/>
-    <connection from="215803174#0" to="215803157" fromLane="1" toLane="1" via=":Entrada-TF5Norte_0_0" tl="Entrada-TF5Norte" linkIndex="0" dir="s" state="o"/>
-    <connection from="215803174#0" to="215803157" fromLane="2" toLane="2" via=":Entrada-TF5Norte_0_1" tl="Entrada-TF5Norte" linkIndex="1" dir="s" state="o"/>
+    <connection from="215803157" to="159229344#0" fromLane="1" toLane="1" via=":Salida-AngelGuimera_0_0" dir="r" state="m"/>
+    <connection from="215803157" to="216243708#1" fromLane="1" toLane="1" via=":Salida-AngelGuimera_1_0" dir="s" state="m"/>
+    <connection from="215803157" to="216243708#1" fromLane="2" toLane="2" via=":Salida-AngelGuimera_1_1" dir="s" state="m"/>
+    <connection from="215803174#0" to="215803157" fromLane="1" toLane="1" via=":Entrada-TF5Norte_0_0" dir="s" state="m"/>
+    <connection from="215803174#0" to="215803157" fromLane="2" toLane="2" via=":Entrada-TF5Norte_0_1" dir="s" state="m"/>
     <connection from="215803177" to="217912067" fromLane="0" toLane="0" via=":1163001906_0_0" dir="s" state="M"/>
     <connection from="215803178" to="159229344#0.2" fromLane="0" toLane="1" via=":gneJ55_0_0" dir="r" state="m"/>
     <connection from="216243700" to="216243700.351" fromLane="0" toLane="0" via=":gneJ57_0_0" dir="s" state="M"/>
@@ -1911,9 +1842,9 @@
     <connection from="216243701-AddedOffRampEdge" to="216243700" fromLane="2" toLane="0" via=":1163001937_2_0" dir="s" state="M"/>
     <connection from="216243701-AddedOffRampEdge" to="216243700" fromLane="3" toLane="1" via=":1163001937_2_1" dir="s" state="M"/>
     <connection from="216243701-AddedOffRampEdge" to="216243700" fromLane="4" toLane="2" via=":1163001937_2_2" dir="s" state="M"/>
-    <connection from="216243708#1" to="28490061#1" fromLane="1" toLane="1" via=":Salida-Trinidad_0_0" tl="Salida-Trinidad" linkIndex="0" dir="r" state="o"/>
-    <connection from="216243708#1" to="220346965" fromLane="1" toLane="1" via=":Salida-Trinidad_1_0" tl="Salida-Trinidad" linkIndex="1" dir="s" state="O"/>
-    <connection from="216243708#1" to="220346965" fromLane="2" toLane="2" via=":Salida-Trinidad_1_1" tl="Salida-Trinidad" linkIndex="2" dir="s" state="O"/>
+    <connection from="216243708#1" to="28490061#1" fromLane="1" toLane="1" via=":Salida-Trinidad_0_0" dir="r" state="m"/>
+    <connection from="216243708#1" to="220346965" fromLane="1" toLane="1" via=":Salida-Trinidad_1_0" dir="s" state="M"/>
+    <connection from="216243708#1" to="220346965" fromLane="2" toLane="2" via=":Salida-Trinidad_1_1" dir="s" state="M"/>
     <connection from="216243711" to="198274982" fromLane="0" toLane="0" via=":1868821339_1_0" dir="s" state="="/>
     <connection from="216268744" to="142470461" fromLane="1" toLane="1" via=":Salida-Astrofisico_0_0" dir="s" state="M"/>
     <connection from="216268744" to="142470445" fromLane="1" toLane="1" via=":Salida-Astrofisico_1_0" dir="s" state="M"/>
@@ -1948,8 +1879,8 @@
     <connection from="217365460#1" to="97855879" fromLane="1" toLane="0" via=":1132622212_0_0" dir="r" state="M"/>
     <connection from="217365460#1" to="217365460#2" fromLane="1" toLane="1" via=":1132622212_1_0" dir="s" state="M"/>
     <connection from="217365460#1" to="217365460#2" fromLane="2" toLane="2" via=":1132622212_1_1" dir="s" state="M"/>
-    <connection from="217365460#2" to="154607611" fromLane="1" toLane="1" via=":Entrada-Trinidad_0_0" tl="Entrada-Trinidad" linkIndex="0" dir="r" state="o"/>
-    <connection from="217365460#2" to="154607611" fromLane="2" toLane="2" via=":Entrada-Trinidad_1_0" tl="Entrada-Trinidad" linkIndex="1" dir="r" state="o"/>
+    <connection from="217365460#2" to="154607611" fromLane="1" toLane="1" via=":Entrada-Trinidad_0_0" dir="r" state="m"/>
+    <connection from="217365460#2" to="154607611" fromLane="2" toLane="2" via=":Entrada-Trinidad_1_0" dir="r" state="m"/>
     <connection from="217691379" to="216657562" fromLane="0" toLane="0" via=":1658380508_0_0" dir="s" state="M"/>
     <connection from="217691379" to="216657562" fromLane="1" toLane="1" via=":1658380508_0_1" dir="s" state="M"/>
     <connection from="217691379" to="216657562" fromLane="2" toLane="2" via=":1658380508_0_2" dir="s" state="M"/>
@@ -1958,19 +1889,19 @@
     <connection from="217691379-AddedOnRampEdge" to="217691379" fromLane="3" toLane="2" via=":217691379-AddedOnRampNode_0_2" dir="s" state="M"/>
     <connection from="217691393#0" to="217691393#1" fromLane="1" toLane="1" via=":3661938913_0_0" dir="s" state="M"/>
     <connection from="217691393#0" to="217691393#1" fromLane="2" toLane="2" via=":3661938913_0_1" dir="s" state="M"/>
-    <connection from="217691393#1" to="215803157" fromLane="1" toLane="1" via=":Entrada-TF5Norte_2_0" tl="Entrada-TF5Norte" linkIndex="2" dir="s" state="o"/>
-    <connection from="217691393#1" to="215803157" fromLane="2" toLane="2" via=":Entrada-TF5Norte_2_1" tl="Entrada-TF5Norte" linkIndex="3" dir="s" state="o"/>
+    <connection from="217691393#1" to="215803157" fromLane="1" toLane="1" via=":Entrada-TF5Norte_2_0" dir="s" state="m"/>
+    <connection from="217691393#1" to="215803157" fromLane="2" toLane="2" via=":Entrada-TF5Norte_2_1" dir="s" state="m"/>
     <connection from="217912067" to="215803108" fromLane="1" toLane="0" via=":1864356535_0_0" dir="s" state="M"/>
     <connection from="217912067" to="215803108" fromLane="2" toLane="1" via=":1864356535_0_1" dir="s" state="M"/>
     <connection from="217912067" to="215803108" fromLane="3" toLane="2" via=":1864356535_0_2" dir="s" state="M"/>
-    <connection from="218745680" to="91731873#1" fromLane="0" toLane="1" via=":Salida-TF5Sur_0_0" tl="Salida-TF5Sur" linkIndex="0" dir="R" state="o"/>
-    <connection from="218745680" to="217691393#0" fromLane="0" toLane="1" via=":Salida-TF5Sur_1_0" tl="Salida-TF5Sur" linkIndex="1" dir="s" state="o"/>
-    <connection from="218745680" to="217691393#0" fromLane="1" toLane="2" via=":Salida-TF5Sur_1_1" tl="Salida-TF5Sur" linkIndex="2" dir="s" state="o"/>
-    <connection from="218891289" to="-109573928#1.8" fromLane="1" toLane="1" via=":EntradaSalida-TF24_1_0" tl="EntradaSalida-TF24" linkIndex="1" dir="r" state="o"/>
-    <connection from="218891289" to="550301038" fromLane="1" toLane="1" via=":EntradaSalida-TF24_2_0" tl="EntradaSalida-TF24" linkIndex="2" dir="s" state="O"/>
-    <connection from="218891289" to="550301038" fromLane="2" toLane="2" via=":EntradaSalida-TF24_2_1" tl="EntradaSalida-TF24" linkIndex="3" dir="s" state="O"/>
-    <connection from="220346965" to="154607611" fromLane="1" toLane="1" via=":Entrada-Trinidad_2_0" tl="Entrada-Trinidad" linkIndex="3" dir="s" state="O"/>
-    <connection from="220346965" to="154607611" fromLane="2" toLane="2" via=":Entrada-Trinidad_2_1" tl="Entrada-Trinidad" linkIndex="4" dir="s" state="O"/>
+    <connection from="218745680" to="91731873#1" fromLane="0" toLane="1" via=":Salida-TF5Sur_0_0" dir="R" state="m"/>
+    <connection from="218745680" to="217691393#0" fromLane="0" toLane="1" via=":Salida-TF5Sur_1_0" dir="s" state="m"/>
+    <connection from="218745680" to="217691393#0" fromLane="1" toLane="2" via=":Salida-TF5Sur_1_1" dir="s" state="m"/>
+    <connection from="218891289" to="-109573928#1.8" fromLane="1" toLane="1" via=":EntradaSalida-TF24_1_0" dir="r" state="m"/>
+    <connection from="218891289" to="550301038" fromLane="1" toLane="1" via=":EntradaSalida-TF24_2_0" dir="s" state="M"/>
+    <connection from="218891289" to="550301038" fromLane="2" toLane="2" via=":EntradaSalida-TF24_2_1" dir="s" state="M"/>
+    <connection from="220346965" to="154607611" fromLane="1" toLane="1" via=":Entrada-Trinidad_2_0" dir="s" state="M"/>
+    <connection from="220346965" to="154607611" fromLane="2" toLane="2" via=":Entrada-Trinidad_2_1" dir="s" state="M"/>
     <connection from="25567763#0" to="200890620#0" fromLane="1" toLane="0" via=":278691267_0_0" dir="s" state="M"/>
     <connection from="27528360" to="362088243#1" fromLane="1" toLane="1" via=":gneJ22_0_0" dir="s" state="M"/>
     <connection from="28306817" to="215803174#0" fromLane="0" toLane="1" via=":1713236912_1_0" dir="s" state="M"/>
@@ -1985,8 +1916,8 @@
     <connection from="358043015#3" to="217365458#1" fromLane="1" toLane="1" via=":1559166874_1_0" dir="s" state="M"/>
     <connection from="359358942#0" to="359358942#1" fromLane="0" toLane="0" via=":7233869665_0_0" dir="s" state="M"/>
     <connection from="359358942#0" to="359358942#1" fromLane="1" toLane="1" via=":7233869665_0_1" dir="s" state="M"/>
-    <connection from="359358942#1" to="216268744" fromLane="0" toLane="1" via=":Entrada-TF5Sur_2_0" tl="Entrada-TF5Sur" linkIndex="2" dir="r" state="o"/>
-    <connection from="359358942#1" to="216268744" fromLane="1" toLane="2" via=":Entrada-TF5Sur_3_0" tl="Entrada-TF5Sur" linkIndex="3" dir="r" state="o"/>
+    <connection from="359358942#1" to="216268744" fromLane="0" toLane="1" via=":Entrada-TF5Sur_2_0" dir="r" state="m"/>
+    <connection from="359358942#1" to="216268744" fromLane="1" toLane="2" via=":Entrada-TF5Sur_3_0" dir="r" state="m"/>
     <connection from="362088243#1" to="-217365458#2" fromLane="1" toLane="1" via=":gneJ30_0_0" dir="r" state="m"/>
     <connection from="449288818#0" to="449288818#1" fromLane="0" toLane="0" via=":1165301917_0_0" dir="s" state="M"/>
     <connection from="449288818#0" to="449288818#1" fromLane="1" toLane="1" via=":1165301917_0_1" dir="s" state="M"/>
@@ -1995,9 +1926,9 @@
     <connection from="449289363" to="62073503" fromLane="1" toLane="0" via=":773677601_0_0" dir="s" state="M"/>
     <connection from="449289872" to="759746395" fromLane="0" toLane="1" via=":1165301824_1_0" dir="s" state="M"/>
     <connection from="549548862#1" to="462991363#1" fromLane="1" toLane="1" via=":cluster_2084331665_2084331667_4583119145_2_0" dir="s" state="M"/>
-    <connection from="550301038" to="142470433#1" fromLane="1" toLane="1" via=":EntradaSalida-Geneto_1_0" tl="EntradaSalida-Geneto" linkIndex="1" dir="R" state="o"/>
-    <connection from="550301038" to="218745680" fromLane="1" toLane="0" via=":EntradaSalida-Geneto_2_0" tl="EntradaSalida-Geneto" linkIndex="2" dir="s" state="O"/>
-    <connection from="550301038" to="218745680" fromLane="2" toLane="1" via=":EntradaSalida-Geneto_2_1" tl="EntradaSalida-Geneto" linkIndex="3" dir="s" state="O"/>
+    <connection from="550301038" to="142470433#1" fromLane="1" toLane="1" via=":EntradaSalida-Geneto_1_0" dir="R" state="m"/>
+    <connection from="550301038" to="218745680" fromLane="1" toLane="0" via=":EntradaSalida-Geneto_2_0" dir="s" state="M"/>
+    <connection from="550301038" to="218745680" fromLane="2" toLane="1" via=":EntradaSalida-Geneto_2_1" dir="s" state="M"/>
     <connection from="62073441" to="-62073486" fromLane="0" toLane="0" via=":773677882_0_0" dir="s" state="M"/>
     <connection from="62073441" to="62073539" fromLane="0" toLane="0" via=":773677882_1_0" dir="l" state="m"/>
     <connection from="62073503" to="775363912" fromLane="0" toLane="0" via=":5637967616_0_0" dir="s" state="M"/>
@@ -2139,10 +2070,8 @@
     <connection from=":Entrada-TF5Norte_2" to="215803157" fromLane="1" toLane="2" dir="s" state="M"/>
     <connection from=":Entrada-TF5Sur_0" to="216268744" fromLane="0" toLane="1" dir="s" state="M"/>
     <connection from=":Entrada-TF5Sur_0" to="216268744" fromLane="1" toLane="2" dir="s" state="M"/>
-    <connection from=":Entrada-TF5Sur_2" to="216268744" fromLane="0" toLane="1" via=":Entrada-TF5Sur_4_0" dir="r" state="m"/>
-    <connection from=":Entrada-TF5Sur_4" to="216268744" fromLane="0" toLane="1" dir="r" state="M"/>
-    <connection from=":Entrada-TF5Sur_3" to="216268744" fromLane="0" toLane="2" via=":Entrada-TF5Sur_5_0" dir="r" state="m"/>
-    <connection from=":Entrada-TF5Sur_5" to="216268744" fromLane="0" toLane="2" dir="r" state="M"/>
+    <connection from=":Entrada-TF5Sur_2" to="216268744" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":Entrada-TF5Sur_3" to="216268744" fromLane="0" toLane="2" dir="r" state="M"/>
     <connection from=":Entrada-Trinidad_0" to="154607611" fromLane="0" toLane="1" dir="r" state="M"/>
     <connection from=":Entrada-Trinidad_1" to="154607611" fromLane="0" toLane="2" dir="r" state="M"/>
     <connection from=":Entrada-Trinidad_2" to="154607611" fromLane="0" toLane="1" dir="s" state="M"/>
@@ -2276,33 +2205,33 @@
     <connection from=":Entrada-Astrofisico_w0" to="218891289" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="142470465" to=":Entrada-Astrofisico_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Entrada-TF5Norte_c0" to=":Entrada-TF5Norte_w1" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Entrada-TF5Norte_w0" to=":Entrada-TF5Norte_c0" fromLane="0" toLane="0" tl="Entrada-TF5Norte" linkIndex="4" dir="s" state="M"/>
+    <connection from=":Entrada-TF5Norte_w0" to=":Entrada-TF5Norte_c0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Entrada-TF5Norte_w0" to="215803157" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="215803174#0" to=":Entrada-TF5Norte_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="217691393#1" to=":Entrada-TF5Norte_w1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Entrada-TF5Sur_c0" to=":Entrada-TF5Sur_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="154607613#1" to=":Entrada-TF5Sur_w0" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Entrada-TF5Sur_w1" to=":Entrada-TF5Sur_c0" fromLane="0" toLane="0" tl="Entrada-TF5Sur" linkIndex="4" dir="s" state="M"/>
+    <connection from=":Entrada-TF5Sur_w1" to=":Entrada-TF5Sur_c0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Entrada-TF5Sur_w1" to="216268744" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Entrada-Trinidad_c0" to=":Entrada-Trinidad_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Entrada-Trinidad_w0" to="154607611" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="217365460#2" to=":Entrada-Trinidad_w0" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Entrada-Trinidad_w1" to=":Entrada-Trinidad_c0" fromLane="0" toLane="0" tl="Entrada-Trinidad" linkIndex="5" dir="s" state="M"/>
+    <connection from=":Entrada-Trinidad_w1" to=":Entrada-Trinidad_c0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Entrada-Trinidad_w1" to="775381932" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="220346965" to=":Entrada-Trinidad_w1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":EntradaSalida-Geneto_c0" to=":EntradaSalida-Geneto_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="-142470433#1" to=":EntradaSalida-Geneto_w0" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":EntradaSalida-Geneto_w1" to=":EntradaSalida-Geneto_c0" fromLane="0" toLane="0" tl="EntradaSalida-Geneto" linkIndex="4" dir="s" state="M"/>
+    <connection from=":EntradaSalida-Geneto_w1" to=":EntradaSalida-Geneto_c0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":EntradaSalida-Geneto_w1" to="142470433#1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="550301038" to=":EntradaSalida-Geneto_w1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":EntradaSalida-TF24_c0" to=":EntradaSalida-TF24_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":EntradaSalida-TF24_w0" to="550301038" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="109573928#1" to=":EntradaSalida-TF24_w0" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":EntradaSalida-TF24_w1" to=":EntradaSalida-TF24_c0" fromLane="0" toLane="0" tl="EntradaSalida-TF24" linkIndex="4" dir="s" state="M"/>
+    <connection from=":EntradaSalida-TF24_w1" to=":EntradaSalida-TF24_c0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":EntradaSalida-TF24_w1" to="-109573928#1.8" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="218891289" to=":EntradaSalida-TF24_w1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-AngelGuimera_c0" to=":Salida-AngelGuimera_w1" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Salida-AngelGuimera_w0" to=":Salida-AngelGuimera_c0" fromLane="0" toLane="0" tl="Salida-AngelGuimera" linkIndex="3" dir="s" state="M"/>
+    <connection from=":Salida-AngelGuimera_w0" to=":Salida-AngelGuimera_c0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-AngelGuimera_w0" to="216243708#1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="-159229344#0" to=":Salida-AngelGuimera_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-AngelGuimera_w1" to="159229344#0" fromLane="0" toLane="0" dir="s" state="M"/>
@@ -2312,14 +2241,14 @@
     <connection from="216268744" to=":Salida-Astrofisico_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-TF5Norte_c0" to=":Salida-TF5Norte_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="154607611" to=":Salida-TF5Norte_w0" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Salida-TF5Norte_w1" to=":Salida-TF5Norte_c0" fromLane="0" toLane="0" tl="Salida-TF5Norte" linkIndex="3" dir="s" state="M"/>
+    <connection from=":Salida-TF5Norte_w1" to=":Salida-TF5Norte_c0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-TF5Norte_w1" to="154607613#0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-TF5Sur_c0" to=":Salida-TF5Sur_w1" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Salida-TF5Sur_w0" to=":Salida-TF5Sur_c0" fromLane="0" toLane="0" tl="Salida-TF5Sur" linkIndex="3" dir="s" state="M"/>
+    <connection from=":Salida-TF5Sur_w0" to=":Salida-TF5Sur_c0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-TF5Sur_w0" to="217691393#0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-TF5Sur_w1" to="91731873#1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-Trinidad_c0" to=":Salida-Trinidad_w1" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":Salida-Trinidad_w0" to=":Salida-Trinidad_c0" fromLane="0" toLane="0" tl="Salida-Trinidad" linkIndex="4" dir="s" state="M"/>
+    <connection from=":Salida-Trinidad_w0" to=":Salida-Trinidad_c0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-Trinidad_w0" to="28490061#1" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from="216243708#1" to=":Salida-Trinidad_w0" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":Salida-Trinidad_w1" to="220346965" fromLane="0" toLane="0" dir="s" state="M"/>
