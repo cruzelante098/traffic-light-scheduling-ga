@@ -28,6 +28,7 @@ import { parseTlLogic, writeTlLogic } from "./xml-io";
 import { executeSumo, SumoAggregatedData } from "./executor";
 import { genotypeToTlLogic, setOriginalTl } from "./converter";
 
+
 /**
  * Program arguments and flags.
  */
@@ -80,12 +81,12 @@ const originalTl: ReadonlyArray<TLLogic> = parseTlLogic(netFilepath);
 setOriginalTl(originalTl);
 
 // TODO: This should be program arguments
-const maxGenerations = 12;
-const populationSize = 10;
+const maxGenerations = 45;
+const populationSize = 12;
 
 // TODO: this value should be 1 / (amount of phases and offsets), though more investigation is needed.
 // maybe consider it as an argument?
-const mutationRate = 1;
+const mutationRate = 0.1;
 
 const yellowPhaseDuration = 4;
 
@@ -112,9 +113,10 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
         "--no-step-log",                        // don't log step info
         "--end 3600",                           // simulation end time
         "--time-to-teleport -1",                // disable teleports
-        "--seed 23432",                         // define seed
+        // "--seed 23432",                         // define seed
         "--duration-log.statistics",            // log aggregated information about trips
         "--tripinfo-output.write-unfinished",   // include info about vehicles that don't reach their destination
+        "--collision.mingap-factor 0"
       ],
       files: {
         network: networkFilename,

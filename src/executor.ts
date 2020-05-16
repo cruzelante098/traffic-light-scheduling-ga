@@ -1,4 +1,5 @@
-import cp from "child_process";
+import cp, { SpawnSyncReturns } from "child_process";
+import fs from "fs";
 
 /*
   SUMO options:
@@ -8,6 +9,7 @@ import cp from "child_process";
  */
 
 const COMMAND_NAME = "sumo";
+let child: SpawnSyncReturns<string>;
 
 export interface SumoOptions {
   command_name?: string;
@@ -76,23 +78,36 @@ function parseSumoAggegatedOutputData(sumoOutput: string): SumoAggregatedData {
 }
 
 export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
+  checkFilesExists(sumoOptions.files.routes);
+
   let command = (sumoOptions.command_name ? sumoOptions.command_name : COMMAND_NAME) + " ";
   command += sumoOptions.flags.join(" ") + " ";
   command += `--net-file ${sumoOptions.files.network} `;
-  command += `--route-files ${sumoOptions.files.routes.join(",")}`;
+  command += `--additional-files ${sumoOptions.files.routes.join(",")}`;
 
   if (sumoOptions.files.additional) {
     command += ` --additional-files ${sumoOptions.files.additional.join(",")}`;
   }
 
   console.log(`Executing '${command}'`);
-  const child = cp.spawnSync(command, {
+  child = cp.spawnSync(command, {
     cwd: process.cwd(),
     env: process.env,
-    stdio: 'pipe',
-    encoding: 'utf-8',
+    stdio: "pipe",
+    encoding: "utf-8",
     shell: true,
+    killSignal: "SIGINT",
   });
 
   return parseSumoAggegatedOutputData(child.output.join());
 }
+
+function checkFilesExists(path: string[]) {
+  for (const x of path) {
+    console.log("Checking " + x);
+    if (!fs.existsSync(x)) {
+      throw "File doesnt exist: " + x;
+    }
+  }
+}
+
