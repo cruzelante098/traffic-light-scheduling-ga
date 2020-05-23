@@ -42,7 +42,7 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="bus" vClass="bus"/>
+    <vType id="bus" vClass="bus" laneChangeModel="LC2013" lcKeepRight="100000000"/>
     <flow id="bus_flow_0" type="bus" begin="0.00" from="449289363" to="142470423#2" via="215803178" end="3600.00" number="10"/>
     <flow id="bus_flow_1" type="bus" begin="0.00" from="159229390#0" to="142470423#2" via="215803178" end="3600.00" number="10"/>
     <flow id="bus_flow_2" type="bus" begin="0.00" from="-142470423#2" to="159229390#1" via="198274971" end="3600.00" number="10"/>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 05/16/20 17:59:34 by Eclipse SUMO netedit Version 1.5.0
+<!-- generated on 05/19/20 09:52:09 by Eclipse SUMO netedit Version 1.5.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
-        <sumo-net-file value="anchieta_tls_special\anchieta.net.xml"/>
+        <sumo-net-file value="anchieta.net.xml"/>
     </input>
 
     <output>
-        <output-file value="anchieta_tls_special\anchieta.net.xml"/>
+        <output-file value="anchieta.net.xml"/>
     </output>
 
     <processing>
@@ -456,14 +456,14 @@
         <lane id=":Entrada-TF5Norte_w1_0" index="0" allow="pedestrian" speed="1.00" length="2.52" width="4.00" shape="1094.15,1514.19 1091.32,1515.17 1093.10,1516.48 1091.75,1516.04 1092.28,1516.51 1092.93,1516.59 1093.70,1516.28 1094.58,1515.57"/>
     </edge>
     <edge id=":Entrada-TF5Sur_0" function="internal">
-        <lane id=":Entrada-TF5Sur_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="16.61" length="9.93" shape="1006.54,1578.24 1001.76,1569.54"/>
-        <lane id=":Entrada-TF5Sur_0_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="16.61" length="9.93" shape="1009.34,1576.71 1004.57,1568.00"/>
+        <lane id=":Entrada-TF5Sur_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="16.61" length="4.91" shape="1006.54,1578.24 1004.27,1574.09"/>
+        <lane id=":Entrada-TF5Sur_0_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="16.61" length="4.91" shape="1009.34,1576.71 1006.91,1572.25"/>
     </edge>
     <edge id=":Entrada-TF5Sur_2" function="internal">
-        <lane id=":Entrada-TF5Sur_2_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="7.05" length="7.20" shape="998.44,1575.80 1000.10,1573.44 1001.21,1571.60 1001.76,1570.31 1001.76,1569.54"/>
+        <lane id=":Entrada-TF5Sur_2_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="6.53" length="6.07" shape="998.44,1575.80 1004.27,1574.09"/>
     </edge>
     <edge id=":Entrada-TF5Sur_3" function="internal">
-        <lane id=":Entrada-TF5Sur_3_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="8.52" length="10.84" shape="1000.96,1577.79 1003.11,1574.55 1004.43,1571.84 1004.92,1569.65 1004.57,1568.00"/>
+        <lane id=":Entrada-TF5Sur_3_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="7.45" length="8.13" shape="1000.96,1577.79 1006.91,1572.25"/>
     </edge>
     <edge id=":Entrada-TF5Sur_c0" function="crossing" crossingEdges="216268744 154607613#1">
         <lane id=":Entrada-TF5Sur_c0_0" index="0" allow="pedestrian" speed="1.00" length="6.61" width="4.00" customShape="1" shape="998.69,1572.90 1002.22,1578.49"/>
@@ -472,7 +472,7 @@
         <lane id=":Entrada-TF5Sur_w0_0" index="0" allow="pedestrian" speed="1.00" length="2.02" width="4.00" shape="1002.50,1580.45 1005.13,1579.01 1003.91,1577.42 1004.68,1578.34 1004.22,1577.91 1003.75,1577.74 1003.26,1577.82 1002.76,1578.15"/>
     </edge>
     <edge id=":Entrada-TF5Sur_w1" function="walkingarea">
-        <lane id=":Entrada-TF5Sur_w1_0" index="0" allow="pedestrian" speed="1.00" length="1.89" width="4.00" shape="1000.38,1571.83 1000.36,1570.32 997.74,1571.76 997.63,1574.30 998.36,1573.52 999.16,1572.61 999.88,1571.70 1000.33,1570.90"/>
+        <lane id=":Entrada-TF5Sur_w1_0" index="0" allow="pedestrian" speed="1.00" length="4.23" width="4.00" shape="997.00,1573.97 1000.38,1571.83 1003.02,1575.14 1000.39,1576.59"/>
     </edge>
     <edge id=":Entrada-Trinidad_0" function="internal">
         <lane id=":Entrada-Trinidad_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="11.00" length="27.11" shape="1064.04,1605.27 1059.72,1599.11 1054.62,1594.90 1048.73,1592.64 1042.07,1592.32"/>
@@ -554,14 +554,14 @@
         <lane id=":Salida-AngelGuimera_w1_0" index="0" allow="pedestrian" speed="1.00" length="9.61" width="4.00" shape="1109.30,1536.94 1108.85,1533.98 1109.38,1534.07 1110.22,1535.89 1097.59,1530.10 1094.59,1530.20 1094.96,1531.91 1095.07,1532.86 1096.34,1534.91 1098.40,1536.35 1101.23,1537.16 1104.85,1537.36"/>
     </edge>
     <edge id=":Salida-Astrofisico_0" function="internal">
-        <lane id=":Salida-Astrofisico_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="11.19" length="12.18" shape="1001.70,1569.42 999.57,1565.92 997.52,1563.28 995.55,1561.51 993.66,1560.60"/>
+        <lane id=":Salida-Astrofisico_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.23" length="17.20" shape="1004.17,1573.91 1000.96,1568.44 998.14,1564.40 995.71,1561.79 993.66,1560.60"/>
     </edge>
     <edge id=":Salida-Astrofisico_1" function="internal">
-        <lane id=":Salida-Astrofisico_1_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.66" length="10.42" shape="1001.70,1569.42 1000.10,1566.51 999.18,1564.36 998.87,1562.09 999.05,1558.82"/>
-        <lane id=":Salida-Astrofisico_1_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="12.66" length="10.42" shape="1004.52,1567.91 1003.15,1565.42 1002.37,1563.58 1002.10,1561.64 1002.26,1558.83"/>
+        <lane id=":Salida-Astrofisico_1_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="16.44" length="15.41" shape="1004.17,1573.91 1001.64,1569.72 999.88,1566.72 998.98,1563.54 999.05,1558.82"/>
+        <lane id=":Salida-Astrofisico_1_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="15.43" length="15.41" shape="1006.81,1572.07 1004.58,1568.40 1003.01,1565.77 1002.21,1562.98 1002.26,1558.83"/>
     </edge>
     <edge id=":Salida-Astrofisico_w0" function="walkingarea">
-        <lane id=":Salida-Astrofisico_w0_0" index="0" allow="pedestrian" speed="1.00" length="8.95" width="3.00" shape="993.89,1562.31 993.14,1565.21 997.64,1571.59 1000.27,1570.14 998.99,1567.95 997.74,1566.07 996.54,1564.55 995.39,1563.39 994.30,1562.59"/>
+        <lane id=":Salida-Astrofisico_w0_0" index="0" allow="pedestrian" speed="1.00" length="14.42" width="3.00" shape="993.89,1562.31 993.14,1565.21 1000.30,1576.42 1002.93,1574.97 1000.71,1571.07 998.83,1568.07 997.15,1565.67 995.67,1563.89 994.37,1562.71"/>
     </edge>
     <edge id=":Salida-TF5Norte_0" function="internal">
         <lane id=":Salida-TF5Norte_0_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="10.24" length="9.20" shape="1037.31,1592.77 1034.85,1593.38 1033.47,1594.59 1032.38,1596.34 1030.76,1598.59"/>
@@ -1069,9 +1069,9 @@
         <lane id="216243711_0" index="0" allow="bus" speed="5.56" length="5.65" shape="1152.67,1460.63 1149.06,1464.97"/>
     </edge>
     <edge id="216268744" from="Entrada-TF5Sur" to="Salida-Astrofisico" priority="7" type="highway.primary_link" spreadType="center" shape="1002.89,1571.38 1001.32,1568.53">
-        <lane id="216268744_0" index="0" allow="pedestrian" speed="22.22" length="0.15" width="3.00" shape="999.05,1571.04 998.95,1570.87"/>
-        <lane id="216268744_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="22.22" length="0.15" shape="1001.76,1569.54 1001.70,1569.42"/>
-        <lane id="216268744_2" index="2" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="22.22" length="0.15" shape="1004.57,1568.00 1004.52,1567.91"/>
+        <lane id="216268744_0" index="0" allow="pedestrian" speed="22.22" length="0.20" width="3.00" shape="1001.71,1575.87 1001.61,1575.69"/>
+        <lane id="216268744_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="22.22" length="0.20" shape="1004.27,1574.09 1004.17,1573.91"/>
+        <lane id="216268744_2" index="2" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="22.22" length="0.20" shape="1006.91,1572.25 1006.81,1572.07"/>
         <param key="ref" value="TF-263"/>
     </edge>
     <edge id="216268745" from="2255930001" to="1868821337" priority="1" type="highway.service" spreadType="center">
@@ -1636,7 +1636,7 @@
         <request index="2" response="1000" foes="1000" cont="0"/>
         <request index="3" response="0000" foes="0111" cont="0"/>
     </junction>
-    <junction id="Salida-Astrofisico" type="priority" x="1002.63" y="1567.81" incLanes="216268744_0 216268744_1 216268744_2" intLanes=":Salida-Astrofisico_0_0 :Salida-Astrofisico_1_0 :Salida-Astrofisico_1_1" shape="997.24,1571.77 1006.03,1567.14 1005.16,1565.44 1004.45,1562.91 1004.06,1560.85 1004.13,1558.84 993.75,1558.79 993.37,1566.81 995.23,1568.60 996.89,1570.58" customShape="1">
+    <junction id="Salida-Astrofisico" type="priority" x="1002.63" y="1567.81" incLanes="216268744_0 216268744_1 216268744_2" intLanes=":Salida-Astrofisico_0_0 :Salida-Astrofisico_1_0 :Salida-Astrofisico_1_1" shape="1003.28,1581.37 1010.03,1575.57 1005.16,1565.44 1004.45,1562.91 1004.06,1560.85 1004.13,1558.84 993.75,1558.79 993.37,1566.81 995.23,1568.60 996.89,1570.58" customShape="1">
         <request index="0" response="000" foes="000" cont="0"/>
         <request index="1" response="000" foes="000" cont="0"/>
         <request index="2" response="000" foes="000" cont="0"/>

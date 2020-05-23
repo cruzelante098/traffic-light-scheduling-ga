@@ -16,6 +16,8 @@
         <collision.mingap-factor value="0"/> -->
         <seed value="1234"/>
         <end value="3600"/>
+        <!-- <lateral-resolution value="2.6"/> -->
+
     </processing>
 
 </configuration>

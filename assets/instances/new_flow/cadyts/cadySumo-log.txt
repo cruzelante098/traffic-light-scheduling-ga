@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+['java', '-cp', 'C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\cadyts-1.3.0-SNAPSHOT.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\cadyts-master-SNAPSHOT.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\floetteroed-utilities-1.0.0-sources.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\floetteroed-utilities-1.0.0.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\floetteroed-utilities-master-SNAPSHOT.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\libsumojni.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\libsumojni_src.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\lisum-core.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\lisum-gui.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\TraaS.jar', '-Xmx1G', 'floetteroed.cadyts.interfaces.sumo.SumoController', 'INIT', '-varscale', '1.0', '-freezeit', '85', '-measfile', 'REALFLOWS.xml', '-binsize', '3600', '-PREPITS', '5', '-bruteforce', 'False', '-demandscale', '2.0', '-mincountstddev', '25.0', '-overridett', 'False', '-clonepostfix', '-CLONE', '-cntfirstlink', 'False', '-cntlastlink', 'False']
+may 21, 2020 11:57:23 AM floetteroed.cadyts.interfaces.sumo.SumoController main
+INFORMACIÓN: processing call: INIT -varscale 1.0 -freezeit 85 -measfile REALFLOWS.xml -binsize 3600 -PREPITS 5 -bruteforce False -demandscale 2.0 -mincountstddev 25.0 -overridett False -clonepostfix -CLONE -cntfirstlink False -cntlastlink False 
+Calibration 2020-05-21 11:57:23 WARNING unable to delete old logfile -> floetteroed.cadyts.calibrators.Calibrator.<init>
+Calibration 2020-05-21 11:57:23 INFO starting SumoCalibrator version 1.1.0
+Calibration 2020-05-21 11:57:23 INFO initializing with randomSeed = 0, timeBinSize_s = 3600, timeBinCnt = 24
+Calibration 2020-05-21 11:57:23 INFO default regressionInertia is 0.95
+Calibration 2020-05-21 11:57:23 INFO default freezeIteration is 2147483647
+Calibration 2020-05-21 11:57:23 INFO default varianceScale is 1.0
+Calibration 2020-05-21 11:57:23 INFO default preparatoryIterations is 1
+Calibration 2020-05-21 11:57:23 INFO default centerRegression is false
+Calibration 2020-05-21 11:57:23 INFO default statisticsFile is calibration-stats.txt
+Calibration 2020-05-21 11:57:23 INFO default proportionalAssignment is false
+Calibration 2020-05-21 11:57:23 INFO default debugMode is false
+Calibration 2020-05-21 11:57:23 INFO default flowAnalysisFile is null
+Calibration 2020-05-21 11:57:23 INFO default countFirstLink is false
+Calibration 2020-05-21 11:57:23 INFO default countLastLink is true
+Calibration 2020-05-21 11:57:23 INFO default minimum standard deviation for COUNT_VEH is 25.0
+Calibration 2020-05-21 11:57:23 INFO default minimum standard deviation for FLOW_VEH_H is 25.0
+Calibration 2020-05-21 11:57:23 INFO default bruteForce is false
+Calibration 2020-05-21 11:57:23 INFO default demandScale is 1.0
+Calibration 2020-05-21 11:57:23 INFO default overrideTravelTimes is false
+Calibration 2020-05-21 11:57:23 INFO default fmaPrefix is null
+Calibration 2020-05-21 11:57:23 INFO default clonePostfix is -CLONE
+Calibration 2020-05-21 11:57:23 INFO set regressionInertia to 0.95
+Calibration 2020-05-21 11:57:23 INFO set varianceScale to 1.0
+Calibration 2020-05-21 11:57:23 INFO set freezeIteration to 85
+Calibration 2020-05-21 11:57:23 INFO set minimum standard deviation for FLOW_VEH_H to 25.0
+Calibration 2020-05-21 11:57:23 INFO set minimum standard deviation for COUNT_VEH to 25.0
+Calibration 2020-05-21 11:57:23 INFO set preparatoryIterations to 5
+Calibration 2020-05-21 11:57:23 INFO set centerRegression to false
+Calibration 2020-05-21 11:57:23 INFO set statisticsFile to calibration-stats.txt
+Calibration 2020-05-21 11:57:23 INFO set proportionalAssignment to false
+Calibration 2020-05-21 11:57:23 INFO set countFirstLink to false
+Calibration 2020-05-21 11:57:23 INFO set countLastLink to false
+Calibration 2020-05-21 11:57:23 INFO set debugMode to false
+Calibration 2020-05-21 11:57:23 INFO set bruteForce to false
+Calibration 2020-05-21 11:57:23 INFO set demandScale to 2.0
+Calibration 2020-05-21 11:57:23 INFO set overrideTravelTimes to false
+Calibration 2020-05-21 11:57:23 INFO set fmaPrefix to null
+Calibration 2020-05-21 11:57:23 INFO set clonePostfix to -CLONE
+Calibration 2020-05-21 11:57:23 INFO loading measurement file REALFLOWS.xml
+Calibration 2020-05-21 11:57:23 INFO added SingleLinkMeasurement(type = COUNT_VEH, link = :EntradaSalida-Geneto_2, start_s = 0, dur_s = 3600, value = 750.0, stddev = 8.0)
+Calibration 2020-05-21 11:57:23 INFO serializing to file serialized.bin
+-------------------------------------------------------------------------------
+['java', '-cp', 'C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\cadyts-1.3.0-SNAPSHOT.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\cadyts-master-SNAPSHOT.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\floetteroed-utilities-1.0.0-sources.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\floetteroed-utilities-1.0.0.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\floetteroed-utilities-master-SNAPSHOT.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\libsumojni.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\libsumojni_src.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\lisum-core.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\lisum-gui.jar;C:\\Program Files (x86)\\Eclipse\\Sumo\\tools\\..\\bin\\TraaS.jar', '-Xmx1G', 'floetteroed.cadyts.interfaces.sumo.SumoController', 'CHOICE', '-choicesetfile', 'duarouter.rou.alt.xml', '-choicefile', 'duarouter_000.cal.xml']
+may 21, 2020 11:57:23 AM floetteroed.cadyts.interfaces.sumo.SumoController main
+INFORMACIÓN: processing call: CHOICE -choicesetfile duarouter.rou.alt.xml -choicefile duarouter_000.cal.xml 
+Calibration 2020-05-21 11:57:24 INFO deserialized from file serialized.bin
+Calibration 2020-05-21 11:57:24 INFO cloning file: duarouter.rou.alt.xml
+Exception in thread "Thread-1" java.lang.RuntimeException: java.lang.NullPointerException
+	at floetteroed.cadyts.calibrators.filebased.xml.SAXParserThread.run(SAXParserThread.java:105)
+Caused by: java.lang.NullPointerException
+	at floetteroed.utilities.XMLHelpers.extractItems(XMLHelpers.java:62)
+	at floetteroed.cadyts.interfaces.sumo.SumoPopulationHandler.startElement(SumoPopulationHandler.java:157)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at floetteroed.cadyts.calibrators.filebased.xml.SAXParserThread.run(SAXParserThread.java:103)

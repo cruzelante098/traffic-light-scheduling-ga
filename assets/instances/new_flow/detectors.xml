@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 04/21/20 20:27:45 by Eclipse SUMO dfrouter Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/dfrouterConfiguration.xsd">
+
+    <input>
+        <net-file value="anchieta.net.xml"/>
+        <detector-files value="flowroute\induction-loop-detectors-TF-5.add.xml"/>
+        <measure-files value="flowroute\flow_TF-5_2020-02-27_8h_normal.csv"/>
+    </input>
+
+    <output>
+        <routes-output value="flowroute\routes_output.add.xml"/>
+        <routes-for-all value="true"/>
+        <detector-output value="flowroute\detectors_output.add.xml"/>
+    </output>
+
+    <processing>
+        <keep-unfinished-routes value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<detectors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/detectors_file.xsd">
+    <!-- <detectorDefinition id="campus_guajara_creciente_lento" lane="216650879_0" pos="0.00" type="source"/>
+    <detectorDefinition id="campus_guajara_creciente_medio_lento" lane="216650879_1" pos="0.00" type="source"/>
+    <detectorDefinition id="campus_guajara_creciente_medio_rapido" lane="216650879_2" pos="0.00" type="source"/>
+    <detectorDefinition id="campus_guajara_creciente_rapido" lane="216650879_3" pos="0.00" type="source"/>
+
+    <detectorDefinition id="campus_guajara_decreciente_lento" lane="217553754_0" pos="-1.00" type="sink"/>
+    <detectorDefinition id="campus_guajara_decreciente_medio" lane="217553754_1" pos="-1.00" type="sink"/>
+    <detectorDefinition id="campus_guajara_decreciente_rapido" lane="217553754_2" pos="-1.00" type="sink"/>
+
+    <detectorDefinition id="padre_anchieta_creciente_lento" lane="215803108_0" pos="-0.01" type="sink"/>
+    <detectorDefinition id="padre_anchieta_creciente_medio" lane="215803108_1" pos="-0.01" type="sink"/>
+    <detectorDefinition id="padre_anchieta_creciente_rapido" lane="215803108_2" pos="-0.01" type="sink"/>
+
+    <detectorDefinition id="padre_anchieta_decreciente_lento" lane="216243701_0" pos="0.00" type="source"/>
+    <detectorDefinition id="padre_anchieta_decreciente_medio" lane="216243701_1" pos="0.00" type="source"/>
+    <detectorDefinition id="padre_anchieta_decreciente_rapido" lane="216243701_2" pos="0.00" type="source"/> -->
+
+
+    <!-- Vías de la rotonda -->
+    <detectorDefinition id="1_sal_nor" lane="28306819#1_0" pos="20" type="sink"/>
+
+    <detectorDefinition id="2_inc_nor_d" lane="100594724_0" pos="285" type="source"/>
+    <detectorDefinition id="2_inc_nor_i" lane="100594724_1" pos="285" type="source"/>
+
+    <detectorDefinition id="3" lane="362088243#1_1" pos="0" type="between"/>
+
+    <detectorDefinition id="4_astrofisico_as" lane="142470461_1" pos="2" type="between"/>
+    <detectorDefinition id="5_astrofisico_des" lane="358043015#3_1" pos="0" type="source"/>
+
+    <detectorDefinition id="6_esperanza_as" lane="-109573928#1.8_1" pos="0" type="sink"/>
+    <detectorDefinition id="7_esperanza_des" lane="109573928#1_1" pos="-0.01" type="source"/>
+
+    <detectorDefinition id="8_geneto_as" lane="142470433#4_1" pos="-0.01" type="sink"/>
+    <detectorDefinition id="9_geneto_des" lane="-142470433#1_1" pos="-0.01" type="source"/>
+
+    <detectorDefinition id="10_gen_desvio" lane="142470460#1_1" pos="11" type="between"/>
+
+    <detectorDefinition id="11_sal_sur" lane="91731873#1_1" pos="13" type="sink"/>
+
+    <detectorDefinition id="12_inc_sur_d" lane="28306817_0" pos="255" type="source"/>
+    <detectorDefinition id="12_inc_sur_i" lane="28306817_1" pos="255" type="source"/>
+
+    <detectorDefinition id="13_guimera" lane="159229344#0.2_1" pos="10" type="sink"/>
+
+    <detectorDefinition id="14_rot_d" lane="217691393#0_1" pos="12.5" type="between"/>
+    <detectorDefinition id="14_rot_i" lane="217691393#0_2" pos="12.5" type="between"/>
+
+    <detectorDefinition id="15_trinidad_sal_d" lane="28490061#2_1" pos="65" type="sink"/>
+    <detectorDefinition id="15_trinidad_sal_i" lane="28490061#2_2" pos="65" type="sink"/>
+
+    <detectorDefinition id="16_trinidad_ent_d" lane="217365460#0_1" pos="5" type="source"/>
+    <detectorDefinition id="16_trinidad_ent_i" lane="217365460#0_2" pos="5" type="source"/>
+
+    <detectorDefinition id="17_rot_d" lane="216243708#1_1" pos="0" type="between"/>
+    <detectorDefinition id="17_rot_i" lane="216243708#1_2" pos="0" type="between"/>
+
+    <detectorDefinition id="18_rot_d" lane="220346965_1" pos="10" type="between"/>
+    <detectorDefinition id="18_rot_i" lane="220346965_2" pos="10" type="between"/>
+
+    <detectorDefinition id="19_rot_d" lane="154607613#0_1" pos="12" type="between"/>
+    <detectorDefinition id="19_rot_i" lane="154607613#0_2" pos="12" type="between"/>
+
+    <detectorDefinition id="20_rot_d" lane="218891289_1" pos="4" type="between"/>
+    <detectorDefinition id="20_rot_i" lane="218891289_2" pos="4" type="between"/>
+        
+    <!-- <detectorDefinition id="21_rot_d" lane=":EntradaSalida-TF24_2_0" pos="19" type="between"/>
+    <detectorDefinition id="21_rot_i" lane=":EntradaSalida-TF24_2_1" pos="19" type="between"/> -->
+
+    <!-- Additional roads -->
+    <detectorDefinition id="additional_1_geneto" lane="-142470433#4_1" pos="0" type="source"/>
+    <detectorDefinition id="additional_2_salida_tf5_sur_i" lane="449288818#0_1" pos="40" type="sink"/>
+    <detectorDefinition id="additional_2_salida_tf5_sur_d" lane="449288818#0_0" pos="40" type="sink"/>
+    <detectorDefinition id="additional_3_astrofisico" lane="-217365458#0_1" pos="-0.01" type="sink"/>
+    
+</detectors>
