@@ -1,8 +1,0 @@
-    <route-alternatives>
-        <vehicle id="830" depart="25208.00" departlane="free" departspeed="max" fromtaz="1" totaz="2">
-            <routeDistribution last="1">
-                <route cost="154.29" probability="0.57623629" edges="91to1 1to21 out" exitTimes="25240.19 25337.05 25362.30"/>
-                <route cost="153.69" probability="0.42376371" edges="91to1 1to22 out" exitTimes="25240.19 25336.44 25361.69"/>
-            </routeDistribution>
-        </vehicle>
-    </route-alternatives>

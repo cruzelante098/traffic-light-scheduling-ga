@@ -1,76 +1,79 @@
 <additional>
   <!-- TF-5 -->
-  <!-- <inductionLoop id="campus_guajara_creciente_lento" lane="216650879_0" pos="0" freq="1" file="output/campus_guajara_creciente_lento.xml"/>
-  <inductionLoop id="campus_guajara_creciente_medio_lento" lane="216650879_1" pos="0" freq="1" file="output/campus_guajara_creciente_medio_lento.xml"/>
-  <inductionLoop id="campus_guajara_creciente_medio_rapido" lane="216650879_2" pos="0" freq="1" file="output/campus_guajara_creciente_medio_rapido.xml"/>
-  <inductionLoop id="campus_guajara_creciente_rapido" lane="216650879_3" pos="0" freq="1" file="output/campus_guajara_creciente_rapido.xml"/>
-  
-  <inductionLoop id="campus_guajara_decreciente_lento" lane="217553754_0" pos="-1" freq="1" file="output/campus_guajara_decreciente_lento.xml"/>
-  <inductionLoop id="campus_guajara_decreciente_medio" lane="217553754_1" pos="-1" freq="1" file="output/campus_guajara_decreciente_medio.xml"/>
-  <inductionLoop id="campus_guajara_decreciente_rapido" lane="217553754_2" pos="-1" freq="1" file="output/campus_guajara_decreciente_rapido.xml"/>
+  <inductionLoop id="padre_anchieta_creciente_A_lento" lane="216650879_0" pos="0" freq="1" file="output/padre_anchieta_creciente_A_lento.xml"/>
+  <inductionLoop id="padre_anchieta_creciente_A_medio_lento" lane="216650879_1" pos="0" freq="1" file="output/padre_anchieta_creciente_A_medio_lento.xml"/>
+  <inductionLoop id="padre_anchieta_creciente_A_medio_rapido" lane="216650879_2" pos="0" freq="1" file="output/padre_anchieta_creciente_A_medio_rapido.xml"/>
+  <inductionLoop id="padre_anchieta_creciente_A_rapido" lane="216650879_3" pos="0" freq="1" file="output/padre_anchieta_creciente_A_rapido.xml"/>
 
-  <inductionLoop id="padre_anchieta_creciente_lento" lane="215803108_0" pos="-0.01" freq="1" file="output/padre_anchieta_creciente_lento.xml"/>
-  <inductionLoop id="padre_anchieta_creciente_medio" lane="215803108_1" pos="-0.01" freq="1" file="output/padre_anchieta_creciente_medio.xml"/>
-  <inductionLoop id="padre_anchieta_creciente_rapido" lane="215803108_2" pos="-0.01" freq="1" file="output/padre_anchieta_creciente_rapido.xml"/>
+  <inductionLoop id="padre_anchieta_creciente_B_lento" lane="215803108_0" pos="-1"  freq="1" file="output/padre_anchieta_creciente_B_lento.xml"/>
+  <inductionLoop id="padre_anchieta_creciente_B_medio" lane="215803108_1" pos="-1"  freq="1" file="output/padre_anchieta_creciente_B_medio.xml"/>
+  <inductionLoop id="padre_anchieta_creciente_B_rapido" lane="215803108_2" pos="-1" freq="1" file="output/padre_anchieta_creciente_B_rapido.xml"/>
 
-  <inductionLoop id="padre_anchieta_decreciente_lento" lane="216243701_0" pos="0" freq="1" file="output/padre_anchieta_decreciente_lento.xml"/>
-  <inductionLoop id="padre_anchieta_decreciente_medio" lane="216243701_1" pos="0" freq="1" file="output/padre_anchieta_decreciente_medio.xml"/>
-  <inductionLoop id="padre_anchieta_decreciente_rapido" lane="216243701_2" pos="0" freq="1" file="output/padre_anchieta_decreciente_rapido.xml"/> -->
+  <inductionLoop id="padre_anchieta_decreciente_A_lento" lane="216243701_0" pos="0" freq="1" file="output/padre_anchieta_decreciente_A_lento.xml"/>
+  <inductionLoop id="padre_anchieta_decreciente_A_medio" lane="216243701_1" pos="0" freq="1" file="output/padre_anchieta_decreciente_A_medio.xml"/>
+  <inductionLoop id="padre_anchieta_decreciente_A_rapido" lane="216243701_2" pos="0" freq="1" file="output/padre_anchieta_decreciente_A_rapido.xml"/>
 
+  <inductionLoop id="padre_anchieta_decreciente_B_lento" lane="217553754_0" pos="-1" freq="1" file="output/padre_anchieta_decreciente_B_lento.xml"/>
+  <inductionLoop id="padre_anchieta_decreciente_B_medio" lane="217553754_1" pos="-1" freq="1" file="output/padre_anchieta_decreciente_B_medio.xml"/>
+  <inductionLoop id="padre_anchieta_decreciente_B_rapido" lane="217553754_2" pos="-1" freq="1" file="output/padre_anchieta_decreciente_B_rapido.xml"/>
+
+  <inductionLoop id="incorp-tf5" lane="100829418_0" pos="0" freq="1" file="output/incorp-tf5.xml"/>
 
   <!-- Vías de la rotonda -->
-  <inductionLoop id="1_sal_nor"       lane="28306819#1_0"      pos="126"       freq="1" file="output/1.xml"/>
-  
-  <inductionLoop id="2_inc_nor_d"     lane="100594724_0"       pos="285"       freq="1" file="output/2_d.xml"/>
-  <inductionLoop id="2_inc_nor_i"     lane="100594724_1"       pos="285"       freq="1" file="output/2_i.xml"/>
+  <inductionLoop id="1_sal_nor" lane="28306819#1_0" pos="126" freq="1" file="output/1.xml"/>
 
-  <inductionLoop id="3"               lane="362088243#1_1"      pos="0"       freq="1" file="output/3.xml"/>
-  
-  <inductionLoop id="4_astrofisico_as"  lane="142470461_1"      pos="2"       freq="1" file="output/4.xml"/>
-  <inductionLoop id="5_astrofisico_des" lane="358043015#3_1"    pos="0"     freq="1" file="output/5.xml"/>
-  
-  <inductionLoop id="6_esperanza_as"  lane="-109573928#1.8_1"   pos="0"       freq="1" file="output/6.xml"/>
-  <inductionLoop id="7_esperanza_des" lane="109573928#1_1"      pos="-0.01"   freq="1" file="output/7.xml"/>
+  <inductionLoop id="2_inc_nor_d" lane="100594724_0" pos="285" freq="1" file="output/2_d.xml"/>
+  <inductionLoop id="2_inc_nor_i" lane="100594724_1" pos="285" freq="1" file="output/2_i.xml"/>
 
-  <inductionLoop id="8_geneto_as"     lane="142470433#4_1"      pos="-0.01"       freq="1" file="output/8.xml"/>
-  <inductionLoop id="9_geneto_des"    lane="-142470433#1_1"     pos="-0.01"   freq="1"  file="output/9.xml"/>
-  
-  <inductionLoop id="10_gen_desvio"   lane="142470460#1_1"      pos="11"      freq="1" file="output/10.xml"/>
-  
-  <inductionLoop id="11_sal_sur"      lane="91731873#1_1"       pos="13"      freq="1" file="output/11.xml"/>  
-  
-  <inductionLoop id="12_inc_sur_d"    lane="28306817_0"         pos="255"     freq="1" file="output/12_d.xml"/>  
-  <inductionLoop id="12_inc_sur_i"    lane="28306817_1"         pos="255"     freq="1" file="output/12_i.xml"/>  
-  
-  <inductionLoop id="13_guimera"      lane="159229344#0.2_1"    pos="80"      freq="1" file="output/13.xml"/>
-  
-  <inductionLoop id="14_rot_d"        lane="217691393#0_1"      pos="12.5"    freq="1" file="output/14_d.xml"/>
-  <inductionLoop id="14_rot_i"        lane="217691393#0_2"      pos="12.5"    freq="1" file="output/14_i.xml"/>
+  <inductionLoop id="3" lane="362088243#1_1" pos="0" freq="1" file="output/3.xml"/>
 
-  <inductionLoop id="15_trinidad_sal_d" lane="28490061#2_1"     pos="65"      freq="1" file="output/15_d.xml"/>
-  <inductionLoop id="15_trinidad_sal_i" lane="28490061#2_2"     pos="65"      freq="1" file="output/15_i.xml"/>
+  <inductionLoop id="4_astrofisico_as" lane="142470461_1" pos="2" freq="1" file="output/4.xml"/>
+  <inductionLoop id="5_astrofisico_des" lane="358043015#3_1" pos="0" freq="1" file="output/5.xml"/>
 
-  <inductionLoop id="16_trinidad_ent_d" lane="217365460#0_1"    pos="5"       freq="1" file="output/16_d.xml"/>
-  <inductionLoop id="16_trinidad_ent_i" lane="217365460#0_2"    pos="5"       freq="1" file="output/16_i.xml"/>
+  <inductionLoop id="6_esperanza_as" lane="-109573928#1.8_1" pos="0" freq="1" file="output/6.xml"/>
+  <inductionLoop id="7_esperanza_des" lane="109573928#1_1" pos="-0.01" freq="1" file="output/7.xml"/>
 
-  <inductionLoop id="17_rot_d"        lane="216243708#1_1"      pos="0"       freq="1" file="output/17_d.xml"/>
-  <inductionLoop id="17_rot_i"        lane="216243708#1_2"      pos="0"       freq="1" file="output/17_i.xml"/>
-  
-  <inductionLoop id="18_rot_d"        lane="220346965_1"        pos="10"      freq="1" file="output/18_d.xml"/>
-  <inductionLoop id="18_rot_i"        lane="220346965_2"        pos="10"      freq="1" file="output/18_i.xml"/>
+  <inductionLoop id="8_geneto_as" lane="142470433#4_1" pos="-0.01" freq="1" file="output/8.xml"/>
+  <inductionLoop id="9_geneto_des" lane="-142470433#1_1" pos="-0.01" freq="1" file="output/9.xml"/>
 
-  <inductionLoop id="19_rot_d"        lane="154607613#0_1"      pos="12"      freq="1" file="output/19_d.xml"/>
-  <inductionLoop id="19_rot_i"        lane="154607613#0_2"      pos="12"      freq="1" file="output/19_i.xml"/>
+  <inductionLoop id="10_gen_desvio" lane="142470460#1_1" pos="11" freq="1" file="output/10.xml"/>
 
-  <inductionLoop id="20_rot_d"        lane="218891289_1"        pos="4"       freq="1" file="output/20_d.xml"/>
-  <inductionLoop id="20_rot_i"        lane="218891289_2"        pos="4"       freq="1" file="output/20_i.xml"/>
+  <inductionLoop id="11_sal_sur" lane="91731873#1_1" pos="13" freq="1" file="output/11.xml"/>
 
-  <inductionLoop id="21_rot_d"        lane=":EntradaSalida-TF24_2_0" pos="19" freq="1" file="output/21_d.xml"/>
-  <inductionLoop id="21_rot_i"        lane=":EntradaSalida-TF24_2_1" pos="19" freq="1" file="output/21_i.xml"/>
-  
+  <inductionLoop id="12_inc_sur_d" lane="28306817_0" pos="255" freq="1" file="output/12_d.xml"/>
+  <inductionLoop id="12_inc_sur_i" lane="28306817_1" pos="255" freq="1" file="output/12_i.xml"/>
+
+  <inductionLoop id="13_guimera" lane="159229344#0.2_1" pos="80" freq="1" file="output/13.xml"/>
+
+  <inductionLoop id="14_rot_d" lane="217691393#0_1" pos="12.5" freq="1" file="output/14_d.xml"/>
+  <inductionLoop id="14_rot_i" lane="217691393#0_2" pos="12.5" freq="1" file="output/14_i.xml"/>
+
+  <inductionLoop id="15_trinidad_sal_d" lane="28490061#2_1" pos="65" freq="1" file="output/15_d.xml"/>
+  <inductionLoop id="15_trinidad_sal_i" lane="28490061#2_2" pos="65" freq="1" file="output/15_i.xml"/>
+
+  <inductionLoop id="16_trinidad_ent_d" lane="217365460#0_1" pos="5" freq="1" file="output/16_d.xml"/>
+  <inductionLoop id="16_trinidad_ent_i" lane="217365460#0_2" pos="5" freq="1" file="output/16_i.xml"/>
+
+  <inductionLoop id="17_rot_d" lane="216243708#1_1" pos="0" freq="1" file="output/17_d.xml"/>
+  <inductionLoop id="17_rot_i" lane="216243708#1_2" pos="0" freq="1" file="output/17_i.xml"/>
+
+  <inductionLoop id="18_rot_d" lane="220346965_1" pos="10" freq="1" file="output/18_d.xml"/>
+  <inductionLoop id="18_rot_i" lane="220346965_2" pos="10" freq="1" file="output/18_i.xml"/>
+
+  <inductionLoop id="19_rot_d" lane="154607613#0_1" pos="12" freq="1" file="output/19_d.xml"/>
+  <inductionLoop id="19_rot_i" lane="154607613#0_2" pos="12" freq="1" file="output/19_i.xml"/>
+
+  <inductionLoop id="20_rot_d" lane="218891289_1" pos="4" freq="1" file="output/20_d.xml"/>
+  <inductionLoop id="20_rot_i" lane="218891289_2" pos="4" freq="1" file="output/20_i.xml"/>
+
+  <inductionLoop id="21_rot_d" lane=":EntradaSalida-TF24_2_0" pos="19" freq="1" file="output/21_d.xml"/>
+  <inductionLoop id="21_rot_i" lane=":EntradaSalida-TF24_2_1" pos="19" freq="1" file="output/21_i.xml"/>
+
   <!-- Additional roads -->
-  <inductionLoop id="additional_1_geneto" lane="-142470433#4_1" pos="0"         freq="1" file="output/add_1.xml"/>
-  <inductionLoop id="additional_2_salida_tf5_sur_i" lane="449288818#0_1" pos="40"  freq="1" file="output/add_2_i.xml"/>
-  <inductionLoop id="additional_2_salida_tf5_sur_d" lane="449288818#0_0" pos="40"  freq="1" file="output/add_2_d.xml"/>
-  <inductionLoop id="additional_3_astrofisico" lane="-217365458#0_1" pos="-0.01"  freq="1" file="output/add_3.xml"/>
+  <inductionLoop id="additional_1_geneto" lane="-142470433#4_1" pos="0" freq="1" file="output/add_1.xml"/>
+  <inductionLoop id="additional_2_salida_tf5_sur_i" lane="449288818#0_1" pos="40" freq="1" file="output/add_2_i.xml"/>
+  <inductionLoop id="additional_2_salida_tf5_sur_d" lane="449288818#0_0" pos="40" freq="1" file="output/add_2_d.xml"/>
+  <inductionLoop id="additional_3_astrofisico" lane="-217365458#0_1" pos="-0.01" freq="1" file="output/add_3.xml"/>
+  <inductionLoop id="additional_4_incorp_tf5" lane="100829406_0" pos="0" freq="1" file="output/add_4.xml"/>
+
 </additional>

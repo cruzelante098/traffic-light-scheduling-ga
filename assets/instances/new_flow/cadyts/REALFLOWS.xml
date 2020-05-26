@@ -1,4 +1,0 @@
-    <measurements>
-        <!-- <singlelink link="28306819#1" start="0" end="3600" value="750" stddev="8" type="COUNT_VEH"/> -->
-        <singlelink link=":EntradaSalida-Geneto_2" start="0" end="3600" value="750" stddev="8" type="COUNT_VEH"/>
-    </measurements>

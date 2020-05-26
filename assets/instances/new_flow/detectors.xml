@@ -23,29 +23,32 @@
 -->
 
 <detectors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/detectors_file.xsd">
-    <!-- <detectorDefinition id="campus_guajara_creciente_lento" lane="216650879_0" pos="0.00" type="source"/>
-    <detectorDefinition id="campus_guajara_creciente_medio_lento" lane="216650879_1" pos="0.00" type="source"/>
-    <detectorDefinition id="campus_guajara_creciente_medio_rapido" lane="216650879_2" pos="0.00" type="source"/>
-    <detectorDefinition id="campus_guajara_creciente_rapido" lane="216650879_3" pos="0.00" type="source"/>
+    <detectorDefinition id="padre_anchieta_creciente_A_lento" lane="216650879_0" pos="0" type="source"/>
+    <detectorDefinition id="padre_anchieta_creciente_A_medio_lento" lane="216650879_1" pos="0" type="source"/>
+    <detectorDefinition id="padre_anchieta_creciente_A_medio_rapido" lane="216650879_2" pos="0" type="source"/>
+    <detectorDefinition id="padre_anchieta_creciente_A_rapido" lane="216650879_3" pos="0" type="source"/>
 
-    <detectorDefinition id="campus_guajara_decreciente_lento" lane="217553754_0" pos="-1.00" type="sink"/>
-    <detectorDefinition id="campus_guajara_decreciente_medio" lane="217553754_1" pos="-1.00" type="sink"/>
-    <detectorDefinition id="campus_guajara_decreciente_rapido" lane="217553754_2" pos="-1.00" type="sink"/>
+    <detectorDefinition id="padre_anchieta_creciente_B_lento" lane="215803108_0" pos="-1" type="sink"/>
+    <detectorDefinition id="padre_anchieta_creciente_B_medio" lane="215803108_1" pos="-1" type="sink"/>
+    <detectorDefinition id="padre_anchieta_creciente_B_rapido" lane="215803108_2" pos="-1" type="sink"/>
 
-    <detectorDefinition id="padre_anchieta_creciente_lento" lane="215803108_0" pos="-0.01" type="sink"/>
-    <detectorDefinition id="padre_anchieta_creciente_medio" lane="215803108_1" pos="-0.01" type="sink"/>
-    <detectorDefinition id="padre_anchieta_creciente_rapido" lane="215803108_2" pos="-0.01" type="sink"/>
+    <detectorDefinition id="padre_anchieta_decreciente_A_lento" lane="216243701_0" pos="0" type="source"/>
+    <detectorDefinition id="padre_anchieta_decreciente_A_medio" lane="216243701_1" pos="0" type="source"/>
+    <detectorDefinition id="padre_anchieta_decreciente_A_rapido" lane="216243701_2" pos="0" type="source"/>
 
-    <detectorDefinition id="padre_anchieta_decreciente_lento" lane="216243701_0" pos="0.00" type="source"/>
-    <detectorDefinition id="padre_anchieta_decreciente_medio" lane="216243701_1" pos="0.00" type="source"/>
-    <detectorDefinition id="padre_anchieta_decreciente_rapido" lane="216243701_2" pos="0.00" type="source"/> -->
+    <detectorDefinition id="padre_anchieta_decreciente_B_lento" lane="217553754_0" pos="-1" type="sink"/>
+    <detectorDefinition id="padre_anchieta_decreciente_B_medio" lane="217553754_1" pos="-1" type="sink"/>
+    <detectorDefinition id="padre_anchieta_decreciente_B_rapido" lane="217553754_2" pos="-1" type="sink"/>
+
+
+    <detectorDefinition id="incorp-tf5" lane="100829418_0" pos="0" type="source"/>
 
 
     <!-- Vías de la rotonda -->
     <detectorDefinition id="1_sal_nor" lane="28306819#1_0" pos="20" type="sink"/>
 
-    <detectorDefinition id="2_inc_nor_d" lane="100594724_0" pos="285" type="source"/>
-    <detectorDefinition id="2_inc_nor_i" lane="100594724_1" pos="285" type="source"/>
+    <detectorDefinition id="2_inc_nor_d" lane="100594724_0" pos="285" type="between"/>
+    <detectorDefinition id="2_inc_nor_i" lane="100594724_1" pos="285" type="between"/>
 
     <detectorDefinition id="3" lane="362088243#1_1" pos="0" type="between"/>
 
@@ -62,8 +65,8 @@
 
     <detectorDefinition id="11_sal_sur" lane="91731873#1_1" pos="13" type="sink"/>
 
-    <detectorDefinition id="12_inc_sur_d" lane="28306817_0" pos="255" type="source"/>
-    <detectorDefinition id="12_inc_sur_i" lane="28306817_1" pos="255" type="source"/>
+    <detectorDefinition id="12_inc_sur_d" lane="28306817_0" pos="255" type="between"/>
+    <detectorDefinition id="12_inc_sur_i" lane="28306817_1" pos="255" type="between"/>
 
     <detectorDefinition id="13_guimera" lane="159229344#0.2_1" pos="10" type="sink"/>
 
@@ -87,14 +90,15 @@
 
     <detectorDefinition id="20_rot_d" lane="218891289_1" pos="4" type="between"/>
     <detectorDefinition id="20_rot_i" lane="218891289_2" pos="4" type="between"/>
-        
+
     <!-- <detectorDefinition id="21_rot_d" lane=":EntradaSalida-TF24_2_0" pos="19" type="between"/>
     <detectorDefinition id="21_rot_i" lane=":EntradaSalida-TF24_2_1" pos="19" type="between"/> -->
 
     <!-- Additional roads -->
     <detectorDefinition id="additional_1_geneto" lane="-142470433#4_1" pos="0" type="source"/>
-    <detectorDefinition id="additional_2_salida_tf5_sur_i" lane="449288818#0_1" pos="40" type="sink"/>
-    <detectorDefinition id="additional_2_salida_tf5_sur_d" lane="449288818#0_0" pos="40" type="sink"/>
+    <detectorDefinition id="additional_2_salida_tf5_sur_i" lane="449288818#0_1" pos="40" type="between"/>
+    <detectorDefinition id="additional_2_salida_tf5_sur_d" lane="449288818#0_0" pos="40" type="between"/>
     <detectorDefinition id="additional_3_astrofisico" lane="-217365458#0_1" pos="-0.01" type="sink"/>
-    
+    <detectorDefinition id="additional_4_incorp_tf5" lane="100829406_0" pos="0" type="between"/>
+
 </detectors>
