@@ -83,7 +83,7 @@ export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
   let command = (sumoOptions.command_name ? sumoOptions.command_name : COMMAND_NAME) + " ";
   command += sumoOptions.flags.join(" ") + " ";
   command += `--net-file ${sumoOptions.files.network} `;
-  command += `--additional-files ${sumoOptions.files.routes.join(",")}`;
+  command += `--additional-files ${sumoOptions.files.routes.map(elem => '"' + elem + '"').join(",")}`;
 
   if (sumoOptions.files.additional) {
     command += ` --additional-files ${sumoOptions.files.additional.join(",")}`;
@@ -104,7 +104,7 @@ export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
 
 function checkFilesExists(path: string[]) {
   for (const x of path) {
-    console.log("Checking " + x);
+    // console.log("Checking " + x);
     if (!fs.existsSync(x)) {
       throw "File doesnt exist: " + x;
     }

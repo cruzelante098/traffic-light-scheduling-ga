@@ -3,9 +3,9 @@ $OR;D2
 0.00 1.00
 * Factor
 1.00
-* some
-* additional
-* comments
+* Format description:
+* fromTaz toTaz vehicles
+
         tf-5_anchieta          tf-5_guajara        3000
         tf-5_guajara           tf-5_anchieta       3050
         

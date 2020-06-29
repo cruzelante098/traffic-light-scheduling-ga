@@ -1,4 +1,6 @@
 import {
+  Crossover,
+  CrossoverParams,
   EvolutionaryAlgorithm,
   EvolutionaryAlgorithmParams,
   FitnessBased,
@@ -14,7 +16,7 @@ import {
   OnePointCrossover,
   OnePointCrossoverParams,
   RandomResetting,
-  RouletteWheel,
+  RouletteWheel, UniformCrossover, UniformCrossoverParams,
   UniformMutationParams,
 } from "@zfunction/genetics-js";
 
@@ -27,7 +29,10 @@ import { TLLogic } from "./tl-logic";
 import { parseTlLogic, writeTlLogic } from "./xml-io";
 import { executeSumo, SumoAggregatedData } from "./executor";
 import { genotypeToTlLogic, setOriginalTl } from "./converter";
+import path from "path";
+import { file } from "tmp";
 
+console.time("execution");
 
 /**
  * Program arguments and flags.
@@ -61,6 +66,24 @@ const argv = yargs
       demandOption: true,
       description: "Filepath to save best network candidate",
     },
+    c: {
+      type: "string",
+      alias: "crossover",
+      demandOption: true,
+      description: "Type of crossover to employ",
+    },
+    i: {
+      type: "number",
+      alias: "population",
+      demandOption: true,
+      description: "Size of the population",
+    },
+    g: {
+      type: "boolean",
+      alias: "savegenotype",
+      demandOption: false,
+      description: "Saves genotype instead of net.xml",
+    },
   })
   .argv;
 
@@ -69,6 +92,11 @@ const argv = yargs
 const netFilepath = argv.n!;
 const routesFilepath = argv.r!;
 const saveFilepath = argv.s!;
+const crossoverStr = argv.c!;
+const populationSize = Number(argv.i!);
+const saveGenotype = argv.g!;
+
+console.log("SAAAAVEEEE", saveFilepath);
 
 // Reads and parses network file
 const originalTl: ReadonlyArray<TLLogic> = parseTlLogic(netFilepath);
@@ -81,12 +109,13 @@ const originalTl: ReadonlyArray<TLLogic> = parseTlLogic(netFilepath);
 setOriginalTl(originalTl);
 
 // TODO: This should be program arguments
-const maxGenerations = 45;
-const populationSize = 12;
+const maxGenerations = 2;
+
+const genotypeLength = originalTl.reduce((a, b) => a + b.phases.length, 0) + originalTl.length; // total phases + offset of every traffic light
 
 // TODO: this value should be 1 / (amount of phases and offsets), though more investigation is needed.
 // maybe consider it as an argument?
-const mutationRate = 0.1;
+const mutationRate = 1 / genotypeLength;
 
 const yellowPhaseDuration = 4;
 
@@ -111,12 +140,11 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
       flags: [
         "--no-warnings",                        // don't log warnings
         "--no-step-log",                        // don't log step info
-        "--end 3600",                           // simulation end time
-        "--time-to-teleport -1",                // disable teleports
-        // "--seed 23432",                         // define seed
+        "--end 5",                           // simulation end time
+        "--time-to-teleport 120",                // disable teleports
+        // `--seed ${}`,                         // define seed
         "--duration-log.statistics",            // log aggregated information about trips
         "--tripinfo-output.write-unfinished",   // include info about vehicles that don't reach their destination
-        "--collision.mingap-factor 0"
       ],
       files: {
         network: networkFilename,
@@ -150,13 +178,22 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
   return fitness;
 };
 
+let crossover: Crossover<IntegerIndividual, number, CrossoverParams<IntegerIndividual, number>>;
+if (crossoverStr === "UniformCrossover") {
+  crossover = new UniformCrossover();
+} else if (crossoverStr === "OnePointCrossover") {
+  crossover = new OnePointCrossover();
+} else {
+  throw new Error("Crossover type not recognized");
+}
+
 // This gigantic object is just the EA configuration. Bunch of types and objects. For reference
 // see Abrante's Dissertation on the subject at https://riull.ull.es/xmlui/handle/915/14535
 const params: EvolutionaryAlgorithmParams<IntegerIndividual,
   number,
   NumericParams,
   FitnessProportionalSelectionParams<IntegerIndividual, number>,
-  OnePointCrossoverParams<IntegerIndividual, number>,
+  UniformCrossoverParams<IntegerIndividual, number>,
   UniformMutationParams> = {
   populationSize: populationSize,
   generator: new IntegerGenerator(),
@@ -171,10 +208,12 @@ const params: EvolutionaryAlgorithmParams<IntegerIndividual,
     selectionCount: populationSize,
     subSelection: new RouletteWheel(),
   },
-  crossover: new OnePointCrossover(),
+  crossover: crossover,
   crossoverParams: {
     engine: nativeMath,
     individualConstructor: IntegerIndividual,
+    // @ts-ignore
+    selectionThreshold: 0.5,
   },
   mutation: new RandomResetting(),
   mutationParams: {
@@ -258,7 +297,7 @@ const evolutionaryAlgorithm =
     number,
     NumericParams,
     FitnessProportionalSelectionParams<IntegerIndividual, number>,
-    OnePointCrossoverParams<IntegerIndividual, number>,
+    CrossoverParams<IntegerIndividual, number>,
     UniformMutationParams>
   (params);
 
@@ -266,40 +305,62 @@ const evolutionaryAlgorithm =
 evolutionaryAlgorithm.run();
 
 // Once the EA it's done, get the fittest individual
-const fittest = evolutionaryAlgorithm.population.getFittestIndividualItem()?.individual;
+const bestCandidate = evolutionaryAlgorithm.population.getFittestIndividualItem()?.individual;
+const fitness = evolutionaryAlgorithm.population.getFittestIndividualItem()?.fitness;
 
-if (fittest === undefined) {
+if (bestCandidate === undefined) {
   throw "Not fittest individual found";
 }
 
+
+function writeToFile(values: number[], filepath: string) {
+  console.log("Checking ", filepath);
+  if (!fs.existsSync(path.dirname(filepath))) {
+    fs.mkdirSync(filepath);
+  }
+  console.log("Writing...");
+  fs.writeFile(filepath, values, (err) => {
+    if (err) return console.log(err);
+    console.log(path.basename(filepath), "has been saved");
+  });
+}
+
+
+if (saveGenotype) {
+  writeToFile([fitness as number, ...bestCandidate.genotype], saveFilepath);
+} else {
 // Convert the array of numbers that is the individual to a network file recognizable by SUMO
-const tl = genotypeToTlLogic(fittest);
-const networkFilename = writeTlLogic(tl);
+  const tl = genotypeToTlLogic(bestCandidate);
+  const networkFilename = writeTlLogic(tl);
 
 // Copy that file to the location the used specified
-fs.renameSync(networkFilename, saveFilepath);
-
-console.log("Fittest candidate located at ", saveFilepath);
-console.log("Best fitness achieved", evolutionaryAlgorithm.population.getFittestIndividualItem()?.fitness);
-
-// If the flag is provided, SUMO-GUI will be executed with the fittest solution to see how it behaves
-if (argv.play) {
-  console.log("\nExecuting simulation");
-  executeSumo({
-      command_name: "sumo-gui",
-      flags: [
-        "--no-warnings",                        // don't log warnings
-        "--no-step-log",                        // don't log step info
-        "--time-to-teleport -1",                // disable teleports
-        "--seed 23432",                         // define seed
-        "--duration-log.statistics",            // log aggregated information about trips
-        "--tripinfo-output.write-unfinished",   // include info about vehicles that don't reach their destination
-      ],
-      files: {
-        network: `"${saveFilepath}"`,
-        routes: routesFilepath,
-        // additional: ['./assets/anchieta_pedestrians.rou.xml']
-      },
-    },
-  );
+  fs.renameSync(networkFilename, saveFilepath);
+  console.log("Fittest candidate located at ", saveFilepath);
 }
+
+
+console.log("Best fitness achieved", fitness);
+console.timeEnd("execution");
+
+
+// // If the flag is provided, SUMO-GUI will be executed with the fittest solution to see how it behaves
+// if (argv.play) {
+//   console.log("\nExecuting simulation");
+//   executeSumo({
+//       command_name: "sumo-gui",
+//       flags: [
+//         "--no-warnings",                        // don't log warnings
+//         "--no-step-log",                        // don't log step info
+//         "--time-to-teleport -1",                // disable teleports
+//         "--seed 23432",                         // define seed
+//         "--duration-log.statistics",            // log aggregated information about trips
+//         "--tripinfo-output.write-unfinished",   // include info about vehicles that don't reach their destination
+//       ],
+//       files: {
+//         network: `"${saveFilepath}"`,
+//         routes: routesFilepath,
+//         // additional: ['./assets/anchieta_pedestrians.rou.xml']
+//       },
+//     },
+//   );
+// }
