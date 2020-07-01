@@ -30,7 +30,7 @@ import { parseTlLogic, writeTlLogic } from "./xml-io";
 import { executeSumo, SumoAggregatedData } from "./executor";
 import { genotypeToTlLogic, setOriginalTl } from "./converter";
 import path from "path";
-import { file } from "tmp";
+import c from "chalk";
 
 console.time("execution");
 
@@ -95,8 +95,6 @@ const saveFilepath = argv.s!;
 const crossoverStr = argv.c!;
 const populationSize = Number(argv.i!);
 const saveGenotype = argv.g!;
-
-console.log("SAAAAVEEEE", saveFilepath);
 
 // Reads and parses network file
 const originalTl: ReadonlyArray<TLLogic> = parseTlLogic(netFilepath);
@@ -171,9 +169,13 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
 
   // This is only to show info about what individual/generation are we simulating
   const generation = Math.floor(iteration / populationSize);
-  const indivudual = Math.abs(populationSize * generation - iteration) + 1;
-  console.log(`FITNESS: Gen ${generation}, Ind ${indivudual}: ${fitness}\n`);
+  const individualNumber = Math.abs(populationSize * generation - iteration) + 1;
+  console.log(`FITNESS: Gen ${generation}, Ind ${individualNumber}: ${fitness}\n`);
   iteration++;
+
+  if (saveGenotype) {
+    writeToFile([fitness as number, ...individual.genotype], saveFilepath.concat(`_Gen${generation}`));
+  }
 
   return fitness;
 };
@@ -316,27 +318,27 @@ if (bestCandidate === undefined) {
 function writeToFile(values: number[], filepath: string) {
   console.log("Checking ", filepath);
   if (!fs.existsSync(path.dirname(filepath))) {
-    fs.mkdirSync(filepath);
+    fs.mkdirSync(path.dirname(filepath));
   }
+
   console.log("Writing...");
-  fs.writeFile(filepath, values, (err) => {
+  fs.writeFile(filepath, values.toString() + "\n", {
+    encoding: "utf8",
+    flag: "a"
+  },(err) => {
     if (err) return console.log(err);
-    console.log(path.basename(filepath), "has been saved");
+    console.log(c.green(path.basename(filepath), "has been saved"));
   });
 }
 
 
-if (saveGenotype) {
-  writeToFile([fitness as number, ...bestCandidate.genotype], saveFilepath);
-} else {
 // Convert the array of numbers that is the individual to a network file recognizable by SUMO
-  const tl = genotypeToTlLogic(bestCandidate);
-  const networkFilename = writeTlLogic(tl);
+const tl = genotypeToTlLogic(bestCandidate);
+const networkFilename = writeTlLogic(tl);
 
 // Copy that file to the location the used specified
-  fs.renameSync(networkFilename, saveFilepath);
-  console.log("Fittest candidate located at ", saveFilepath);
-}
+fs.renameSync(networkFilename, saveFilepath.concat(".net.xml"));
+console.log("Fittest candidate located at ", saveFilepath);
 
 
 console.log("Best fitness achieved", fitness);

@@ -77,6 +77,12 @@ function parseSumoAggegatedOutputData(sumoOutput: string): SumoAggregatedData {
   };
 }
 
+import { inspect } from 'util';
+
+export function ins(x: any, colors: boolean = true): string {
+  return inspect(x, { depth: 30, colors, maxArrayLength: 30 });
+}
+
 export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
   checkFilesExists(sumoOptions.files.routes);
 
@@ -98,6 +104,10 @@ export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
     shell: true,
     killSignal: "SIGINT",
   });
+
+  if (child.status !== 0) {
+    process.exit(1);
+  }
 
   return parseSumoAggegatedOutputData(child.output.join());
 }
