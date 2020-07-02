@@ -42,6 +42,7 @@ export function run(population: number, crossovers: "OnePointCrossover" | "Unifo
     // });
 
     node.stdout.pipe(process.stdout);
+    node.stderr.pipe(process.stderr);
   }
 }
 
