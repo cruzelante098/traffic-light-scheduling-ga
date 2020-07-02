@@ -13,8 +13,8 @@ export function run(population: number, crossovers: "OnePointCrossover" | "Unifo
       console.log(c.redBright(fileFolder));
     }
 
-    const node = spawn("\"C:/Program Files/nodejs/node.exe\"", [
-      "--require ts-node/register \"C:/Users/Francisco Cruz/Repositorios/traffic-light-scheduling-ga/src/genetics.ts\"",
+    const node = spawn("node", [
+      "--require ts-node/register src/genetics.ts",
       "--project tsconfig.json",
       `--network "${inputFile}"`,
       `--crossover ${crossovers}`,
@@ -45,8 +45,8 @@ export function run(population: number, crossovers: "OnePointCrossover" | "Unifo
   }
 }
 
-const outputFolder = "C:/Users/Francisco Cruz/Desktop/output";
-const instancesFolder = "C:/Users/Francisco Cruz/Repositorios/traffic-light-scheduling-ga/assets/instances";
+const outputFolder = "./output";
+const instancesFolder = "assets/instances";
 
 const anchieta_no_tls = `${instancesFolder}/anchieta_no_tls/anchieta.net.xml`;
 const anchieta_no_tls_few_pedestrians = `${instancesFolder}/anchieta_no_tls_few_pedestrians/anchieta.net.xml`;
@@ -56,8 +56,8 @@ const anchieta_tls_algev_interior_lane_changes = `${instancesFolder}/anchieta_tl
 const anchieta_tls_special = `${instancesFolder}/anchieta_tls_special/anchieta.net.xml`;
 
 
-const few_pedestrians = "C:/Users/Francisco Cruz/Repositorios/traffic-light-scheduling-ga/assets/instances/anchieta_no_tls_few_pedestrians/peatones_aleatorios.rou.xml"
-const many_pedestrians = "C:/Users/Francisco Cruz/Repositorios/traffic-light-scheduling-ga/assets/instances/anchieta_no_tls_many_pedestrians/peatones_aleatorios.rou.xml"
+const few_pedestrians = "assets/instances/anchieta_no_tls_few_pedestrians/peatones_aleatorios.rou.xml"
+const many_pedestrians = "assets/instances/anchieta_no_tls_many_pedestrians/peatones_aleatorios.rou.xml"
 
 
 // process.on('warning', e => console.warn(e.stack));
