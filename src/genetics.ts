@@ -173,7 +173,7 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
   console.log(`FITNESS: Gen ${generation}, Ind ${individualNumber}: ${fitness}\n`);
   iteration++;
 
-  if (saveGenotype) {
+  if (saveGenotype && (generation % 5 === 0)) {
     writeToFile([fitness as number, ...individual.genotype], saveFilepath.concat(`_Gen${generation}`));
   }
 
@@ -318,7 +318,7 @@ if (bestCandidate === undefined) {
 function writeToFile(values: number[], filepath: string) {
   console.log("Checking ", filepath);
   if (!fs.existsSync(path.dirname(filepath))) {
-    fs.mkdirSync(path.dirname(filepath));
+    fs.mkdirSync(path.dirname(filepath), { recursive: true });
   }
 
   console.log("Writing...");
