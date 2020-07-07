@@ -107,7 +107,7 @@ const originalTl: ReadonlyArray<TLLogic> = parseTlLogic(netFilepath);
 setOriginalTl(originalTl);
 
 // TODO: This should be program arguments
-const maxGenerations = 2;
+const maxGenerations = 5;
 
 const genotypeLength = originalTl.reduce((a, b) => a + b.phases.length, 0) + originalTl.length; // total phases + offset of every traffic light
 
@@ -119,6 +119,11 @@ const yellowPhaseDuration = 4;
 
 // Used to print info about what individual and generation is being executed.
 let iteration = 0;
+
+const executionInfo = {
+  execution: path.basename(saveFilepath),
+  generations: [],
+};
 
 /**
  * Calculates the fitness value of the individual.
@@ -174,7 +179,12 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
   iteration++;
 
   if (saveGenotype && (generation % 5 === 0)) {
-    writeToFile([fitness as number, ...individual.genotype], saveFilepath.concat(`_Gen${generation}`));
+    // @ts-ignore
+    executionInfo.generations.push({
+      generation: generation,
+      fitness: fitness as number,
+      genotype: individual.genotype
+    });
   }
 
   return fitness;
@@ -315,22 +325,35 @@ if (bestCandidate === undefined) {
 }
 
 
-function writeToFile(values: number[], filepath: string) {
-  console.log("Checking ", filepath);
-  if (!fs.existsSync(path.dirname(filepath))) {
-    fs.mkdirSync(path.dirname(filepath), { recursive: true });
-  }
+// function writeToFile(values: number[], filepath: string) {
+//   console.log("Checking ", filepath);
+//   if (!fs.existsSync(path.dirname(filepath))) {
+//     fs.mkdirSync(path.dirname(filepath), { recursive: true });
+//   }
+//
+//   console.log("Writing...");
+//   fs.writeFile(filepath, values.toString() + "\n", {
+//     encoding: "utf8",
+//     flag: "a"
+//   },(err) => {
+//     if (err) return console.log(err);
+//     console.log(c.green(path.basename(filepath), "has been saved"));
+//   });
+// }
 
-  console.log("Writing...");
-  fs.writeFile(filepath, values.toString() + "\n", {
-    encoding: "utf8",
-    flag: "a"
-  },(err) => {
-    if (err) return console.log(err);
-    console.log(c.green(path.basename(filepath), "has been saved"));
-  });
+
+console.log("Checking ", saveFilepath);
+if (!fs.existsSync(path.dirname(saveFilepath))) {
+  fs.mkdirSync(path.dirname(saveFilepath), { recursive: true });
 }
-
+console.log("Writing...");
+fs.writeFile(saveFilepath, JSON.stringify(executionInfo, null, 4), {
+  encoding: "utf8",
+  flag: "a"
+},(err) => {
+  if (err) return console.log(err);
+  console.log(c.green(path.basename(saveFilepath), "has been saved"));
+});
 
 // Convert the array of numbers that is the individual to a network file recognizable by SUMO
 const tl = genotypeToTlLogic(bestCandidate);
