@@ -95,6 +95,8 @@ export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
     command += ` --additional-files ${sumoOptions.files.additional.join(",")}`;
   }
 
+  command += " --xml-validation never";
+
   console.log(`Executing '${command}'`);
   child = cp.spawnSync(command, {
     cwd: process.cwd(),
@@ -108,6 +110,8 @@ export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
   if (child.status !== 0) {
     process.exit(1);
   }
+
+  console.error(child.stderr);
 
   return parseSumoAggegatedOutputData(child.output.join());
 }

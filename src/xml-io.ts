@@ -53,6 +53,8 @@ export function writeTlLogic(tl: TLLogic[]): string {
     postfix: ".net.xml",
     keep: false,
     discardDescriptor: true,
+    // tmpdir: "/home/fcruz/traffic-light-scheduling-ga/",
+    // dir: "tmp",
   });
 
   fs.copyFileSync(netpath, filename.name);
