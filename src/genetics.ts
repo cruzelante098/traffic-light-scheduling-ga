@@ -107,7 +107,7 @@ const originalTl: ReadonlyArray<TLLogic> = parseTlLogic(netFilepath);
 setOriginalTl(originalTl);
 
 // TODO: This should be program arguments
-const maxGenerations = 5;
+const maxGenerations = 10;
 
 const genotypeLength = originalTl.reduce((a, b) => a + b.phases.length, 0) + originalTl.length; // total phases + offset of every traffic light
 
@@ -120,10 +120,29 @@ const yellowPhaseDuration = 4;
 // Used to print info about what individual and generation is being executed.
 let iteration = 0;
 
-const executionInfo = {
-  execution: path.basename(saveFilepath),
+
+interface ExecutionInfo {
+  execution: number,
+  generations: Array<Array<{
+      id: number;
+      fitness: number;
+      genotype: number[]
+    }>
+  >
+}
+
+const executionInfo: ExecutionInfo = {
+  execution: Number(path.basename(saveFilepath).substr(4)),
   generations: [],
 };
+
+for(let i = 0; i <= populationSize; i++) {
+  executionInfo.generations.push([]);
+}
+
+const execution = Number(path.basename(saveFilepath).slice(4));
+// const seed = [4189, 79840, 52441, 7109, 632754, 74180369, 87496, 1634, 963, 4561]
+const seed = Math.floor(Math.random() * (1000000 - 1000) + 1000);
 
 /**
  * Calculates the fitness value of the individual.
@@ -143,9 +162,9 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
       flags: [
         "--no-warnings",                        // don't log warnings
         "--no-step-log",                        // don't log step info
-        "--end 5",                           // simulation end time
+        "--end 1800",                           // simulation end time
         "--time-to-teleport 120",                // disable teleports
-        // `--seed ${}`,                         // define seed
+        `--seed ${seed}`,                         // define seed
         "--duration-log.statistics",            // log aggregated information about trips
         "--tripinfo-output.write-unfinished",   // include info about vehicles that don't reach their destination
       ],
@@ -179,11 +198,10 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
   iteration++;
 
   if (saveGenotype && (generation % 5 === 0)) {
-    // @ts-ignore
-    executionInfo.generations.push({
-      generation: generation,
+    executionInfo.generations[generation].push({
+      id: generation,
       fitness: fitness as number,
-      genotype: individual.genotype
+      genotype: individual.genotype,
     });
   }
 
@@ -212,7 +230,14 @@ const params: EvolutionaryAlgorithmParams<IntegerIndividual,
   generatorParams: {
     engine: nativeMath,
     length: originalTl.reduce((a, b) => a + b.phases.length, 0) + originalTl.length, // total phases + offset of every traffic light
-    range: new NumericRange(4, 120), // range the duration values will be generated
+    range: new NumericRange(10, 120), // range the duration values will be generated
+    particularValue: (index: number) => {
+      if (doesPhaseContainsYellow(index)) {
+        return yellowPhaseDuration;
+      } else {
+        return undefined;
+      }
+    },
   },
   selection: new FitnessProportionalSelection(),
   selectionParams: {
@@ -342,12 +367,21 @@ if (bestCandidate === undefined) {
 // }
 
 
+const stringify = (obj: any, indent = 2) => 
+  JSON.stringify(obj, (key, value) => {
+    if (Array.isArray(value) && !value.some(x => x && typeof x === 'object')) {
+      return `\uE000${JSON.stringify(value.map(v => typeof v === 'string' ? v.replace(/"/g, '\uE001') : v))}\uE000`;
+    }
+    return value;
+  }, indent).replace(/"\uE000([^\uE000]+)\uE000"/g, match => match.substr(2, match.length - 4).replace(/\\"/g, '"').replace(/\uE001/g, '\\\"'));
+
+
 console.log("Checking ", saveFilepath);
 if (!fs.existsSync(path.dirname(saveFilepath))) {
   fs.mkdirSync(path.dirname(saveFilepath), { recursive: true });
 }
 console.log("Writing...");
-fs.writeFile(saveFilepath, JSON.stringify(executionInfo, null, 4), {
+fs.writeFile(saveFilepath + ".json", stringify(executionInfo), {
   encoding: "utf8",
   flag: "a"
 },(err) => {

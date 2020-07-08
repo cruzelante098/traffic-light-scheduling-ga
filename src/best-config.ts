@@ -68,34 +68,34 @@ const many_pedestrians = "assets/instances/anchieta_no_tls_many_pedestrians/peat
 // run(10, "OnePointCrossover", anchieta_no_tls_few_pedestrians);
 
 run(10, "OnePointCrossover", anchieta_tls_algev_interior_lane_always_green);
-// run(10, "OnePointCrossover", anchieta_tls_algev_interior_lane_changes);
-// run(10, "OnePointCrossover", anchieta_tls_special, few_pedestrians);
-// run(10, "OnePointCrossover", anchieta_tls_special, many_pedestrians);
+run(10, "OnePointCrossover", anchieta_tls_algev_interior_lane_changes);
+run(10, "OnePointCrossover", anchieta_tls_special, few_pedestrians);
+run(10, "OnePointCrossover", anchieta_tls_special, many_pedestrians);
 
 // run(10, "UniformCrossover", anchieta_no_tls);
 // run(10, "UniformCrossover", anchieta_no_tls_few_pedestrians);
 // run(10, "UniformCrossover", anchieta_no_tls_many_pedestrians);
 
 run(10, "UniformCrossover", anchieta_tls_algev_interior_lane_always_green);
-// run(10, "UniformCrossover", anchieta_tls_algev_interior_lane_changes);
-// run(10, "UniformCrossover", anchieta_tls_special, few_pedestrians);
-// run(10, "UniformCrossover", anchieta_tls_special, many_pedestrians);
+run(10, "UniformCrossover", anchieta_tls_algev_interior_lane_changes);
+run(10, "UniformCrossover", anchieta_tls_special, few_pedestrians);
+run(10, "UniformCrossover", anchieta_tls_special, many_pedestrians);
 
 // run(50, "OnePointCrossover", anchieta_no_tls);
 // run(50, "OnePointCrossover", anchieta_no_tls_few_pedestrians);
 // run(50, "OnePointCrossover", anchieta_no_tls_many_pedestrians);
 
 run(50, "OnePointCrossover", anchieta_tls_algev_interior_lane_always_green);
-// run(50, "OnePointCrossover", anchieta_tls_algev_interior_lane_changes);
-// run(50, "OnePointCrossover", anchieta_tls_special, few_pedestrians);
-// run(50, "OnePointCrossover", anchieta_tls_special, many_pedestrians);
+run(50, "OnePointCrossover", anchieta_tls_algev_interior_lane_changes);
+run(50, "OnePointCrossover", anchieta_tls_special, few_pedestrians);
+run(50, "OnePointCrossover", anchieta_tls_special, many_pedestrians);
 
 // run(50, "UniformCrossover", anchieta_no_tls);
 // run(50, "UniformCrossover", anchieta_no_tls_few_pedestrians);
 // run(50, "UniformCrossover", anchieta_no_tls_many_pedestrians);
 
 run(50, "UniformCrossover", anchieta_tls_algev_interior_lane_always_green);
-// run(50, "UniformCrossover", anchieta_tls_algev_interior_lane_changes);
-// run(50, "UniformCrossover", anchieta_tls_special, few_pedestrians);
-// run(50, "UniformCrossover", anchieta_tls_special, many_pedestrians);
+run(50, "UniformCrossover", anchieta_tls_algev_interior_lane_changes);
+run(50, "UniformCrossover", anchieta_tls_special, few_pedestrians);
+run(50, "UniformCrossover", anchieta_tls_special, many_pedestrians);
 

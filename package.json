@@ -27,7 +27,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@zfunction/genetics-js": "^0.2.8",
+    "@zfunction/genetics-js": "^0.2.9",
     "chalk": "^4.1.0",
     "lodash": "^4.17.15",
     "tmp": "^0.2.1",
