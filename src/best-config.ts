@@ -4,7 +4,7 @@ import c from "chalk";
 import { file } from "tmp";
 
 export function run(population: number, crossovers: "OnePointCrossover" | "UniformCrossover", inputFile: string, pedestriansFile?: string) {
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 3; i++) {
 
     let fileFolder = path.basename(path.dirname(inputFile));
 

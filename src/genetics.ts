@@ -107,7 +107,7 @@ const originalTl: ReadonlyArray<TLLogic> = parseTlLogic(netFilepath);
 setOriginalTl(originalTl);
 
 // TODO: This should be program arguments
-const maxGenerations = 10;
+const maxGenerations = 50;
 
 const genotypeLength = originalTl.reduce((a, b) => a + b.phases.length, 0) + originalTl.length; // total phases + offset of every traffic light
 
@@ -135,10 +135,6 @@ const executionInfo: ExecutionInfo = {
   execution: Number(path.basename(saveFilepath).substr(4)),
   generations: [],
 };
-
-for(let i = 0; i <= populationSize; i++) {
-  executionInfo.generations.push([]);
-}
 
 const execution = Number(path.basename(saveFilepath).slice(4));
 // const seed = [4189, 79840, 52441, 7109, 632754, 74180369, 87496, 1634, 963, 4561]
@@ -197,13 +193,17 @@ const fitnessFunction: FitnessFunction<NumericIndividual, number> = (individual)
   console.log(`FITNESS: Gen ${generation}, Ind ${individualNumber}: ${fitness}\n`);
   iteration++;
 
-  if (saveGenotype && (generation % 5 === 0)) {
-    executionInfo.generations[generation].push({
-      id: generation,
-      fitness: fitness as number,
-      genotype: individual.genotype,
-    });
+  // if (saveGenotype && (generation % 5 === 0)) {
+  if(!executionInfo.generations[generation]) {
+    executionInfo.generations[generation] = []
   }
+  
+  executionInfo.generations[generation].push({
+    id: generation,
+    fitness: fitness as number,
+    genotype: individual.genotype,
+  });
+  // }
 
   return fitness;
 };
