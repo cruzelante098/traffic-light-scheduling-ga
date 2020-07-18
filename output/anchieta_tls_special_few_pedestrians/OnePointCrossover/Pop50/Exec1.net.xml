@@ -1346,13 +1346,13 @@
         <lane id="97855879_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="72.84" shape="1062.05,1615.71 1061.66,1615.77 1044.51,1603.31 1009.69,1640.91"/>
     </edge>
 
-    <tlLogic id="3661938913" type="static" programID="0" offset="100">
-        <phase duration="69" state="GG"/>
+    <tlLogic id="3661938913" type="static" programID="0" offset="24">
+        <phase duration="70" state="GG"/>
         <phase duration="4" state="yy"/>
-        <phase duration="13" state="rr"/>
+        <phase duration="12" state="rr"/>
     </tlLogic>
-    <tlLogic id="3661942326" type="static" programID="0" offset="97">
-        <phase duration="115" state="GG"/>
+    <tlLogic id="3661942326" type="static" programID="0" offset="55">
+        <phase duration="72" state="GG"/>
         <phase duration="4" state="yy"/>
         <phase duration="10" state="rr"/>
     </tlLogic>

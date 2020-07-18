@@ -1352,64 +1352,64 @@
         <lane id="97855879_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="72.84" shape="1062.05,1615.71 1061.66,1615.77 1044.51,1603.31 1009.69,1640.91"/>
     </edge>
 
-    <tlLogic id="Entrada-Astrofisico" type="static" programID="0" offset="114">
-        <phase duration="25" state="GrG"/>
+    <tlLogic id="Entrada-Astrofisico" type="static" programID="0" offset="31">
+        <phase duration="16" state="GrG"/>
         <phase duration="4" state="yrG"/>
-        <phase duration="94" state="rGG"/>
+        <phase duration="76" state="rGG"/>
         <phase duration="4" state="ryG"/>
     </tlLogic>
-    <tlLogic id="Entrada-TF5Norte" type="static" programID="0" offset="19">
+    <tlLogic id="Entrada-TF5Norte" type="static" programID="0" offset="120">
         <phase duration="10" state="GGrrr"/>
         <phase duration="4" state="yyrrr"/>
-        <phase duration="114" state="rrGGG"/>
+        <phase duration="117" state="rrGGG"/>
         <phase duration="4" state="rryyr"/>
     </tlLogic>
-    <tlLogic id="Entrada-TF5Sur" type="static" programID="0" offset="74">
+    <tlLogic id="Entrada-TF5Sur" type="static" programID="0" offset="66">
         <phase duration="111" state="GGrrG"/>
         <phase duration="4" state="yyrrr"/>
         <phase duration="17" state="rrggr"/>
         <phase duration="4" state="rryyr"/>
     </tlLogic>
-    <tlLogic id="Entrada-Trinidad" type="static" programID="0" offset="78">
-        <phase duration="82" state="GGGrrr"/>
+    <tlLogic id="Entrada-Trinidad" type="static" programID="0" offset="108">
+        <phase duration="105" state="GGGrrr"/>
         <phase duration="4" state="yyyrrr"/>
-        <phase duration="64" state="rrrGGG"/>
+        <phase duration="75" state="rrrGGG"/>
         <phase duration="4" state="rrryyr"/>
     </tlLogic>
-    <tlLogic id="EntradaSalida-Geneto" type="static" programID="0" offset="54">
-        <phase duration="31" state="GGrGr"/>
+    <tlLogic id="EntradaSalida-Geneto" type="static" programID="0" offset="55">
+        <phase duration="29" state="GGrGr"/>
         <phase duration="4" state="yyrGr"/>
-        <phase duration="70" state="rrGGG"/>
+        <phase duration="41" state="rrGGG"/>
         <phase duration="4" state="rryGy"/>
     </tlLogic>
-    <tlLogic id="EntradaSalida-TF24" type="static" programID="0" offset="107">
-        <phase duration="15" state="GGrGr"/>
+    <tlLogic id="EntradaSalida-TF24" type="static" programID="0" offset="15">
+        <phase duration="45" state="GGrGr"/>
         <phase duration="4" state="yyrGr"/>
-        <phase duration="71" state="rrGGG"/>
+        <phase duration="89" state="rrGGG"/>
         <phase duration="4" state="rryGy"/>
     </tlLogic>
-    <tlLogic id="Salida-AngelGuimera" type="static" programID="0" offset="34">
-        <phase duration="51" state="GGGr"/>
+    <tlLogic id="Salida-AngelGuimera" type="static" programID="0" offset="40">
+        <phase duration="58" state="GGGr"/>
         <phase duration="4" state="yGGr"/>
-        <phase duration="94" state="rGGG"/>
+        <phase duration="60" state="rGGG"/>
         <phase duration="4" state="rGGy"/>
     </tlLogic>
-    <tlLogic id="Salida-TF5Norte" type="static" programID="0" offset="71">
-        <phase duration="54" state="GGGr"/>
-        <phase duration="4" state="yGGr"/>
-        <phase duration="30" state="rGGG"/>
-        <phase duration="4" state="rGGy"/>
-    </tlLogic>
-    <tlLogic id="Salida-TF5Sur" type="static" programID="0" offset="31">
-        <phase duration="73" state="GGGr"/>
+    <tlLogic id="Salida-TF5Norte" type="static" programID="0" offset="10">
+        <phase duration="104" state="GGGr"/>
         <phase duration="4" state="yGGr"/>
         <phase duration="37" state="rGGG"/>
         <phase duration="4" state="rGGy"/>
     </tlLogic>
-    <tlLogic id="Salida-Trinidad" type="static" programID="0" offset="19">
-        <phase duration="84" state="gGGgr"/>
+    <tlLogic id="Salida-TF5Sur" type="static" programID="0" offset="19">
+        <phase duration="119" state="GGGr"/>
+        <phase duration="4" state="yGGr"/>
+        <phase duration="22" state="rGGG"/>
+        <phase duration="4" state="rGGy"/>
+    </tlLogic>
+    <tlLogic id="Salida-Trinidad" type="static" programID="0" offset="73">
+        <phase duration="39" state="gGGgr"/>
         <phase duration="4" state="yGGgr"/>
-        <phase duration="12" state="rGGGG"/>
+        <phase duration="74" state="rGGGG"/>
         <phase duration="4" state="rGGGy"/>
     </tlLogic>
 

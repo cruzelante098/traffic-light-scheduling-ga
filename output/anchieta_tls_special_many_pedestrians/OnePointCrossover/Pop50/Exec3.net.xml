@@ -1346,15 +1346,15 @@
         <lane id="97855879_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="72.84" shape="1062.05,1615.71 1061.66,1615.77 1044.51,1603.31 1009.69,1640.91"/>
     </edge>
 
-    <tlLogic id="3661938913" type="static" programID="0" offset="105">
-        <phase duration="114" state="GG"/>
+    <tlLogic id="3661938913" type="static" programID="0" offset="94">
+        <phase duration="111" state="GG"/>
         <phase duration="4" state="yy"/>
-        <phase duration="19" state="rr"/>
+        <phase duration="14" state="rr"/>
     </tlLogic>
-    <tlLogic id="3661942326" type="static" programID="0" offset="42">
-        <phase duration="68" state="GG"/>
+    <tlLogic id="3661942326" type="static" programID="0" offset="11">
+        <phase duration="12" state="GG"/>
         <phase duration="4" state="yy"/>
-        <phase duration="15" state="rr"/>
+        <phase duration="21" state="rr"/>
     </tlLogic>
 
     <junction id="1001504521" type="priority" x="1320.07" y="1198.70" incLanes="449288818#1_0 449288818#1_1" intLanes=":1001504521_0_0 :1001504521_1_0" shape="1337.11,1183.25 1334.80,1181.04 1334.53,1180.80 1332.03,1178.80 1315.26,1197.06 1320.08,1201.27">
