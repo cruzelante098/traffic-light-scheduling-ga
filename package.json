@@ -29,7 +29,7 @@
   "dependencies": {
     "@zfunction/genetics-js": "^0.2.9",
     "chalk": "^4.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "tmp": "^0.2.1",
     "xmldom": "^0.3.0",
     "yargs": "^15.3.1"
