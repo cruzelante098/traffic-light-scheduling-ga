@@ -97,7 +97,7 @@ export function executeSumo(sumoOptions: SumoOptions): SumoAggregatedData {
 
   command += " --xml-validation never";
 
-  console.log(`Executing '${command}'`);
+  // console.log(`Executing '${command}'`);
   child = cp.spawnSync(command, {
     cwd: process.cwd(),
     env: process.env,
